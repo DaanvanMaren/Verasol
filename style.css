@@ -2,6 +2,9 @@
 body{
     padding: 10px;
 }
+*{
+    border:1px solid red;
+}
 /* test */
 /* nu komt test van hierboven zeker pas op pages */
 /* nog een test */
