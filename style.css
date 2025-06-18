@@ -5,3 +5,6 @@ body{
 *{
     border:1px solid red;
 }
+a{
+    font-size: 100px;
+}
