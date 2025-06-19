@@ -10,3 +10,6 @@ body > p {
   color: #BF570D;
   margin-top: 900px;
 }
+.container-scrollbar{
+  scrollbar-width: none;
+}
