@@ -5,7 +5,8 @@
   color: #3B3B3B;
 }
 body > p {
-  color: #BF570D;
   border: 1px solid pink;
   padding-top: 100px;
+  color: #BF570D;
+  margin-top: 900px;
 }
