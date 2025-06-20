@@ -4,7 +4,6 @@
 .alt {
   color: #3B3B3B;
 }
-body > p {
-  color: #BF570D;
-  margin-top: 900px;
+.ml-0 {
+  margin-left: 0px !important;
 }

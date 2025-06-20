@@ -4,9 +4,6 @@
 .alt {
   color: #3B3B3B;
 }
-.container-scrollbar{
-  scrollbar-width: none;
-}
-.ml-0{
-  margin-left:0px;
+.ml-0 {
+  margin-left: 0px !important;
 }
