@@ -1,18 +1,11 @@
 "use strict";
 
-function updateVisibility() {
-  var hasActie = document.querySelector('.actie') !== null;
-  var hasUsp = document.querySelector('.usp') !== null;
-  var uspEl = document.querySelector('.usp');
-  var actieEl = document.querySelector('.actie');
+function updateUspVisibility() {
+  var hasActie = !!document.querySelector('.actie');
+  document.querySelectorAll('.usp').forEach(function (el) {
+    el.style.display = hasActie ? 'none' : '';
+  });
+} // bij laden
 
-  if (uspEl) {
-    uspEl.style.display = hasActie ? 'none' : '';
-  }
 
-  if (actieEl) {
-    actieEl.style.display = hasUsp ? 'none' : '';
-  }
-}
-
-document.addEventListener('DOMContentLoaded', updateVisibility);
+document.addEventListener('DOMContentLoaded', updateUspVisibility);

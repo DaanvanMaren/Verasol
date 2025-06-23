@@ -1,16 +1,9 @@
-function updateVisibility() {
-    const hasActie = document.querySelector('.actie') !== null;
-    const hasUsp   = document.querySelector('.usp')   !== null;
-
-    const uspEl   = document.querySelector('.usp');
-    const actieEl = document.querySelector('.actie');
-
-    if (uspEl) {
-      uspEl.style.display = hasActie ? 'none' : '';
-    }
-    if (actieEl) {
-      actieEl.style.display = hasUsp ? 'none' : '';
-    }
+function updateUspVisibility() {
+    const hasActie = !!document.querySelector('.actie');
+    document.querySelectorAll('.usp').forEach(el => {
+      el.style.display = hasActie ? 'none' : '';
+    });
   }
 
-  document.addEventListener('DOMContentLoaded', updateVisibility);
+  // bij laden
+  document.addEventListener('DOMContentLoaded', updateUspVisibility);
