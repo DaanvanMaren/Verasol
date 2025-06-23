@@ -16,7 +16,7 @@
 .has-bg-arrow {
   margin: 100px 0;
 }
-@media only screen and (min-width: 334px) {
+@media only screen and (max-width: 334px) {
   article:has(.actie) .text-hero {
     bottom: 160px !important;
   }
