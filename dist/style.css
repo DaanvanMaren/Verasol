@@ -16,6 +16,15 @@
 .has-bg-arrow {
   margin: 100px 0;
 }
+.primary {
+  color: #BF570D;
+}
+.alt {
+  color: #636363;
+}
+.ml-0 {
+  margin-left: 0px !important;
+}
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow > .media-4 {
     height: 100%;
