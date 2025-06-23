@@ -24,7 +24,14 @@
 .has-bg-arrow {
 	margin: 100px 0;
 }
-
+article:has(.actie){
+    @media only screen and(min-width:334px) {
+        .hero-text{
+            bottom: 160px !important;
+        }
+        
+    }
+}
 @media only screen and (min-width: 768px) {
     [id*="lib-block"].has-bg-arrow>.media-4 {
         height: 100%;

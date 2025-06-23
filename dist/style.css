@@ -16,6 +16,11 @@
 .has-bg-arrow {
   margin: 100px 0;
 }
+@media only screen and (min-width: 334px) {
+  article:has(.actie) .hero-text {
+    bottom: 160px !important;
+  }
+}
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow > .media-4 {
     height: 100%;
