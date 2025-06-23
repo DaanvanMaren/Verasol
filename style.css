@@ -4,8 +4,10 @@
 .alt {
   color: #3B3B3B;
 }
-body > p {
-  color: #BF570D;
-  border: 1px solid pink;
-  padding-top: 100px;
+.ml-0 {
+  margin-left: 0px !important;
+}
+.anita {
+  background-color: #ee2673;
+  color: white;
 }
