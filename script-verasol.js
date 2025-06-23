@@ -1,12 +1,20 @@
-function updateUspVisibility() {
+function updateVisibility() {
     const hasActie = !!document.querySelector('.actie');
+
+    // 1) USP togglen
     document.querySelectorAll('.usp').forEach(el => {
       el.style.display = hasActie ? 'none' : '';
     });
-    document.querySelectorAll(x-shape).forEach(el =>{
-        el.display = hasActie ? 'none': '';
-    })
+
+    // 2) x-shape-bg onder .actie-vaantje-onderkant togglen
+    document.querySelectorAll('.actie-vaantje-onderkant').forEach(container => {
+      const shapeBg = container.querySelector('x-shape-bg');
+      if (!shapeBg) return;
+
+      // als er géén .actie is, verberg; anders toon
+      shapeBg.style.display = hasActie ? '' : 'none';
+    });
   }
 
-  // bij laden
-  document.addEventListener('DOMContentLoaded', updateUspVisibility);
+  // bij paginaload
+  document.addEventListener('DOMContentLoaded', updateVisibility);
