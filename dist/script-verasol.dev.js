@@ -5,6 +5,9 @@ function updateUspVisibility() {
   document.querySelectorAll('.usp').forEach(function (el) {
     el.style.display = hasActie ? 'none' : '';
   });
+  document.querySelectorAll(x - shape).forEach(function (el) {
+    el.display = hasActie ? 'none' : '';
+  });
 } // bij laden
 
 

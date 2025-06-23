@@ -3,6 +3,9 @@ function updateUspVisibility() {
     document.querySelectorAll('.usp').forEach(el => {
       el.style.display = hasActie ? 'none' : '';
     });
+    document.querySelectorAll(x-shape).forEach(el =>{
+        el.display = hasActie ? 'none': '';
+    })
   }
 
   // bij laden
