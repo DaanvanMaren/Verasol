@@ -17,6 +17,7 @@
   margin: 100px 0;
 }
 @media only screen and (max-width: 334px) {
+  /* Selecteer .text-hero *binnen* een <article> dat een .actie bevat */
   article:has(.actie) .text-hero {
     bottom: 160px !important;
   }
