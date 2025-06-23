@@ -12,3 +12,5 @@ function updateVisibility() {
       actieEl.style.display = hasUsp ? 'none' : '';
     }
   }
+
+  document.addEventListener('DOMContentLoaded', updateVisibility);
