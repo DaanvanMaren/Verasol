@@ -2,7 +2,7 @@
 /* Tabellen */
 .table-row.table-body:nth-child(even),
 table tr:nth-child(even) {
-  background-color: #eee;
+  background-color: #eceded;
 }
 /* Pijlen */
 .arrow-left,
