@@ -1,4 +1,9 @@
 /* ***** eigen classes ***** */
+
+/* Tabellen */
+.table-row.table-body:nth-child(even), table tr td:nth-child(even) {background-color: #eee;}
+
+
 /* Pijlen */
 .arrow-left,
 .arrow-right {
