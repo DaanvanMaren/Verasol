@@ -1,7 +1,6 @@
 /* ***** eigen classes ***** */
 /* Tabellen */
-.table-row.table-body:nth-child(even),
-table tr:nth-child(even) {
+.accordion .table-row.table-body:nth-child(odd) {
   background-color: #eceded;
 }
 /* Pijlen */
