@@ -1,9 +1,4 @@
 /* ***** eigen classes ***** */
-@media only screen and (max-width: 768px) {
-  .box-folder-label {
-    display: none;
-  }
-}
 /* Tabellen */
 .accordion .table-row.table-body:nth-child(odd) {
   background-color: #eceded;
