@@ -17,7 +17,7 @@ function updateVisibility() {
   }
 
   // bij paginaload
-  document.addEventListener('DOMContentLoaded', updateVisibilityTwee);
+  document.addEventListener('DOMContentLoaded', updateVisibility);
 
 function updateVisibilityTwee() {
     const hasActie = !!document.querySelector('.actie-categorie');

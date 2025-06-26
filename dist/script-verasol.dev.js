@@ -16,7 +16,7 @@ function updateVisibility() {
 } // bij paginaload
 
 
-document.addEventListener('DOMContentLoaded', updateVisibilityTwee);
+document.addEventListener('DOMContentLoaded', updateVisibility);
 
 function updateVisibilityTwee() {
   var hasActie = !!document.querySelector('.actie-categorie'); // 1) USP togglen
