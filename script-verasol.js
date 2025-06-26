@@ -19,23 +19,23 @@ function updateVisibility() {
   // bij paginaload
   document.addEventListener('DOMContentLoaded', updateVisibility);
 
-function updateVisibilityTwee() {
-    const hasActie = !!document.querySelector('.actie-categorie');
+// function updateVisibilityTwee() {
+//     const hasActie = !!document.querySelector('.actie-categorie');
 
-    // 1) USP togglen
-    document.querySelectorAll('.usp').forEach(el => {
-      el.style.display = hasActie ? 'none' : '';
-    });
+//     // 1) USP togglen
+//     document.querySelectorAll('.usp').forEach(el => {
+//       el.style.display = hasActie ? 'none' : '';
+//     });
 
-    // 2) x-shape-bg onder .actie-vaantje-onderkant togglen
-    document.querySelectorAll('.actie-vaantje-onderkant').forEach(container => {
-      const shapeBg = container.querySelector('x-shape-bg');
-      if (!shapeBg) return;
+//     // 2) x-shape-bg onder .actie-vaantje-onderkant togglen
+//     document.querySelectorAll('.actie-vaantje-onderkant').forEach(container => {
+//       const shapeBg = container.querySelector('x-shape-bg');
+//       if (!shapeBg) return;
 
-      // als er géén .actie is, verberg; anders toon
-      shapeBg.style.display = hasActie ? '' : 'none';
-    });
-  }
+//       // als er géén .actie is, verberg; anders toon
+//       shapeBg.style.display = hasActie ? '' : 'none';
+//     });
+//   }
 
-  // bij paginaload
-  document.addEventListener('DOMContentLoaded', updateVisibilityTwee);
+//   // bij paginaload
+//   document.addEventListener('DOMContentLoaded', updateVisibilityTwee);
