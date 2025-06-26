@@ -34,6 +34,9 @@
 .ml-0 {
   margin-left: 0px !important;
 }
+hr {
+  padding: 20px 0px;
+}
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow > .media-4 {
     height: 100%;
