@@ -12,7 +12,7 @@
   border-top-right-radius: 10px;
   padding: 7px;
 }
-.table-head .thead {
+.table-head .thead div {
   color: #fff;
 }
 .arrow-left,
