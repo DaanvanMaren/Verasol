@@ -2,17 +2,27 @@
 @primary-500: #636363;
 @primary-600: #C2D9CA;
 
-/* ***** eigen classes ***** */
+// eigen classes
 // label
 @media only screen and (max-width:768px){
   .box-folder-label{
     display: none;
   }
 }
-/* Tabellen */
-.accordion .table-row.table-body:nth-child(odd) {background-color: #eceded;}
+// Tabellen
+.table-row {padding-left: 3px; padding-right: 3px;}
+.table-body:nth-child(odd) {background-color: #eceded;}
+.table-body .col div {padding: 10px; font-size: 16px;}
+.table-head {
+  background-color: #BF570D; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 7px;
+}
+.table-head .thead, .table-body .col {padding:0px!important}
+.table-head .thead div {color:#fff;} 
 
-/* Pijlen */
+// Pijlen
 .arrow-left,
 .arrow-right {
   mask-repeat: no-repeat, no-repeat;
@@ -43,6 +53,7 @@
 .ml-0{
     margin-left:0px !important;
   }
+
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow>.media-4 {
     height: 100%;
