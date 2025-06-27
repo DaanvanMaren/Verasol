@@ -7,7 +7,7 @@
   padding-left: 3px;
   padding-right: 3px;
 }
-.table-body:nth-child(odd) {
+.table-body:nth-child(2n) {
   background-color: #eceded;
 }
 .table-body .col div {
