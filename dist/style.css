@@ -3,8 +3,15 @@
     display: none;
   }
 }
-.table-row.table-body:nth-child(odd) {
+.table-row {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.table-body:nth-child(odd) {
   background-color: #eceded;
+}
+.table-body .col div {
+  padding: 10px;
 }
 .table-head {
   background-color: #BF570D;
