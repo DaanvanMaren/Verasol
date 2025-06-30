@@ -110,5 +110,19 @@ document.addEventListener('DOMContentLoaded', function () {
   steps.forEach(function (step) {
     return observer.observe(step);
   });
-  updateVisibility();
+  updateVisibility(); // Klikbare stappen links: scroll naar bijbehorende rechterblok
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function () {
+      var step = link.getAttribute("data-step");
+      var target = document.getElementById("step-" + step);
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
 });
