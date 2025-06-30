@@ -35,6 +35,9 @@ html {
 .text-3.active p {
   font-weight: bold;
 }
+.scroll-link {
+  cursor: pointer;
+}
 .arrow-left,
 .arrow-right {
   mask-repeat: no-repeat, no-repeat;
