@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .box-folder-label {
     display: none;
   }
