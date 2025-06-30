@@ -8,6 +8,9 @@ html {
   .scroll-punten {
     display: none;
   }
+  .usp-hotspot {
+    display: none;
+  }
 }
 .table-row {
   padding-left: 3px;
