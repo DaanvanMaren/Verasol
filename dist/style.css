@@ -29,6 +29,9 @@
 .table-head .thead div {
   color: #fff;
 }
+.text-3.active p {
+  font-weight: bold;
+}
 .arrow-left,
 .arrow-right {
   mask-repeat: no-repeat, no-repeat;

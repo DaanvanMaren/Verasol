@@ -91,5 +91,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  var steps = document.querySelectorAll(".step-content");
+  var links = document.querySelectorAll(".text-3");
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var step = entry.target.getAttribute("data-step");
+        links.forEach(function (link) {
+          link.classList.toggle("active", link.getAttribute("data-step") === step);
+        });
+      }
+    });
+  }, {
+    threshold: 0.5 // Aangepast op basis van wanneer het blok echt "in beeld" is
+
+  });
+  steps.forEach(function (step) {
+    return observer.observe(step);
+  });
   updateVisibility();
 });

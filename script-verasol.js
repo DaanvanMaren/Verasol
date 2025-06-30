@@ -102,6 +102,24 @@ document.addEventListener('DOMContentLoaded', function () {
       shapeBg.style.display = hasActie ? '' : 'none';
     });
   }
+  const steps = document.querySelectorAll(".step-content");
+  const links = document.querySelectorAll(".text-3");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const step = entry.target.getAttribute("data-step");
+          links.forEach((link) => {
+            link.classList.toggle("active", link.getAttribute("data-step") === step);
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.5 // Aangepast op basis van wanneer het blok echt "in beeld" is
+    }
+  );
 
+  steps.forEach((step) => observer.observe(step));
   updateVisibility();
 });

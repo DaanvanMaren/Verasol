@@ -3,8 +3,34 @@
     display: none;
   }
 }
-.accordion .table-row.table-body:nth-child(odd) {
+.table-row {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.table-body:nth-child(2n) {
   background-color: #eceded;
+}
+.table-body .col div {
+  padding: 10px;
+  font-size: 16px;
+}
+.table-row:first-of-type {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.table-head {
+  background-color: #BF570D;
+  padding: 7px;
+}
+.table-head .thead,
+.table-body .col {
+  padding: 0px !important;
+}
+.table-head .thead div {
+  color: #fff;
+}
+.text-3.active p {
+  font-weight: bold;
 }
 .arrow-left,
 .arrow-right {
