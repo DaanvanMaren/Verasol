@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     },
     {
-      threshold: 0.5 // Aangepast op basis van wanneer het blok echt "in beeld" is
+      threshold: 1 // Aangepast op basis van wanneer het blok echt "in beeld" is
     }
   );
 
