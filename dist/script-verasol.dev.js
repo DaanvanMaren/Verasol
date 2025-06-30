@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!shapeBg) return;
       shapeBg.style.display = hasActie ? '' : 'none';
     });
-  }
+  } // tekst bold maken voor scrollbare blokken
+
 
   var steps = document.querySelectorAll(".step-content");
   var links = document.querySelectorAll(".text-3");

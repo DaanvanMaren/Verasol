@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
       shapeBg.style.display = hasActie ? '' : 'none';
     });
   }
+  // tekst bold maken voor scrollbare blokken
   const steps = document.querySelectorAll(".step-content");
   const links = document.querySelectorAll(".text-3");
   const observer = new IntersectionObserver(
