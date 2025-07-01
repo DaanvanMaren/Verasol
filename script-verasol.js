@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateVisibility() {
     const hasActie = !!document.querySelector('.actie');
 
-    document.querySelectorAll('.usp').forEach(el => {
+    document.querySelectorAll('.usp-hero').forEach(el => {
       el.style.display = hasActie ? 'none' : '';
     });
 
