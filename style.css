@@ -12,38 +12,44 @@ html {
     display: none;
   }
 }
+/* ***** Tabellen ***** */
+/* AN: code tabellen gestructureerd en variabelen gebruikt */
 .table-row {
   padding-left: 3px;
   padding-right: 3px;
-}
-.table-body:nth-child(2n) {
-  background-color: #eceded;
-}
-.table-body .col div {
-  padding: 10px;
-  font-size: 16px;
 }
 .table-row:first-of-type {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.table-body .col div {
+  padding: 10px;
+  font-size: 16px;
+}
+.table-body:nth-child(2n) {
+  background-color: #eceded;
+}
 .table-head {
   background-color: #BF570D;
   padding: 7px;
+}
+.table-head .thead div {
+  color: #fff;
 }
 .table-head .thead,
 .table-body .col {
   padding: 0px !important;
 }
-.table-head .thead div {
-  color: #fff;
-}
+/* ***** scroll blok ***** */
+/* AN: duidelijke onderscheiding van code die bij elkaar hoort */
 .text-3.active p {
   font-weight: bold;
 }
 .scroll-link {
   cursor: pointer;
 }
+/* ***** classes weer toevoegen ***** */
+/* AN: duidelijke onderscheiding van code die bij elkaar hoort */
 .primary {
   color: #BF570D;
 }
@@ -141,6 +147,8 @@ html[lang="nl"] .menu nav[data-menu="language"]::after {
 html[lang="de"] .menu nav[data-menu="language"]::after {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fc0; %7D .cls-2 %7B fill: %23000001; %7D .cls-3 %7B fill: red; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M497.41,341.33H14.59c35.15,99.43,129.95,170.67,241.41,170.67s206.27-71.24,241.41-170.67Z'/%3E%3Cpath class='cls-2' d='M14.59,170.67h482.83C462.27,71.24,367.46,0,256,0S49.73,71.24,14.59,170.67Z'/%3E%3Cpath class='cls-3' d='M0,256c0,29.92,5.15,58.64,14.59,85.33h482.83c9.44-26.69,14.59-55.41,14.59-85.33s-5.15-58.64-14.59-85.33H14.59C5.15,197.36,0,226.08,0,256Z'/%3E%3C/svg%3E");
 }
+/* ***** Acties ***** */
+/* AN: duidelijke onderscheiding van code die bij elkaar hoort */
 .actie-banner-mobiel {
   display: none;
 }
