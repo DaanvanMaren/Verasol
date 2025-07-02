@@ -8,6 +8,9 @@ html {
   .scroll-punten {
     display: none;
   }
+  .usp-hotspot {
+    display: none;
+  }
 }
 .table-row {
   padding-left: 3px;
@@ -41,6 +44,16 @@ html {
 .scroll-link {
   cursor: pointer;
 }
+.primary {
+  color: #BF570D;
+}
+.alt {
+  color: #636363;
+}
+.ml-0 {
+  margin-left: 0px !important;
+}
+/* ***** Pijlen ***** */
 .arrow-left,
 .arrow-right {
   mask-repeat: no-repeat, no-repeat;
@@ -57,14 +70,10 @@ html {
 .has-bg-arrow {
   margin: 100px 0;
 }
-.primary {
-  color: #BF570D;
-}
-.alt {
-  color: #636363;
-}
-.ml-0 {
-  margin-left: 0px !important;
+.vanaf-prijs .card-3 {
+  mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M1920,600H186.94c-10.69,0-23.82-7.58-29.16-16.83L4.01,316.84c-5.35-9.26-5.35-24.42,0-33.67L157.77,16.84c5.35-9.26,18.47-16.84,29.16-16.84h1733.06v600Z'/%3E%3C/svg%3E");
+  mask-position: right center, 100% 0;
+  mask-repeat: no-repeat;
 }
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow > .media-4 {
@@ -98,6 +107,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
+.usp-pijl-rechts::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_1' data-name='Laag 1' viewBox='0 0 40.47 88.06'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23dc640f; %7D .cls-2 %7B fill: %23fff; isolation: isolate; %7D %3C/style%3E%3C/defs%3E%3Cg id='Group_242' data-name='Group 242'%3E%3Cg id='Group_186-2' data-name='Group 186-2'%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M0,83.78h14.08c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.68-31.93c.75-1.39.75-3.06,0-4.45L20.22,9.97l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H0v79.31Z'/%3E%3Cpath id='Union_4-2' data-name='Union 4-2' class='cls-2' d='M0,88.06h4.22c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.81-35.37c.84-1.54.84-3.39,0-4.93L11.02,6.28l-2.24-3.63C7.72,1.18,6.04.27,4.23.19L0,0v88.06Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
 html[lang="nl"] .menu nav[data-menu="language"]::after {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ae1c28; %7D .cls-2 %7B fill: %2321468b; %7D .cls-3 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M14.59,170.67h482.83C462.27,71.24,367.46,0,256,0S49.73,71.24,14.59,170.67Z'/%3E%3Cpath class='cls-3' d='M0,256c0,29.92,5.15,58.64,14.59,85.33h482.83c9.44-26.69,14.59-55.41,14.59-85.33s-5.15-58.64-14.59-85.33H14.59C5.15,197.36,0,226.08,0,256Z'/%3E%3Cpath class='cls-2' d='M497.41,341.33H14.59c35.15,99.43,129.95,170.67,241.41,170.67s206.27-71.24,241.41-170.67Z'/%3E%3C/svg%3E");
 }
@@ -117,4 +129,13 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   .actie-vaantje-categorie {
     display: none;
   }
+}
+/* ***** Locator Widget ***** */
+.locator-widget input {
+  text-align: left;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 18'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23636363; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M15.48,8.5c-.24-3.18-2.79-5.73-5.98-5.97V0h-1v2.53c-3.18.24-5.73,2.79-5.97,5.97H0v1h2.53c.24,3.18,2.79,5.73,5.97,5.97v2.53h1v-2.53c3.19-.24,5.73-2.79,5.98-5.97h1.53v-1h-1.53ZM8.5,3.53v2.03c-1.53.22-2.73,1.42-2.95,2.95h-2.03c.24-2.63,2.34-4.74,4.97-4.97ZM3.53,9.5h2.03c.22,1.53,1.42,2.73,2.95,2.95v2.02c-2.63-.24-4.74-2.34-4.97-4.97ZM9.5,14.47v-2.02c1.53-.22,2.73-1.42,2.95-2.95h2.03c-.24,2.63-2.34,4.74-4.98,4.97ZM12.45,8.5c-.22-1.53-1.42-2.73-2.95-2.95v-2.03c2.63.24,4.74,2.34,4.98,4.97h-2.03Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  background-size: 18px;
+  background-position-y: center;
 }
