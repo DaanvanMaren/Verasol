@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateVisibility() {
     var hasActie = !!document.querySelector('.actie');
-    document.querySelectorAll('.usp').forEach(function (el) {
+    document.querySelectorAll('.usp-hero').forEach(function (el) {
       el.style.display = hasActie ? 'none' : '';
     });
     document.querySelectorAll('.actie-vaantje-onderkant').forEach(function (container) {
