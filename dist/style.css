@@ -207,11 +207,22 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   }
 }
 /** Categorie slider **/
-.cat-slider .button-4 {
+.cat-slider .card-3 .button-4 {
   border: none;
 }
-.cat-slider .button-4:hover {
+.cat-slider .card-3 .button-4:hover {
   background-color: #BF570D;
   color: #fff;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+}
+.cat-slider .card-3:after {
+  position: absolute;
+  content: '';
+  width: 90%;
+  margin: auto;
+  height: 10px;
+  background-color: transparent;
+}
+.cat-slider .card-3:hover:after {
+  background-color: #BF570D;
 }
