@@ -218,11 +218,14 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 .cat-slider .card-3:after {
   position: absolute;
   content: '';
+  bottom: -10px;
   width: 90%;
-  margin: auto;
+  justify-self: center;
   height: 10px;
-  background-color: transparent;
+  background: transparent;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .cat-slider .card-3:hover:after {
-  background-color: #BF570D;
+  background: #BF570D;
 }

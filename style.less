@@ -266,14 +266,17 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     &:after {
       position:absolute;
       content:'';
+      bottom:-10px;
       width:90%;
-      margin:auto;
+      justify-self: center;
       height:10px;
-      background-color:transparent;
+      background:transparent;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
     }
     &:hover {
       &:after {
-        background-color:@primary-400;
+        background:@primary-400;
       }
     }
   }
