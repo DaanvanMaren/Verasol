@@ -215,7 +215,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   color: #fff;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
   bottom: 0px;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s bottom ease-in-out;
 }
 .cat-slider .card-3:after {
   position: absolute;
@@ -227,7 +227,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   background: transparent;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s bottom ease-in-out;
 }
 .cat-slider .card-3:hover:after {
   background: #BF570D;
