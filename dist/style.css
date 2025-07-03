@@ -206,3 +206,12 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     background-position-y: center;
   }
 }
+/** Categorie slider **/
+.cat-slider .button-4 {
+  border: none;
+}
+.cat-slider .button-4:hover {
+  background-color: #BF570D;
+  color: #fff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+}
