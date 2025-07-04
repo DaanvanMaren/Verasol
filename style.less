@@ -19,6 +19,7 @@ html {
     display: none;
   }
 }
+
 /* ***** Tabellen ***** *//* AN: code tabellen gestructureerd en variabelen gebruikt */
 .table-row {
   padding-left: 3px;
@@ -235,4 +236,116 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     background-position-y: center;
   }
 }
+
+/* Slider bullets */
+
+.control-wrapper.bullets, .swiper-pagination-bullets {
+  column-gap: 6px!important;
+  button.bullet, span.control-3 {
+    background-color:#dbdbdb;
+    width:10px;
+    border:none;
+    &.active {width:30px; background-color:@primary-400;}
+  }
+}
+
+// Categorie slider
+.cat-slider {
+  .card-3 {
+    .button-4 {
+      border:none;
+    }
+    &:after {
+      position:absolute;
+      content:'';
+      bottom:0px;
+      width:90%;
+      justify-self: center;
+      height:0px;
+      background:transparent;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      transition:.3s all ease-in-out;
+    }
+    .cat-slider-submenu {
+      display:none;
+      width: auto!important;
+      justify-self: center;
+      .button-wrapper {
+        background-color:#fff;
+        border-radius:10px;
+        padding:5px 15px;
+        .button-6 {
+          border-right: 1px solid #eee;
+          padding: 0px 15px 0px 5px;
+          text-align: center;
+          color:@primary-400;
+          &:last-of-type {border-right:none;}
+        }
+      }
+    }
+    &:hover {
+      &:after {
+        background:@primary-400;
+        bottom:-10px;
+        height:10px;
+        transition:.3s all ease-in-out;
+      }
+      .button-4 {
+        background-color:@primary-400;
+        color:#fff;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+      }
+      .cat-slider-submenu {display:block;}
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cat-slider {
+    .swiper-slide-active {
+      .card-3 {
+        &:after {
+          background:@primary-400!important;
+          bottom:-10px!important;
+          height:10px!important;
+        }
+        .button-4 {
+          background-color:@primary-400!important;
+          color:#fff!important;
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2)!important;
+        }
+        .cat-slider-submenu {display:block;}
+      }
+    }
+  }
+}
+// Grey bg arrow
+div#page-1977967  { // Homepage
+  .ons-assortiment .grey-bg-arrow {display:none;}
+}
+.ons-assortiment .grey-bg-arrow {
+    width: 100%;
+    background-size: auto 75%;
+    background-position: -200px bottom;
+    background-repeat: no-repeat;
+    background-image: url(https://files.bureauvdo.nl/grey_bg-arrow-right.svg);
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+// Veranda typen - product vlaggen
+.productflags {
+  .productflag-slider {
+    .smartline-flag .card-3>x-shape-bg>*{background-color:#E88734!important;}
+    .greenline-flag .card-3>x-shape-bg>*{background-color:#DC640F!important;}
+    .profiline-flag .card-3>x-shape-bg>*{background-color:#ffffff!important;}
+    .linea-flag .card-3>x-shape-bg>*{background-color:#838989!important;}
+    .cube-flag .card-3>x-shape-bg>*{background-color:#636363!important;}
+  }
+}
+
 //  Diversen

@@ -190,3 +190,116 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     background-position-y: center;
   }
 }
+/* Slider bullets */
+.control-wrapper.bullets,
+.swiper-pagination-bullets {
+  column-gap: 6px!important;
+}
+.control-wrapper.bullets button.bullet,
+.swiper-pagination-bullets button.bullet,
+.control-wrapper.bullets span.control-3,
+.swiper-pagination-bullets span.control-3 {
+  background-color: #dbdbdb;
+  width: 10px;
+  border: none;
+}
+.control-wrapper.bullets button.bullet.active,
+.swiper-pagination-bullets button.bullet.active,
+.control-wrapper.bullets span.control-3.active,
+.swiper-pagination-bullets span.control-3.active {
+  width: 30px;
+  background-color: #BF570D;
+}
+.cat-slider .card-3 .button-4 {
+  border: none;
+}
+.cat-slider .card-3:after {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  width: 90%;
+  justify-self: center;
+  height: 0px;
+  background: transparent;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 0.3s all ease-in-out;
+}
+.cat-slider .card-3 .cat-slider-submenu {
+  display: none;
+  width: auto!important;
+  justify-self: center;
+}
+.cat-slider .card-3 .cat-slider-submenu .button-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.cat-slider .card-3 .cat-slider-submenu .button-wrapper .button-6 {
+  border-right: 1px solid #eee;
+  padding: 0px 15px 0px 5px;
+  text-align: center;
+  color: #BF570D;
+}
+.cat-slider .card-3 .cat-slider-submenu .button-wrapper .button-6:last-of-type {
+  border-right: none;
+}
+.cat-slider .card-3:hover:after {
+  background: #BF570D;
+  bottom: -10px;
+  height: 10px;
+  transition: 0.3s all ease-in-out;
+}
+.cat-slider .card-3:hover .button-4 {
+  background-color: #BF570D;
+  color: #fff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+}
+.cat-slider .card-3:hover .cat-slider-submenu {
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .cat-slider .swiper-slide-active .card-3:after {
+    background: #BF570D !important;
+    bottom: -10px !important;
+    height: 10px!important;
+  }
+  .cat-slider .swiper-slide-active .card-3 .button-4 {
+    background-color: #BF570D !important;
+    color: #fff !important;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2) !important;
+  }
+  .cat-slider .swiper-slide-active .card-3 .cat-slider-submenu {
+    display: block;
+  }
+}
+div#page-1977967 .ons-assortiment .grey-bg-arrow {
+  display: none;
+}
+.ons-assortiment .grey-bg-arrow {
+  width: 100%;
+  background-size: auto 75%;
+  background-position: -200px bottom;
+  background-repeat: no-repeat;
+  background-image: url(https://files.bureauvdo.nl/grey_bg-arrow-right.svg);
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.productflags .productflag-slider .smartline-flag .card-3 > x-shape-bg > * {
+  background-color: #E88734 !important;
+}
+.productflags .productflag-slider .greenline-flag .card-3 > x-shape-bg > * {
+  background-color: #DC640F !important;
+}
+.productflags .productflag-slider .profiline-flag .card-3 > x-shape-bg > * {
+  background-color: #ffffff !important;
+}
+.productflags .productflag-slider .linea-flag .card-3 > x-shape-bg > * {
+  background-color: #838989 !important;
+}
+.productflags .productflag-slider .cube-flag .card-3 > x-shape-bg > * {
+  background-color: #636363 !important;
+}
