@@ -252,6 +252,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   border-right: 1px solid #eee;
   padding: 0px 15px 0px 5px;
   text-align: center;
+  color: #BF570D;
 }
 .cat-slider .card-3 .cat-slider-submenu .button-wrapper .button-6:last-of-type {
   border-right: none;
