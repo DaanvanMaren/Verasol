@@ -240,6 +240,8 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 }
 .cat-slider .card-3 .cat-slider-submenu {
   display: none;
+  width: auto;
+  justify-self: center;
 }
 .cat-slider .card-3 .cat-slider-submenu .button-wrapper {
   background-color: #fff;
