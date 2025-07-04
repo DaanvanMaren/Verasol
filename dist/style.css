@@ -214,10 +214,10 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   background-color: #dbdbdb;
   width: 10px;
 }
-.control-wrapper.bullets button.bullet.active,
-.swiper-pagination-bullets button.bullet.active,
-.control-wrapper.bullets span.control-3.active,
-.swiper-pagination-bullets span.control-3.active {
+border:none .control-wrapper.bullets button.bullet.active,
+border:none .swiper-pagination-bullets button.bullet.active,
+border:none .control-wrapper.bullets span.control-3.active,
+border:none .swiper-pagination-bullets span.control-3.active {
   width: 30px;
   background-color: #BF570D;
 }
