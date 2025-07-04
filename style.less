@@ -280,6 +280,12 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
       border-bottom-right-radius: 15px;
       transition:.3s all ease-in-out;
     }
+    .cat-slider-submenu {
+      display:none;
+      background-color:#fff;
+      border-radius:10px;
+      padding:5px 15px;
+    }
     &:hover {
       &:after {
         background:@primary-400;
@@ -292,6 +298,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
         color:#fff;
         box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
       }
+      .cat-slider-submenu {display:block;}
     }
   }
 }

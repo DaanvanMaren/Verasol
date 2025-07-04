@@ -238,6 +238,12 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   border-bottom-right-radius: 15px;
   transition: 0.3s all ease-in-out;
 }
+.cat-slider .card-3 .cat-slider-submenu {
+  display: none;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
 .cat-slider .card-3:hover:after {
   background: #BF570D;
   bottom: -10px;
@@ -248,6 +254,9 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   background-color: #BF570D;
   color: #fff;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+}
+.cat-slider .card-3:hover .cat-slider-submenu {
+  display: block;
 }
 @media only screen and (max-width: 767px) {
   .cat-slider .swiper-slide-active .card-3:after {
