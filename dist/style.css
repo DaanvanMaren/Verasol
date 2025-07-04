@@ -250,12 +250,12 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 767px) {
-  .cat-slider .card-3:after {
+  .cat-slider .swiper-slide-active .card-3:after {
     background: #BF570D !important;
     bottom: -10px !important;
     height: 10px!important;
   }
-  .cat-slider .card-3 .button-4 {
+  .cat-slider .swiper-slide-active .card-3 .button-4 {
     background-color: #BF570D !important;
     color: #fff !important;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2) !important;
