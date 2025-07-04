@@ -207,11 +207,17 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   }
 }
 /* Slider bullets */
-.control-wrapper.bullets button.bullet {
+.control-wrapper.bullets button.bullet,
+.swiper-pagination-bullets button.bullet,
+.control-wrapper.bullets span.control-3,
+.swiper-pagination-bullets span.control-3 {
   background-color: #dbdbdb;
   width: 10px;
 }
-.control-wrapper.bullets button.bullet.active {
+.control-wrapper.bullets button.bullet.active,
+.swiper-pagination-bullets button.bullet.active,
+.control-wrapper.bullets span.control-3.active,
+.swiper-pagination-bullets span.control-3.active {
   width: 30px;
   background-color: #BF570D;
 }
