@@ -206,6 +206,15 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     background-position-y: center;
   }
 }
+/* Slider bullets */
+.control-wrapper.bullets button.bullet {
+  background-color: #dbdbdb;
+  width: 10px;
+}
+.control-wrapper.bullets button.bullet.active {
+  width: 30px;
+  background-color: #BF570D;
+}
 /** Categorie slider **/
 .cat-slider .card-3 .button-4 {
   border: none;
