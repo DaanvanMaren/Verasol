@@ -300,3 +300,18 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   top: 0;
   left: 0;
 }
+.productflags .productflag-slider .smartline-flag .card-3 > x-shape-bg > * {
+  background-color: #E88734;
+}
+.productflags .productflag-slider .greenline-flag .card-3 > x-shape-bg > * {
+  background-color: #DC640F;
+}
+.productflags .productflag-slider .profiline-flag .card-3 > x-shape-bg > * {
+  background-color: #ffffff;
+}
+.productflags .productflag-slider .linea-flag .card-3 > x-shape-bg > * {
+  background-color: #838989;
+}
+.productflags .productflag-slider .cube-flag .card-3 > x-shape-bg > * {
+  background-color: #636363;
+}
