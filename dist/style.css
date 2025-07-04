@@ -210,11 +210,6 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 .cat-slider .card-3 .button-4 {
   border: none;
 }
-.cat-slider .card-3 .button-4:hover {
-  background-color: #BF570D;
-  color: #fff;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
-}
 .cat-slider .card-3:after {
   position: absolute;
   content: '';
@@ -232,4 +227,9 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   bottom: -10px;
   height: 10px;
   transition: 0.3s all ease-in-out;
+}
+.cat-slider .card-3:hover .button-4 {
+  background-color: #BF570D;
+  color: #fff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
 }
