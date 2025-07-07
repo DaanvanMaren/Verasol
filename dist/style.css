@@ -355,9 +355,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 }
 .productflags .inner-flag-carousel .bullets {
   display: flex;
-  position: relative;
+  position: relative!important;
   bottom: auto;
-  top: -15px;
+  top: -15px !important;
   justify-content: center;
   z-index: 30;
 }
