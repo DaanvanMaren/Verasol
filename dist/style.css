@@ -341,7 +341,11 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .productflags .productflag-slider article .text-3 ul {
   list-style: none;
   padding-left: 0px;
+  position: relative;
 }
 .productflags .productflag-slider article .text-3 ul li:before {
   content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: -20px;
 }
