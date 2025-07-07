@@ -302,7 +302,17 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   left: 0;
 }
 .ons-assortiment button.previous {
+  fill: #e8c1a0 !important;
+}
+.ons-assortiment button.next {
   fill: #BF570D !important;
+}
+.ons-assortiment .cat-slider-submenu {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  width: 100%;
 }
 .productflags .productflag-slider .smartline-flag .card-3 > x-shape-bg > * {
   background-color: #E88734 !important;
