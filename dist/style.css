@@ -301,6 +301,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   top: 0;
   left: 0;
 }
+.ons-assortiment button.previous {
+  fill: #BF570D !important;
+}
 .productflags .productflag-slider .smartline-flag .card-3 > x-shape-bg > * {
   background-color: #E88734 !important;
 }
