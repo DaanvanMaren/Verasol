@@ -361,6 +361,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   justify-content: center;
   z-index: 30;
 }
-.productflags .inner-flag-carousel .control-wrapper .control-3.light.active {
+.productflags .inner-flag-carousel .control-wrapper .control-3.active,
+.productflags .inner-flag-carousel .control-wrapper .control-3:hover {
   background-color: #BF570D;
 }
