@@ -365,3 +365,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .productflags .inner-flag-carousel .control-wrapper .control-3:hover {
   background-color: #BF570D;
 }
+.faq-section .media-4.arrow-right {
+  height: 300px;
+  align-self: self-end;
+}
