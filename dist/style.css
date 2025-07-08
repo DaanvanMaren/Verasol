@@ -353,9 +353,11 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   position: absolute;
   left: -20px;
 }
-.productflags .inner-flag-carousel .control-wrapper {
+.productflags .inner-flag-carousel .viewport-1 {
   isolation: isolate;
   pointer-events: none;
+}
+.productflags .inner-flag-carousel .viewport-1 .control-wrapper {
   display: flex;
   position: relative!important;
   bottom: auto;
@@ -363,7 +365,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   justify-content: center;
   z-index: 30;
 }
-.productflags .inner-flag-carousel .control-wrapper .control-3.active,
-.productflags .inner-flag-carousel .control-wrapper .control-3:hover {
+.productflags .inner-flag-carousel .viewport-1 .control-wrapper .control-3.active,
+.productflags .inner-flag-carousel .viewport-1 .control-wrapper .control-3:hover {
   background-color: #BF570D;
 }
