@@ -353,10 +353,6 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   position: absolute;
   left: -20px;
 }
-.productflags .inner-flag-carousel {
-  isolation: isolate;
-  overflow: hidden;
-}
 .productflags .inner-flag-carousel .control-wrapper {
   display: flex;
   position: relative!important;
