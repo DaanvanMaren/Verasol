@@ -338,6 +338,10 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .productflags .productflag-slider .cube-flag .card-3 > x-shape-bg > * {
   background-color: #636363 !important;
 }
+.productflags .productflag-slider article {
+  isolation: isolate;
+  pointer-events: none;
+}
 .productflags .productflag-slider article .text-3 {
   font-size: 15px;
   padding: 0px 20px;
