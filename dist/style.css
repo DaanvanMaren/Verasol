@@ -369,12 +369,13 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   height: 300px;
   align-self: self-end;
   left: 0;
+  margin-bottom: 50px;
 }
 .faq-section .media-3.faq-helper {
   position: absolute;
   width: 260px;
   left: 125px;
-  bottom: -24px;
+  bottom: 26px;
 }
 .faq-section .accordion .handler.active {
   font-weight: bold;
