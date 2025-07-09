@@ -379,6 +379,16 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .faq-section .accordion .handler.active {
   font-weight: bold;
 }
+.faq-section .footnote p {
+  font-size: 12px;
+}
+.faq-section .footnote p a {
+  color: #BF570D;
+  text-decoration: none;
+}
+.faq-section .footnote p a:hover {
+  text-decoration: underline;
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-section .media-3.faq-helper {
     left: 20px;
