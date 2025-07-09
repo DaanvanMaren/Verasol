@@ -380,4 +380,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   .faq-section .media-3.faq-helper {
     left: 20px;
   }
+  .faq-section .media-4.arrow-right {
+    align-self: self-start;
+  }
 }
