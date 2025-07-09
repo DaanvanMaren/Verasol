@@ -368,6 +368,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .faq-section .media-4.arrow-right {
   height: 300px;
   align-self: self-end;
+  left: 0;
 }
 .faq-section .media-3.faq-helper {
   position: absolute;
