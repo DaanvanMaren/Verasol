@@ -382,5 +382,6 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   }
   .faq-section .media-4.arrow-right {
     align-self: self-start;
+    width: 100%;
   }
 }
