@@ -375,3 +375,8 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   left: 125px;
   bottom: -24px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .faq-section .media-3.faq-helper {
+    left: 20px;
+  }
+}
