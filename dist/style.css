@@ -399,6 +399,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   }
 }
 @media (max-width: 768px) {
+  .faq-section {
+    overflow: hidden;
+  }
   .faq-section .media-4.arrow-right {
     align-self: self-end;
     width: 100%;
