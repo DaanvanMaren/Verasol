@@ -339,7 +339,6 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   background-color: #636363 !important;
 }
 .productflags .productflag-slider article .text-3 {
-  font-size: 15px;
   padding: 0px 20px;
 }
 .productflags .productflag-slider article .text-3 ul {
@@ -379,9 +378,6 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 }
 .faq-section .accordion .handler.active {
   font-weight: bold;
-}
-.faq-section .accordion .text-4 p {
-  font-size: 14px;
 }
 .faq-section .footnote p {
   font-size: 12px;
