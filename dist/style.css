@@ -332,6 +332,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .productflags .productflag-slider .profiline-flag .card-3 .text-3 li::before {
   color: #BF570D;
 }
+.productflags .productflag-slider .profiline-flag .card-3 .button-4 {
+  border: 1px solid #BF570D;
+}
 .productflags .productflag-slider .linea-flag .card-3 > x-shape-bg > * {
   background-color: #838989 !important;
 }
