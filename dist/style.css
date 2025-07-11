@@ -238,18 +238,6 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 .cat-slider .card-3 .button-4 {
   border: none;
 }
-.cat-slider .card-3:after {
-  position: absolute;
-  content: '';
-  bottom: 0px;
-  width: 90%;
-  justify-self: center;
-  height: 0px;
-  background: transparent;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  transition: 0.3s all ease-in-out;
-}
 .cat-slider .card-3 .cat-slider-submenu {
   display: none;
   width: auto!important;
@@ -269,12 +257,6 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 .cat-slider .card-3 .cat-slider-submenu .button-wrapper .button-6:last-of-type {
   border-right: none;
 }
-.cat-slider .card-3:hover:after {
-  background: #BF570D;
-  bottom: -10px;
-  height: 10px;
-  transition: 0.3s all ease-in-out;
-}
 .cat-slider .card-3:hover .button-4 {
   background-color: #BF570D;
   color: #fff;
@@ -284,11 +266,6 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  .cat-slider .swiper-slide-active .card-3:after {
-    background: #BF570D !important;
-    bottom: -10px !important;
-    height: 10px!important;
-  }
   .cat-slider .swiper-slide-active .card-3 .button-4 {
     background-color: #BF570D !important;
     color: #fff !important;
