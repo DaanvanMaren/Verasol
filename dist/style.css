@@ -118,12 +118,14 @@ html {
   padding-right: 20px;
   font-size: 16px;
   color: #fff;
+  transform: translate(0px, 5px);
 }
 .vanaf-prijs .card-3 .heading-4 {
   text-align: right;
   font-size: 32px;
   padding-right: 20px;
   color: #fff;
+  transform: translate(0px, -5px);
 }
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow .arrow-left,
