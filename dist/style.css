@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
 }
 @media only screen and (max-width: 767px) {
   .box-folder-label {
