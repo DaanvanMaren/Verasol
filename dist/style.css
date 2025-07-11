@@ -334,6 +334,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .ons-assortiment .cat-slider-submenu a.button-6:hover {
   text-decoration: underline;
 }
+.productflags .productflag-slider {
+  overflow: hidden!important;
+}
 .productflags .productflag-slider .smartline-flag .card-3 > x-shape-bg > * {
   background-color: #E88734 !important;
 }
