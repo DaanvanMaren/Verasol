@@ -340,29 +340,11 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .productflags .productflag-slider {
   overflow: hidden!important;
 }
-.productflags .productflag-slider .smartline-flag .card-3 > x-shape-bg > * {
-  background-color: #E88734 !important;
-}
-.productflags .productflag-slider .greenline-flag .card-3 > x-shape-bg > * {
-  background-color: #DC640F !important;
-}
-.productflags .productflag-slider .profiline-flag .card-3 x-shape-bg > * {
-  background-color: #ffffff !important;
-}
 .productflags .productflag-slider .profiline-flag .card-3 .text-3 li::before {
   color: #BF570D;
 }
 .productflags .productflag-slider .profiline-flag .card-3 .button-4 {
   border: 1px solid #BF570D;
-}
-.productflags .productflag-slider .linea-flag .card-3 > x-shape-bg > * {
-  background-color: #838989 !important;
-}
-.productflags .productflag-slider .cube-flag .card-3 > x-shape-bg > * {
-  background-color: #636363 !important;
-}
-.productflags .productflag-slider .pergola-flag .card-3 > x-shape-bg > * {
-  background-color: #000000 !important;
 }
 .productflags .productflag-slider article .text-3 {
   padding: 0px 20px;
