@@ -317,7 +317,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   transition: 0.3s all ease-in-out;
 }
 @media only screen and (max-width: 767px) {
-  .orange-shadow:after {
+  .swiper-slide-active .orange-shadow:after {
     background: #BF570D !important;
     bottom: -10px !important;
     height: 10px!important;
