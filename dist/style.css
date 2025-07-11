@@ -375,6 +375,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   position: absolute;
   left: -20px;
 }
+.productflags .productflag-slider .heading-7 {
+  font-family: 'Isidora Sans Alt', sans-serif;
+}
 .productflags .inner-flag-carousel .control-wrapper {
   display: flex;
   position: relative!important;
