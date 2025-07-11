@@ -316,6 +316,13 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   height: 10px;
   transition: 0.3s all ease-in-out;
 }
+@media only screen and (max-width: 767px) {
+  .orange-shadow:after {
+    background: #BF570D !important;
+    bottom: -10px !important;
+    height: 10px!important;
+  }
+}
 div#page-1977967 .ons-assortiment .grey-bg-arrow {
   display: none;
 }
