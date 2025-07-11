@@ -81,6 +81,7 @@ html {
     mask-position: top;
     mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
     transform: translateX(0px);
+    height: 400px;
   }
 }
 [id*="lib-block"].has-bg-arrow {
