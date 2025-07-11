@@ -349,6 +349,32 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     }
   }
 }
+
+// Oranje rand/schaduw on hover
+.orange-shadow {
+  &:after {
+    position:absolute;
+    content:'';
+    bottom:0px;
+    width:90%;
+    justify-self: center;
+    height:0px;
+    background:transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition:.3s all ease-in-out;
+  }
+  &:hover {
+    &:after {
+      background:@primary-400;
+      bottom:-10px;
+      height:10px;
+      transition:.3s all ease-in-out;
+    }
+  }
+}
+
+
 // Grey bg arrow
 div#page-1977967  { // Homepage
   .ons-assortiment .grey-bg-arrow {display:none;}
