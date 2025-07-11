@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 @media only screen and (max-width: 767px) {
   .box-folder-label {
@@ -400,7 +401,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   bottom: 26px;
 }
 .faq-section .accordion .handler.active {
-  font-weight: bold;
+  font-family: ;
 }
 .faq-section .footnote p {
   font-size: 12px;
