@@ -443,11 +443,11 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   -webkit-text-stroke: 2px #fff;
   font-size: 20px;
 }
-#afmetingen,
-#situatie,
-#samenstellen,
-#uitbreiden,
-#aankleden,
-#afronden > .handler-1.handler.dark {
-  padding-right: 30px !important;
+#afmetingen .handler-1.handler.dark,
+#situatie .handler-1.handler.dark,
+#samenstellen .handler-1.handler.dark,
+#uitbreiden .handler-1.handler.dark,
+#aankleden .handler-1.handler.dark,
+#afronden .handler-1.handler.dark {
+  padding-right: 30px;
 }
