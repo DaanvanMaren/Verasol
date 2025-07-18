@@ -142,8 +142,11 @@ html {
   }
 }
 @media only screen and (max-width: 1024px) {
-  .usp-pijl-rechts::before {
-    margin-right: -12px !important;
+  .usp-pijl-rechts {
+    display: none;
+  }
+  .usp-pijl-link {
+    display: none;
   }
 }
 .usp-pijl-rechts::before {
