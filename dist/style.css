@@ -404,7 +404,8 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 }
 .faq-section .media-4.arrow-right {
   height: 300px;
-  align-self: self-end;
+  position: absolute;
+  align-self: anchor-center;
   left: 0;
   margin-bottom: 50px;
 }
@@ -412,7 +413,8 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   position: absolute;
   width: 260px;
   left: 125px;
-  bottom: 26px;
+  align-self: anchor-center;
+  bottom: 64px;
 }
 .faq-section .accordion .handler.active {
   font-family: 'open-sans-bold';
