@@ -439,7 +439,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-section .media-3.faq-helper {
-    left: 0px;
+    left: -25px;
   }
 }
 @media (max-width: 768px) {
