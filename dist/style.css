@@ -404,10 +404,10 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 }
 @media only screen and (max-width: 768px) {
   .faq-section.media-4.arrow-right {
-    display: none;
+    display: none !important;
   }
   .faq-section.faq-helper {
-    display: none;
+    display: none !important;
   }
 }
 .faq-section .media-4.arrow-right {
