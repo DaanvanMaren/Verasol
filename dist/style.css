@@ -420,7 +420,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .faq-section .media-3.faq-helper {
   position: absolute;
   width: 260px;
-  left: 125px;
+  left: 65px;
   align-self: anchor-center;
   bottom: 64px;
 }
@@ -439,7 +439,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-section .media-3.faq-helper {
-    left: 20px;
+    left: 0px;
   }
 }
 @media (max-width: 768px) {
@@ -451,7 +451,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
     width: 100%;
   }
   .faq-section .media-3.faq-helper {
-    left: 10%;
+    left: 0;
   }
   .faq-section .container {
     order: 1;
