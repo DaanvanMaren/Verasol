@@ -457,6 +457,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
     order: 1;
   }
 }
+.test {
+  display: inline-block;
+}
 .review-section i.fa-star {
   -webkit-text-stroke: 2px #fff;
   font-size: 20px;
