@@ -1,3 +1,4 @@
+@primary-300: #e8c1a0;
 @primary-400: #BF570D;
 @primary-500: #636363;
 @primary-600: #C2D9CA;
@@ -5,6 +6,7 @@
 // eigen classes
 html {
   scroll-behavior: smooth;
+  //-webkit-font-smoothing: antialiased;
 }
 
 // label
@@ -19,7 +21,8 @@ html {
     display: none;
   }
 }
-/* ***** Tabellen ***** */
+
+/* ***** Tabellen ***** *//* AN: code tabellen gestructureerd en variabelen gebruikt */
 .table-row {
   padding-left: 3px;
   padding-right: 3px;
@@ -55,7 +58,7 @@ html {
   padding: 0px !important
 }
 
-/* ***** scroll blok ***** */
+/* ***** scroll blok ***** *//* AN: duidelijke onderscheiding van code die bij elkaar hoort */
 .text-3.active p {
   font-weight: bold;
 }
@@ -64,7 +67,8 @@ html {
   cursor: pointer;
 }
 
-/* ***** classes weer toevoegen ***** */
+
+/* ***** classes weer toevoegen ***** *//* AN: duidelijke onderscheiding van code die bij elkaar hoort */
 .primary{
     color: @primary-400
 }
@@ -75,33 +79,142 @@ html {
     margin-left:0px !important;
 }
 
-/* ***** Pijlen ***** */
+//Bij /* ***** Pijlen ***** */
 .arrow-left,
 .arrow-right {
-  mask-repeat: no-repeat, no-repeat;
-  mask-size: auto 100%;
+    mask-repeat: no-repeat, no-repeat;
+    mask-size: auto 100%;
 }
 
 .arrow-left {
-  mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M1920,600H186.94c-10.69,0-23.82-7.58-29.16-16.83L4.01,316.84c-5.35-9.26-5.35-24.42,0-33.67L157.77,16.84c5.35-9.26,18.47-16.84,29.16-16.84h1733.06v600Z'/%3E%3C/svg%3E");
-  mask-position: left center, 100% 0;
+    mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M1920,600H186.94c-10.69,0-23.82-7.58-29.16-16.83L4.01,316.84c-5.35-9.26-5.35-24.42,0-33.67L157.77,16.84c5.35-9.26,18.47-16.84,29.16-16.84h1733.06v600Z'/%3E%3C/svg%3E");
+    mask-position: left center, 100% 0;
 }
 
 .arrow-right {
-  mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M0,0h1733.06c10.69,0,23.82,7.58,29.16,16.83l153.77,266.33c5.35,9.26,5.35,24.42,0,33.67l-153.77,266.33c-5.35,9.26-18.47,16.84-29.16,16.84H0V0Z'/%3E%3C/svg%3E");
-  mask-position: right center, 100% 0;
+    mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M0,0h1733.06c10.69,0,23.82,7.58,29.16,16.83l153.77,266.33c5.35,9.26,5.35,24.42,0,33.67l-153.77,266.33c-5.35,9.26-18.47,16.84-29.16,16.84H0V0Z'/%3E%3C/svg%3E");
+    mask-position: right center, 100% 0;
 }
 
-.has-bg-arrow {
-  margin: 100px 0;
+@media (max-width:767px) {
+  section.has-bg-arrow.mobile-arrow-top {
+    padding: 0px 12px;
+    .arrow-top {
+      mask-size: 100% auto;
+      mask-position: top;
+      mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+      transform: translateX(0px);
+      height:400px;
+    }
+  }
 }
 
-.vanaf-prijs .card-3 {
+[id*="lib-block"].has-bg-arrow {
+    margin: 100px 0;
+    overflow: hidden;
+
+    &:has(.arrow-left),
+    &:has(.arrow-right) {
+        flex-direction: column-reverse;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        position: relative;
+        margin-top: 36px;
+    }
+
+    .arrow-left {
+        transform: translateX(12px);
+    }
+
+    .arrow-right {
+        transform: translateX(-12px);
+    }
+
+    .header-menu+& {
+        margin-top: 0;
+    }
+}
+
+.vanaf-prijs {
+  .card-3 {
     mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M1920,600H186.94c-10.69,0-23.82-7.58-29.16-16.83L4.01,316.84c-5.35-9.26-5.35-24.42,0-33.67L157.77,16.84c5.35-9.26,18.47-16.84,29.16-16.84h1733.06v600Z'/%3E%3C/svg%3E");
     mask-position: right center, 100% 0;
     mask-repeat: no-repeat;
+    mask-size: 250px;
+    .text-4 {
+      margin: 3px 3px 0px;
+      text-align: right;
+      padding-right: 20px;
+      font-size:16px;
+      color:#fff;
+      transform: translate(0px, 3px);
+    }
+    .heading-4 {
+      text-align: right;
+      font-size: 32px;
+      padding-right: 20px;
+      color:#fff;
+      transform: translate(0px, -7px);
+    }
+  }
 }
 
+@media only screen and (min-width: 768px) {
+    [id*="lib-block"].has-bg-arrow {
+        .arrow-left,
+        .arrow-right {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            margin-top: 0;
+            transform: none;
+        }
+        
+        .arrow-left {
+            left: 50%;
+        }
+    }
+}
+// usp pijlen
+@media only screen and(max-width: 1024px) {
+  .usp-pijl-rechts{
+    display: none !important;
+  }
+  .usp-pijl-links{
+    display: none !important;
+  }
+}
+.usp-pijl-rechts::before {
+  content: "";
+  margin-right: -20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_1' data-name='Laag 1' viewBox='0 0 40.46 88.06'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; isolation: isolate; %7D %3C/style%3E%3C/defs%3E%3Cg id='Group_242' data-name='Group 242'%3E%3Cg id='Group_186-2' data-name='Group 186-2'%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M14.08,83.78c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.68-31.93c.75-1.39.75-3.06,0-4.45L20.22,9.97l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H2v79.31h12.08Z'/%3E%3Cpath id='Union_4-2' data-name='Union 4-2' class='cls-2' d='M0,88.06h4.22c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.81-35.37c.84-1.54.84-3.39,0-4.93L11.02,6.28l-2.24-3.63C7.72,1.18,6.04.27,4.23.19L0,0v88.06Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: 0;
+  pointer-events: none;
+}
+.usp-pijl-links::before {
+  content: "";
+  margin-left: -20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_1' data-name='Laag 1' viewBox='0 0 40.47 88.07'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; isolation: isolate; %7D %3C/style%3E%3C/defs%3E%3Cg id='Group_242' data-name='Group 242'%3E%3Cg id='Group_186-2' data-name='Group 186-2'%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M39.46,4.28h-13.08c-1.64.07-3.16.89-4.12,2.22l-2.02,3.28L.56,41.71c-.75,1.39-.75,3.06,0,4.45l19.68,31.93,2.02,3.28c.96,1.33,2.48,2.16,4.12,2.23h13.08V4.28Z'/%3E%3Cpath id='Union_4-2' data-name='Union 4-2' class='cls-2' d='M40.46,0h-4.22c-1.82.08-3.5.99-4.56,2.47l-2.24,3.63L7.63,41.47c-.84,1.54-.84,3.39,0,4.93l21.81,35.38,2.24,3.63c1.06,1.48,2.74,2.39,4.56,2.47l4.23.19V0h0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 0;
+  pointer-events: none;
+}
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow>.media-4 {
     height: 100%;
@@ -109,24 +222,9 @@ html {
     top: 0;
     left: 50%;
   }
-
-  /* [id*="lib-block"].has-bg-arrow .col-1 {
-        width: 58.33333333%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    } */
 }
 
-@media only screen and (min-width: 1024px) {
-  /* [id*="lib-block"].has-bg-arrow .col-1 {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    } */
-}
-
-/* // */
-
-/* ***** Vlaggen ***** */
+//Vlaggen 
 //vlaggen algemeen
 .menu nav[data-menu="language"]::after {
   content: '';
@@ -139,9 +237,6 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
-.usp-pijl-rechts::after{
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_1' data-name='Laag 1' viewBox='0 0 40.47 88.06'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23dc640f; %7D .cls-2 %7B fill: %23fff; isolation: isolate; %7D %3C/style%3E%3C/defs%3E%3Cg id='Group_242' data-name='Group 242'%3E%3Cg id='Group_186-2' data-name='Group 186-2'%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M0,83.78h14.08c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.68-31.93c.75-1.39.75-3.06,0-4.45L20.22,9.97l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H0v79.31Z'/%3E%3Cpath id='Union_4-2' data-name='Union 4-2' class='cls-2' d='M0,88.06h4.22c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.81-35.37c.84-1.54.84-3.39,0-4.93L11.02,6.28l-2.24-3.63C7.72,1.18,6.04.27,4.23.19L0,0v88.06Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
 // vlaggen inhoud
 // misschien vervangen voor url van de bestanden na livegang
 html[lang="nl"] .menu nav[data-menu="language"]::after {
@@ -152,7 +247,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fc0; %7D .cls-2 %7B fill: %23000001; %7D .cls-3 %7B fill: red; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M497.41,341.33H14.59c35.15,99.43,129.95,170.67,241.41,170.67s206.27-71.24,241.41-170.67Z'/%3E%3Cpath class='cls-2' d='M14.59,170.67h482.83C462.27,71.24,367.46,0,256,0S49.73,71.24,14.59,170.67Z'/%3E%3Cpath class='cls-3' d='M0,256c0,29.92,5.15,58.64,14.59,85.33h482.83c9.44-26.69,14.59-55.41,14.59-85.33s-5.15-58.64-14.59-85.33H14.59C5.15,197.36,0,226.08,0,256Z'/%3E%3C/svg%3E");
 }
 
-/* ***** Acties ***** */
+// Acties 
 .actie-banner-mobiel {
   display: none;
 }
@@ -171,7 +266,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   }
 }
 
-/* ***** Locator Widget ***** */
+//Locator Widget
 @media only screen and (min-width: 768px) {
   .locator-widget input {
     text-align: left;
@@ -183,19 +278,277 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   }
 }
 
-/* ***** Diversen ***** */
-.header-menu + .breadcrumb {
-    margin-top: 24px;
-}
+/* Slider bullets */
 
-@media only screen and (min-width: 480px) {
-  .header-menu + .breadcrumb {
-    margin-top: 48px;
+.control-wrapper.bullets, .swiper-pagination-bullets {
+  column-gap: 6px!important;
+  button.bullet, span.control-3 {
+    background-color:#dbdbdb;
+    width:10px;
+    border:none;
+    &.active {width:30px; background-color:@primary-400;}
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .header-menu + .breadcrumb {
-    margin-top: 72px;
+// Categorie slider
+.cat-slider {
+  .card-3 {
+    .button-4 {
+      border:none;
+    }
+    .cat-slider-submenu {
+      display:none;
+      width: auto!important;
+      justify-self: center;
+      .button-wrapper {
+        background-color:#fff;
+        border-radius:10px;
+        padding:5px 15px;
+        .button-6 {
+          border-right: 1px solid #eee;
+          padding: 0px 15px 0px 5px;
+          text-align: center;
+          color:@primary-400;
+          &:last-of-type {border-right:none;}
+        }
+      }
+    }
+    &:hover {
+      .button-4 {
+        background-color:@primary-400;
+        color:#fff;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+      }
+      .cat-slider-submenu {display:block;}
+    }
   }
+}
+
+@media only screen and (max-width: 767px) {
+  .cat-slider {
+    .swiper-slide-active {
+      .card-3 {
+        .button-4 {
+          background-color:@primary-400!important;
+          color:#fff!important;
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2)!important;
+        }
+        .cat-slider-submenu {display:block;}
+      }
+    }
+  }
+}
+
+// Oranje rand/schaduw on hover
+.orange-shadow {
+  &:after {
+    position:absolute;
+    content:'';
+    bottom:0px;
+    width:90%;
+    justify-self: center;
+    height:0px;
+    background:transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition:.3s all ease-in-out;
+  }
+  &:hover {
+    &:after {
+      background:@primary-400;
+      bottom:-10px;
+      height:10px;
+      transition:.3s all ease-in-out;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .swiper-slide-active {
+    .orange-shadow {
+      &:after {
+        background:@primary-400!important;
+        bottom:-10px!important;
+        height:10px!important;
+      }
+    }
+  }
+}
+
+
+
+// Grey bg arrow
+div#page-1977967  { // Homepage
+  .ons-assortiment .grey-bg-arrow {display:none;}
+}
+.ons-assortiment { 
+  .grey-bg-arrow {
+      width: 100%;
+      background-size: auto 75%;
+      background-position: -200px bottom;
+      background-repeat: no-repeat;
+      background-image: url(https://files.bureauvdo.nl/grey_bg-arrow-right.svg);
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  button.previous {
+    fill:@primary-300!important;
+  }
+  button.next {
+    fill:@primary-400!important;
+  }
+  .cat-slider-submenu {
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		bottom: 20px;
+		width: 100%;
+    a.button-6 {
+      text-decoration:none;
+      &:hover {text-decoration:underline;}
+    }
+	}
+}
+
+// Veranda typen - product vlaggen
+.productflags {
+  .productflag-slider {
+    overflow:hidden!important;
+    .smartline-flag .card-3>x-shape-bg>*{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23e88734; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");}
+    .greenline-flag .card-3>x-shape-bg>*{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23dc640f; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");}
+    .profiline-flag .card-3 {
+      x-shape-bg>*{
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");
+      }
+      .text-3 li::before {
+        color:@primary-400;
+      }
+      .button-4 {border:1px solid @primary-400;}
+    }
+    .linea-flag .card-3>x-shape-bg>*{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23838989; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");}
+    .cube-flag .card-3>x-shape-bg>*{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23636363; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");}
+    .pergola-flag .card-3>x-shape-bg>*{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3C/svg%3E");}
+    article {
+      .text-3 {
+        // font-size:15px;
+        padding: 0px 20px;
+        ul {
+          list-style:none;
+          padding-left:0px;
+          position: relative;
+          li {
+            &:before {
+              content: "\f00c";
+              font-family: "FontAwesome";
+              position: absolute;
+              left:-20px;
+            }
+          }
+        }
+      }
+    }
+    .heading-7, .heading-7 strong  {
+      font-family:'Isidora Sans Alt', sans-serif;
+    }
+  }
+  .inner-flag-carousel {
+    .control-wrapper {
+      display:flex;
+      position: relative!important;
+      bottom: auto;
+      top: -15px!important;
+      justify-content: center;
+      z-index: 30;
+      .control-3.active, .control-3:hover  {
+        background-color:@primary-400;
+      }
+    }
+  }
+}
+@media only screen and (max-width:768px) {
+  .faq-section > .media-4.arrow-right{
+    display: none !important;
+  }
+  .faq-section > .faq-helper{
+    display: none !important;
+  }
+}
+// FAQ Section
+.faq-section {
+  .media-4.arrow-right {
+    height:300px;
+    position: absolute;
+    align-self: anchor-center;
+    left:0;
+    margin-bottom: 50px;
+  }
+  .media-3.faq-helper {
+    position: absolute;
+    width: 260px;
+    left: 65px;
+    align-self: anchor-center;
+    // bottom: 26px;
+    bottom: 64px;
+  }
+  .accordion {
+    .handler.active {
+      font-family: 'open-sans-bold';
+    }
+    // .text-4 p {
+    //   font-size: 14px;
+    // }
+  }
+  .footnote p {
+    font-size:12px;
+    a {
+      color:@primary-400; 
+      text-decoration:none;
+      &:hover {text-decoration:underline;}
+    }
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .faq-section {
+    .media-3.faq-helper {
+      left: -25px;
+    }
+  }
+}
+@media (max-width:768px) {
+  .faq-section {
+    overflow:hidden;
+    .media-4.arrow-right {
+      align-self: self-end;
+      width:100%;
+    }
+    .media-3.faq-helper {
+      left:0;
+    }
+    .container {
+      order:1;
+    }
+  }
+}
+
+
+
+// Reviews 
+.review-section {
+  i.fa-star {
+    -webkit-text-stroke: 2px #fff;
+    font-size: 20px;
+  }
+}
+
+
+//  Diversen
+#afmetingen  .handler-1.handler.dark,
+#situatie    .handler-1.handler.dark,
+#samenstellen .handler-1.handler.dark,
+#uitbreiden  .handler-1.handler.dark,
+#aankleden   .handler-1.handler.dark,
+#afronden    .handler-1.handler.dark {
+  padding-right: 30px;
 }
