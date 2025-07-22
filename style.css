@@ -403,10 +403,10 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   background-color: #BF570D;
 }
 @media only screen and (max-width: 768px) {
-  .faq-section.media-4.arrow-right {
+  .faq-section > .media-4.arrow-right {
     display: none !important;
   }
-  .faq-section.faq-helper {
+  .faq-section > .faq-helper {
     display: none !important;
   }
 }
