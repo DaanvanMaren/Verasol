@@ -140,18 +140,6 @@ html {
   [id*="lib-block"].has-bg-arrow .arrow-left {
     left: 50%;
   }
-  [class*="lib-block"].has-bg-arrow .arrow-left,
-  [class*="lib-block"].has-bg-arrow .arrow-right {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    margin-top: 0;
-    transform: none;
-  }
-  [class*="lib-block"].has-bg-arrow .arrow-left {
-    left: 50%;
-  }
 }
 @media only screen and (max-width: 1024px) {
   .usp-pijl-rechts {
@@ -191,12 +179,6 @@ html {
 }
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow > .media-4 {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 50%;
-  }
-  [class*="lib-block"].has-bg-arrow > .media-4 {
     height: 100%;
     width: 100%;
     top: 0;
