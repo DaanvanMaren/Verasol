@@ -482,3 +482,10 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .row-tabel {
   min-width: 600px;
 }
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .faq-helper {
+      display: none !important;
+    }
+  }
+}
