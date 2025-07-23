@@ -177,6 +177,21 @@ html {
             left: 50%;
         }
     }
+    [class*="lib-block"].has-bg-arrow {
+      .arrow-left,
+      .arrow-right {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          margin-top: 0;
+          transform: none;
+      }
+      
+      .arrow-left {
+          left: 50%;
+      }
+  }
 }
 // usp pijlen
 @media only screen and(max-width: 1024px) {
