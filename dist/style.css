@@ -196,6 +196,12 @@ html {
     top: 0;
     left: 50%;
   }
+  [class*="lib-block"].has-bg-arrow > .media-4 {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 50%;
+  }
 }
 .menu nav[data-menu="language"]::after {
   content: '';
