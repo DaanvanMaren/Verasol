@@ -476,3 +476,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 #afronden .handler-1.handler.dark {
   padding-right: 30px;
 }
+.container-tabel {
+  overflow-x: scroll;
+}
+.row-tabel {
+  min-width: 600px;
+}
