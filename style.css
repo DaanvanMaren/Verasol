@@ -358,6 +358,9 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .prod-acc > .box-3 > .text-5.dark {
   display: none !important;
 }
+.text-5.dark {
+  display: none;
+}
 .productflags .productflag-slider {
   overflow: hidden!important;
 }
