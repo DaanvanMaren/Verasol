@@ -353,10 +353,10 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   text-decoration: underline;
 }
 .prod-acc {
-  background-image: none;
+  background-image: none !important;
 }
 .prod-acc > .listener {
-  display: none;
+  display: none !important;
 }
 .productflags .productflag-slider {
   overflow: hidden!important;
