@@ -355,7 +355,7 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .prod-acc {
   background-image: none !important;
 }
-.prod-acc > .listener {
+.prod-acc > .box-3.listener {
   display: none !important;
 }
 .productflags .productflag-slider {
