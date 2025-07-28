@@ -352,6 +352,12 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .ons-assortiment .cat-slider-submenu a.button-6:hover {
   text-decoration: underline;
 }
+.prod-acc {
+  background-image: none;
+}
+.prod-acc > .listener {
+  display: none;
+}
 .productflags .productflag-slider {
   overflow: hidden!important;
 }
