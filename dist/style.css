@@ -566,7 +566,7 @@ footer .text-7 ul li:before {
 .text-5 strong,
 .text-6 strong,
 .text-7 strong {
-  font-weight: 600;
+  font-family: 'open-sans-semibold';
 }
 #afmetingen .handler-1.handler.dark,
 #situatie .handler-1.handler.dark,
