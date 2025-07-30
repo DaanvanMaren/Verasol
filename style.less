@@ -471,6 +471,26 @@ section.form {
   }
 }
 
+// Campaign Monitor
+.cm-form {
+  label {
+    display: none;
+
+    &[for="cm-privacy-consent"] {
+      display: inline;
+    }
+  }
+
+  input[type="checkbox"] {
+    margin-bottom: 0;
+    transform: translateY(4px);
+  }
+
+  button[type="submit"] {
+    margin-top: 12px;
+  }
+}
+
 // ***** Productpagina's *****
 .prod-acc {
   background-image: none !important;

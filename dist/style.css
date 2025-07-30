@@ -361,6 +361,19 @@ section.form.dealer .card-4 > div {
 .breadcrumb + section.form {
   padding-top: 40px;
 }
+.cm-form label {
+  display: none;
+}
+.cm-form label[for="cm-privacy-consent"] {
+  display: inline;
+}
+.cm-form input[type="checkbox"] {
+  margin-bottom: 0;
+  transform: translateY(4px);
+}
+.cm-form button[type="submit"] {
+  margin-top: 12px;
+}
 .prod-acc {
   background-image: none !important;
   cursor: default !important;
