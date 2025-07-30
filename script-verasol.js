@@ -1,8 +1,18 @@
+// sla locatie naam op en ga naar de volgende pagina
+function saveLocatie(e) {
+  if (e) e.preventDefault();
+  const dealer = document.getElementById("dealer").value;
+  sessionStorage.setItem("dealer", dealer);
+  console.log("Dealer opgeslagen:", dealer);
+  window.location.href = "/preview/?wid=83536&pid=2005443&pkey=gb99mj2tr3zhzowfsuxbo3f0iylm80ky";
+}
+window.saveLocatie = saveLocatie;
 // laat opgeslagen locatie zien op de volgende pagina (ook als in iframe)
 function fillPostcodeField() {
   const display = document.getElementById("postcode");
   if (display) {
     const dealer = sessionStorage.getItem("dealer");
+    console.log(dealer);
     display.value = dealer || '';
   }
 }
@@ -149,12 +159,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // sla locatie naam op en ga naar de volgende pagina
-  function saveLocatie(e) {
-    if (e) e.preventDefault();
-    const dealer = document.getElementById("dealer").value;
-    sessionStorage.setItem("dealer", dealer);
-    window.location.href = "/preview/?wid=83536&pid=2005443&pkey=gb99mj2tr3zhzowfsuxbo3f0iylm80ky";
-  }
-  window.saveLocatie = saveLocatie;
+  
 });
