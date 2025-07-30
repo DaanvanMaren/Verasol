@@ -133,4 +133,22 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // sla locatie naam op en ga naar de volgende pagina
+  function saveLocatie(e) {
+    if (e) e.preventDefault();
+    const dealer = document.getElementById("dealer").value;
+    sessionStorage.setItem("dealer", dealer);
+    window.location.href = "page2.html";
+  }
+  window.saveLocatie = saveLocatie;
+
+  // laat opgeslagen locatie zien op de volgende pagina
+  document.addEventListener("DOMContentLoaded", function() {
+    const display = document.getElementById("postcode");
+    if (display) {
+        const dealer = sessionStorage.getItem("dealer");
+        display.value = dealer || '';
+    }
+  });
 });
