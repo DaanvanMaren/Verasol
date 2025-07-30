@@ -19,8 +19,6 @@ html {
     flex-direction: column-reverse !important;
   }
 }
-/* ***** Tabellen ***** */
-/* AN: code tabellen gestructureerd en variabelen gebruikt */
 .table-row {
   padding-left: 3px;
   padding-right: 3px;
@@ -47,16 +45,12 @@ html {
 .table-body .col {
   padding: 0px !important;
 }
-/* ***** scroll blok ***** */
-/* AN: duidelijke onderscheiding van code die bij elkaar hoort */
 .text-3.active p {
   font-weight: bold;
 }
 .scroll-link {
   cursor: pointer;
 }
-/* ***** classes weer toevoegen ***** */
-/* AN: duidelijke onderscheiding van code die bij elkaar hoort */
 .primary {
   color: #BF570D;
 }
@@ -79,7 +73,7 @@ html {
   mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M0,0h1733.06c10.69,0,23.82,7.58,29.16,16.83l153.77,266.33c5.35,9.26,5.35,24.42,0,33.67l-153.77,266.33c-5.35,9.26-18.47,16.84-29.16,16.84H0V0Z'/%3E%3C/svg%3E");
   mask-position: right center, 100% 0;
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   section.has-bg-arrow.mobile-arrow-top {
     padding: 0px 12px;
   }
@@ -148,7 +142,7 @@ html {
     left: 50%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .usp-pijl-rechts {
     display: none !important;
   }
@@ -215,7 +209,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 .actie-vaantje-categorie {
   display: block;
 }
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .actie-banner-mobiel {
     display: block;
   }
@@ -233,7 +227,6 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     background-position-y: center;
   }
 }
-/* Slider bullets */
 .control-wrapper.bullets,
 .swiper-pagination-bullets {
   column-gap: 6px!important;
@@ -352,6 +345,21 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .ons-assortiment .cat-slider-submenu a.button-6:hover {
   text-decoration: underline;
 }
+section.form .card-4 .checkboxes,
+section.form .card-4 .radios {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.form .card-4 .checkboxes > div,
+section.form .card-4 .radios > div {
+  width: 50%;
+}
+section.form.newsletter .card-4 > div {
+  width: 100%;
+}
+.breadcrumb + section.form {
+  padding-top: 40px;
+}
 .prod-acc {
   background-image: none !important;
   cursor: default !important;
@@ -416,14 +424,6 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .productflags .inner-flag-carousel .control-wrapper .control-3:hover {
   background-color: #BF570D;
 }
-@media only screen and (max-width: 768px) {
-  .faq-section > .media-4.arrow-right {
-    display: none !important;
-  }
-  .faq-section > .faq-helper {
-    display: none !important;
-  }
-}
 .faq-section .media-4.arrow-right {
   height: 300px;
   position: absolute;
@@ -451,12 +451,25 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .faq-section .footnote p a:hover {
   text-decoration: underline;
 }
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .faq-helper {
+      display: none !important;
+    }
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-section .media-3.faq-helper {
     left: -25px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+  .faq-section > .media-4.arrow-right,
+  .faq-section > .faq-helper {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 767px) {
   .faq-section {
     overflow: hidden;
   }
@@ -527,11 +540,4 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 }
 .row-tabel {
   min-width: 600px;
-}
-@media not all and (min-resolution: 0.001dpcm) {
-  @supports (-webkit-appearance: none) {
-    .faq-helper {
-      display: none !important;
-    }
-  }
 }
