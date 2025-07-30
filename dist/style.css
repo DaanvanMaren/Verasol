@@ -500,6 +500,7 @@ ul.checklist {
   list-style: none;
   padding-left: 0px;
   position: relative;
+  margin-left: 24px;
 }
 ul.checklist li:before {
   content: "\f00c";
