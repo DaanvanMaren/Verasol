@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e) e.preventDefault();
     const dealer = document.getElementById("dealer").value;
     sessionStorage.setItem("dealer", dealer);
-    window.location.href = "/preview/?wid=83536&amp;pid=2005443&amp;pkey=gb99mj2tr3zhzowfsuxbo3f0iylm80ky";
+    window.location.href = "/preview/?wid=83536&pid=2005443&pkey=gb99mj2tr3zhzowfsuxbo3f0iylm80ky";
   }
   window.saveLocatie = saveLocatie;
 
