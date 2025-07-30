@@ -364,6 +364,7 @@ section.form.dealer .card-4 > div {
 .cm-form label {
   display: none;
 }
+.cm-form label#newsletterCheckbox + label,
 .cm-form label[for="cm-privacy-consent"] {
   display: inline;
 }
@@ -581,4 +582,7 @@ footer .text-7 ul li:before {
 }
 .row-tabel {
   min-width: 600px;
+}
+.dnone {
+  display: none;
 }
