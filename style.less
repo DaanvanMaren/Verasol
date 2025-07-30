@@ -476,10 +476,13 @@ section.form {
   label {
     display: none;
 
-    &#newsletterCheckbox + label,
     &[for="cm-privacy-consent"] {
       display: inline;
     }
+  }
+
+  input#newsletterCheckbox + label {
+    display: inline;
   }
 
   input[type="checkbox"] {

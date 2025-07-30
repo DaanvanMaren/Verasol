@@ -364,8 +364,10 @@ section.form.dealer .card-4 > div {
 .cm-form label {
   display: none;
 }
-.cm-form label#newsletterCheckbox + label,
 .cm-form label[for="cm-privacy-consent"] {
+  display: inline;
+}
+.cm-form input#newsletterCheckbox + label {
   display: inline;
 }
 .cm-form input[type="checkbox"] {
