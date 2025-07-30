@@ -481,13 +481,17 @@ section.form {
     }
   }
 
-  input#newsletterCheckbox + label {
-    display: inline;
-  }
+  input {
+    width: 100%;
 
-  input[type="checkbox"] {
-    margin-bottom: 0;
-    transform: translateY(4px);
+    &#newsletterCheckbox + label {
+      display: inline;
+    }
+  
+    &[type="checkbox"] {
+      margin-bottom: 0;
+      transform: translateY(4px);
+    }
   }
 
   button[type="submit"] {
