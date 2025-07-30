@@ -1,3 +1,18 @@
+// laat opgeslagen locatie zien op de volgende pagina (ook als in iframe)
+function fillPostcodeField() {
+  const display = document.getElementById("postcode");
+  if (display) {
+    const dealer = sessionStorage.getItem("dealer");
+    display.value = dealer || '';
+  }
+}
+
+// Probeer direct te vullen (voor als script na DOM geladen wordt, bv. in iframe)
+fillPostcodeField();
+
+// Ook bij DOMContentLoaded (voor normale pagina's)
+document.addEventListener("DOMContentLoaded", fillPostcodeField);
+
 document.addEventListener('DOMContentLoaded', function () {
   // Modal open/sluit
   document.querySelectorAll('.modal-btn').forEach(function (btn) {
@@ -142,19 +157,4 @@ document.addEventListener('DOMContentLoaded', function () {
     window.location.href = "/preview/?wid=83536&pid=2005443&pkey=gb99mj2tr3zhzowfsuxbo3f0iylm80ky";
   }
   window.saveLocatie = saveLocatie;
-
-  // laat opgeslagen locatie zien op de volgende pagina (ook als in iframe)
-  function fillPostcodeField() {
-    const display = document.getElementById("postcode");
-    if (display) {
-      const dealer = sessionStorage.getItem("dealer");
-      display.value = dealer || '';
-    }
-  }
-
-  // Probeer direct te vullen (voor als script na DOM geladen wordt, bv. in iframe)
-  fillPostcodeField();
-
-  // Ook bij DOMContentLoaded (voor normale pagina's)
-  document.addEventListener("DOMContentLoaded", fillPostcodeField);
 });
