@@ -446,15 +446,21 @@ div#page-1977967 {// Homepage
 	}
 }
 // ***** Formulieren *****
-section.form .card-4 {
-  .checkboxes,
-  .radios {
-    display: flex;
-    flex-wrap: wrap;
+section.form {
+  .card-4 {
+    .checkboxes,
+    .radios {
+      display: flex;
+      flex-wrap: wrap;
 
-    > div {
-      width: 50%;
+      > div {
+        width: 50%;
+      }
     }
+  }
+
+  &.newsletter .card-4 > div {
+    width: 100%;
   }
 }
 

@@ -354,6 +354,9 @@ section.form .card-4 .checkboxes > div,
 section.form .card-4 .radios > div {
   width: 50%;
 }
+section.form.newsletter .card-4 > div {
+  width: 100%;
+}
 .prod-acc {
   background-image: none !important;
   cursor: default !important;
