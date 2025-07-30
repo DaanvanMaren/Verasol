@@ -345,6 +345,10 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .ons-assortiment .cat-slider-submenu a.button-6:hover {
   text-decoration: underline;
 }
+section.form .card-4 {
+  background-color: #C2D9CA;
+  border-radius: 10px;
+}
 .prod-acc {
   background-image: none !important;
   cursor: default !important;
@@ -409,14 +413,6 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 .productflags .inner-flag-carousel .control-wrapper .control-3:hover {
   background-color: #BF570D;
 }
-@media only screen and (max-width: 767px) {
-  .faq-section > .media-4.arrow-right {
-    display: none !important;
-  }
-  .faq-section > .faq-helper {
-    display: none !important;
-  }
-}
 .faq-section .media-4.arrow-right {
   height: 300px;
   position: absolute;
@@ -454,6 +450,12 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
 @media (min-width: 768px) and (max-width: 1023px) {
   .faq-section .media-3.faq-helper {
     left: -25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .faq-section > .media-4.arrow-right,
+  .faq-section > .faq-helper {
+    display: none !important;
   }
 }
 @media only screen and (max-width: 767px) {

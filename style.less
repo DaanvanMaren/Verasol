@@ -445,6 +445,13 @@ div#page-1977967 {// Homepage
     }
 	}
 }
+// ***** Formulieren *****
+section.form {
+  .card-4 {
+    background-color: @primary-600;
+    border-radius: 10px;
+  }
+}
 
 // ***** Productpagina's *****
 .prod-acc {
@@ -535,15 +542,6 @@ div#page-1977967 {// Homepage
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .faq-section > .media-4.arrow-right{
-    display: none !important;
-  }
-
-  .faq-section > .faq-helper{
-    display: none !important;
-  }
-}
 // ***** FAQ Section *****
 .faq-section {
   .media-4.arrow-right {
@@ -600,6 +598,15 @@ div#page-1977967 {// Homepage
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .faq-section {
+    > .media-4.arrow-right,
+    > .faq-helper{
+      display: none !important;
+    }
+  }
+} // van wie is deze? graag samenvoegen met die hieronder
 
 @media only screen and (max-width: 767px) {
   .faq-section {
