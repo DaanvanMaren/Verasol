@@ -357,6 +357,9 @@ section.form .card-4 .radios > div {
 section.form.newsletter .card-4 > div {
   width: 100%;
 }
+.breadcrumb + section.form {
+  padding-top: 40px;
+}
 .prod-acc {
   background-image: none !important;
   cursor: default !important;
