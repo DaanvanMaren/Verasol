@@ -651,6 +651,33 @@ section.form {
   }
 }
 
+// ***** Lijsten in teksten vinkjes geven *****
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-6,
+.text-7 {
+  ul,
+  ul.checklist {
+    list-style:none;
+    padding-left:0px;
+    position: relative;
+    margin-left: 24px;
+  
+    li {
+      &:before {
+        content: "\f00c";
+        font-family: "FontAwesome";
+        position: absolute;
+        left:-20px;
+        color: @primary-400;
+      }
+    }
+  }
+}
+
 // ***** Diversen *****
 #afmetingen .handler-1.handler.dark,
 #situatie .handler-1.handler.dark,
@@ -667,21 +694,4 @@ section.form {
 
 .row-tabel {
   min-width: 600px;
-}
-
-ul.checklist {
-  list-style:none;
-  padding-left:0px;
-  position: relative;
-  margin-left: 24px;
-
-  li {
-    &:before {
-      content: "\f00c";
-      font-family: "FontAwesome";
-      position: absolute;
-      left:-20px;
-      color: @primary-400;
-    }
-  }
 }

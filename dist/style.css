@@ -488,6 +488,45 @@ section.form.newsletter .card-4 > div {
   -webkit-text-stroke: 2px #fff;
   font-size: 20px;
 }
+.text-1 ul,
+.text-2 ul,
+.text-3 ul,
+.text-4 ul,
+.text-5 ul,
+.text-6 ul,
+.text-7 ul,
+.text-1 ul.checklist,
+.text-2 ul.checklist,
+.text-3 ul.checklist,
+.text-4 ul.checklist,
+.text-5 ul.checklist,
+.text-6 ul.checklist,
+.text-7 ul.checklist {
+  list-style: none;
+  padding-left: 0px;
+  position: relative;
+  margin-left: 24px;
+}
+.text-1 ul li:before,
+.text-2 ul li:before,
+.text-3 ul li:before,
+.text-4 ul li:before,
+.text-5 ul li:before,
+.text-6 ul li:before,
+.text-7 ul li:before,
+.text-1 ul.checklist li:before,
+.text-2 ul.checklist li:before,
+.text-3 ul.checklist li:before,
+.text-4 ul.checklist li:before,
+.text-5 ul.checklist li:before,
+.text-6 ul.checklist li:before,
+.text-7 ul.checklist li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: -20px;
+  color: #BF570D;
+}
 #afmetingen .handler-1.handler.dark,
 #situatie .handler-1.handler.dark,
 #samenstellen .handler-1.handler.dark,
@@ -501,17 +540,4 @@ section.form.newsletter .card-4 > div {
 }
 .row-tabel {
   min-width: 600px;
-}
-ul.checklist {
-  list-style: none;
-  padding-left: 0px;
-  position: relative;
-  margin-left: 24px;
-}
-ul.checklist li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  position: absolute;
-  left: -20px;
-  color: #BF570D;
 }
