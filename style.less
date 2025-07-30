@@ -553,7 +553,26 @@ div#page-1977967  { // Homepage
     font-size: 20px;
   }
 }
-
+// iemand heeft deze verwijderd
+article {
+  .text-3 {
+    // font-size:15px;
+    padding: 0px 20px;
+    ul.vinkje {
+      list-style:none;
+      padding-left:0px;
+      position: relative;
+      li {
+        &:before {
+          content: "\f00c";
+          font-family: "FontAwesome";
+          position: absolute;
+          left:-20px;
+        }
+      }
+    }
+  }
+}
 
 //  Diversen
 #afmetingen  .handler-1.handler.dark,

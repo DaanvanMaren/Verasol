@@ -475,6 +475,20 @@ div#page-1977967 .ons-assortiment .grey-bg-arrow {
   -webkit-text-stroke: 2px #fff;
   font-size: 20px;
 }
+article .text-3 {
+  padding: 0px 20px;
+}
+article .text-3 ul.vinkje {
+  list-style: none;
+  padding-left: 0px;
+  position: relative;
+}
+article .text-3 ul.vinkje li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: -20px;
+}
 #afmetingen .handler-1.handler.dark,
 #situatie .handler-1.handler.dark,
 #samenstellen .handler-1.handler.dark,
