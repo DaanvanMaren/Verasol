@@ -559,6 +559,15 @@ footer .text-6 ul li:before,
 footer .text-7 ul li:before {
   display: none;
 }
+.text-1 strong,
+.text-2 strong,
+.text-3 strong,
+.text-4 strong,
+.text-5 strong,
+.text-6 strong,
+.text-7 strong {
+  font-weight: 600;
+}
 #afmetingen .handler-1.handler.dark,
 #situatie .handler-1.handler.dark,
 #samenstellen .handler-1.handler.dark,
