@@ -657,3 +657,19 @@ section.form .card-4 {
 .row-tabel {
   min-width: 600px;
 }
+
+ul.checklist {
+  list-style:none;
+  padding-left:0px;
+  position: relative;
+
+  li {
+    &:before {
+      content: "\f00c";
+      font-family: "FontAwesome";
+      position: absolute;
+      left:-20px;
+      color: @primary-400;
+    }
+  }
+}
