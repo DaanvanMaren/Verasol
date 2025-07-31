@@ -557,7 +557,14 @@ footer .text-3 ul,
 footer .text-4 ul,
 footer .text-5 ul,
 footer .text-6 ul,
-footer .text-7 ul {
+footer .text-7 ul,
+header .text-1 ul,
+header .text-2 ul,
+header .text-3 ul,
+header .text-4 ul,
+header .text-5 ul,
+header .text-6 ul,
+header .text-7 ul {
   margin-left: 0;
 }
 footer .text-1 ul li:before,
@@ -566,7 +573,14 @@ footer .text-3 ul li:before,
 footer .text-4 ul li:before,
 footer .text-5 ul li:before,
 footer .text-6 ul li:before,
-footer .text-7 ul li:before {
+footer .text-7 ul li:before,
+header .text-1 ul li:before,
+header .text-2 ul li:before,
+header .text-3 ul li:before,
+header .text-4 ul li:before,
+header .text-5 ul li:before,
+header .text-6 ul li:before,
+header .text-7 ul li:before {
   display: none;
 }
 .text-1 strong,
