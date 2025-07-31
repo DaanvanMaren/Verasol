@@ -586,22 +586,22 @@ header .text-6 ul:not(.usp) li:before,
 header .text-7 ul:not(.usp) li:before {
   display: none;
 }
-.legal .text-1,
-.legal .text-2,
-.legal .text-3,
-.legal .text-4,
-.legal .text-5,
-.legal .text-6,
-.legal .text-7 {
+.legal .text-1 ul,
+.legal .text-2 ul,
+.legal .text-3 ul,
+.legal .text-4 ul,
+.legal .text-5 ul,
+.legal .text-6 ul,
+.legal .text-7 ul {
   list-style: disc;
 }
-.legal .text-1 li:before,
-.legal .text-2 li:before,
-.legal .text-3 li:before,
-.legal .text-4 li:before,
-.legal .text-5 li:before,
-.legal .text-6 li:before,
-.legal .text-7 li:before {
+.legal .text-1 ul li:before,
+.legal .text-2 ul li:before,
+.legal .text-3 ul li:before,
+.legal .text-4 ul li:before,
+.legal .text-5 ul li:before,
+.legal .text-6 ul li:before,
+.legal .text-7 ul li:before {
   display: none;
 }
 .text-1 strong,
