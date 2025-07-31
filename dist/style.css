@@ -432,6 +432,9 @@ section.form.campaign .card-4 .radios > div {
   position: absolute;
   left: -20px;
 }
+.productflags .productflag-slider article .greenline-flag .text-3 ul li:before {
+  color: #ffffff;
+}
 .productflags .productflag-slider .heading-7,
 .productflags .productflag-slider .heading-7 strong {
   font-family: 'Isidora Sans Alt', sans-serif;
