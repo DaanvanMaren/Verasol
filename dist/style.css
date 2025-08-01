@@ -384,6 +384,9 @@ section.form.campaign .card-4 .radios > div {
 .cm-form button[type="submit"] {
   margin-top: 12px;
 }
+.dealer-detail.dealer + .dealer-detail.store {
+  display: none;
+}
 .prod-acc {
   background-image: none !important;
   cursor: default !important;
