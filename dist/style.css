@@ -405,6 +405,8 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .table tr td,
 .dealer-detail .open table tr td {
   padding: 6px 12px;
+  font-family: 'open-sans-light';
+  font-size: 16px;
 }
 .dealer-detail .table .row .col:first-of-type .heading-4,
 .dealer-detail .open table .row .col:first-of-type .heading-4,
