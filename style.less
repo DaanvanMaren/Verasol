@@ -538,9 +538,15 @@ section.form {
   .col:has(.empty) {
     display: none;
   }
-  
+
     &:not(.empty) + .text-5 {
       display: none;
+  }
+
+  @media only screen and (min-width: 480px) {
+    .col:has(.empty) {
+      display: flex;
+    }
   }
 }
 
