@@ -640,6 +640,8 @@ header .text-7 ul:not(.usp) li:before {
   padding: 20px;
 }
 #page-2063530 .box-2 .listener {
-  color: #FFFFFF !important;
   padding: 20px;
+}
+#page-2063530 .box-2 .listener p {
+  color: #FFFFFF !important;
 }
