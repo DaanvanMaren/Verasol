@@ -384,20 +384,45 @@ section.form.campaign .card-4 .radios > div {
 .cm-form button[type="submit"] {
   margin-top: 12px;
 }
+.dealer-detail .table,
 .dealer-detail .open table {
   border-radius: 10px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
+.dealer-detail .table .row:nth-of-type(odd),
+.dealer-detail .open table .row:nth-of-type(odd),
+.dealer-detail .table tr:nth-of-type(odd),
 .dealer-detail .open table tr:nth-of-type(odd) {
   background-color: #ECEDED;
 }
+.dealer-detail .table .row .col,
+.dealer-detail .open table .row .col,
+.dealer-detail .table tr .col,
+.dealer-detail .open table tr .col,
+.dealer-detail .table .row td,
+.dealer-detail .open table .row td,
+.dealer-detail .table tr td,
 .dealer-detail .open table tr td {
   padding: 6px 12px;
 }
+.dealer-detail .table .row .col:first-of-type,
+.dealer-detail .open table .row .col:first-of-type,
+.dealer-detail .table tr .col:first-of-type,
+.dealer-detail .open table tr .col:first-of-type,
+.dealer-detail .table .row td:first-of-type,
+.dealer-detail .open table .row td:first-of-type,
+.dealer-detail .table tr td:first-of-type,
 .dealer-detail .open table tr td:first-of-type {
   font-family: 'open-sans-semibold';
 }
+.dealer-detail .table .row .col:last-of-type,
+.dealer-detail .open table .row .col:last-of-type,
+.dealer-detail .table tr .col:last-of-type,
+.dealer-detail .open table tr .col:last-of-type,
+.dealer-detail .table .row td:last-of-type,
+.dealer-detail .open table .row td:last-of-type,
+.dealer-detail .table tr td:last-of-type,
 .dealer-detail .open table tr td:last-of-type {
   text-align: right;
 }
