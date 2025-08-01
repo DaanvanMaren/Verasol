@@ -32,7 +32,7 @@ html {
   font-size: 16px;
 }
 .table-body:nth-child(2n) {
-  background-color: #eceded;
+  background-color: #ECEDED;
 }
 .table-head {
   background-color: #BF570D;
@@ -383,6 +383,23 @@ section.form.campaign .card-4 .radios > div {
 }
 .cm-form button[type="submit"] {
   margin-top: 12px;
+}
+.dealer-detail .open table {
+  border-radius: 10px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.dealer-detail .open table tr:nth-of-type(odd) {
+  background-color: #ECEDED;
+}
+.dealer-detail .open table tr td {
+  padding: 6px 12px;
+}
+.dealer-detail .open table tr td:first-of-type {
+  font-family: 'open-sans-semibold';
+}
+.dealer-detail .open table tr td:last-of-type {
+  text-align: right;
 }
 .dealer-detail.dealer + .dealer-detail.store {
   display: none;
