@@ -534,8 +534,14 @@ section.form {
         }
     }
 }
-.dealer-detail .table:not(.empty) + .text-5 {
+.dealer-detail .table {
+  .col:has(.empty) {
     display: none;
+  }
+  
+    &:not(.empty) + .text-5 {
+      display: none;
+  }
 }
 
 .dealer-detail.dealer + .dealer-detail.store {

@@ -436,6 +436,9 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .open table tr td:last-of-type {
   text-align: right;
 }
+.dealer-detail .table .col:has(.empty) {
+  display: none;
+}
 .dealer-detail .table:not(.empty) + .text-5 {
   display: none;
 }
