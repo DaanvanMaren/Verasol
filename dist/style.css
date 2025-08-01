@@ -406,6 +406,14 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .open table tr td {
   padding: 6px 12px;
 }
+.dealer-detail .table .row .col:first-of-type .heading-4,
+.dealer-detail .open table .row .col:first-of-type .heading-4,
+.dealer-detail .table tr .col:first-of-type .heading-4,
+.dealer-detail .open table tr .col:first-of-type .heading-4,
+.dealer-detail .table .row td:first-of-type .heading-4,
+.dealer-detail .open table .row td:first-of-type .heading-4,
+.dealer-detail .table tr td:first-of-type .heading-4,
+.dealer-detail .open table tr td:first-of-type .heading-4,
 .dealer-detail .table .row .col:first-of-type,
 .dealer-detail .open table .row .col:first-of-type,
 .dealer-detail .table tr .col:first-of-type,
