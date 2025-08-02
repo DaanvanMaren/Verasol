@@ -400,10 +400,6 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .open table .row .col,
 .dealer-detail .table tr .col,
 .dealer-detail .open table tr .col,
-.dealer-detail .table .row .col .heading-4,
-.dealer-detail .open table .row .col .heading-4,
-.dealer-detail .table tr .col .heading-4,
-.dealer-detail .open table tr .col .heading-4,
 .dealer-detail .table .row td,
 .dealer-detail .open table .row td,
 .dealer-detail .table tr td,
@@ -416,10 +412,6 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .open table .row .col:first-of-type .heading-4,
 .dealer-detail .table tr .col:first-of-type .heading-4,
 .dealer-detail .open table tr .col:first-of-type .heading-4,
-.dealer-detail .table .row .col .heading-4:first-of-type .heading-4,
-.dealer-detail .open table .row .col .heading-4:first-of-type .heading-4,
-.dealer-detail .table tr .col .heading-4:first-of-type .heading-4,
-.dealer-detail .open table tr .col .heading-4:first-of-type .heading-4,
 .dealer-detail .table .row td:first-of-type .heading-4,
 .dealer-detail .open table .row td:first-of-type .heading-4,
 .dealer-detail .table tr td:first-of-type .heading-4,
@@ -428,10 +420,6 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .open table .row .col:first-of-type,
 .dealer-detail .table tr .col:first-of-type,
 .dealer-detail .open table tr .col:first-of-type,
-.dealer-detail .table .row .col .heading-4:first-of-type,
-.dealer-detail .open table .row .col .heading-4:first-of-type,
-.dealer-detail .table tr .col .heading-4:first-of-type,
-.dealer-detail .open table tr .col .heading-4:first-of-type,
 .dealer-detail .table .row td:first-of-type,
 .dealer-detail .open table .row td:first-of-type,
 .dealer-detail .table tr td:first-of-type,
@@ -442,15 +430,18 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .open table .row .col:last-of-type,
 .dealer-detail .table tr .col:last-of-type,
 .dealer-detail .open table tr .col:last-of-type,
-.dealer-detail .table .row .col .heading-4:last-of-type,
-.dealer-detail .open table .row .col .heading-4:last-of-type,
-.dealer-detail .table tr .col .heading-4:last-of-type,
-.dealer-detail .open table tr .col .heading-4:last-of-type,
 .dealer-detail .table .row td:last-of-type,
 .dealer-detail .open table .row td:last-of-type,
 .dealer-detail .table tr td:last-of-type,
 .dealer-detail .open table tr td:last-of-type {
   text-align: right;
+}
+.dealer-detail .table .row .col .heading-4,
+.dealer-detail .open table .row .col .heading-4,
+.dealer-detail .table tr .col .heading-4,
+.dealer-detail .open table tr .col .heading-4 {
+  font-family: 'open-sans-light';
+  font-size: 16px;
 }
 .dealer-detail .table .col:has(.empty) {
   display: none;
