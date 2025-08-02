@@ -447,9 +447,6 @@ section.form.campaign .card-4 .radios > div {
     display: flex;
   }
 }
-.page .dealer-detail.dealer + .dealer-detail.store {
-  display: none;
-}
 .prod-acc {
   background-image: none !important;
   cursor: default !important;
