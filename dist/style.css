@@ -389,6 +389,7 @@ section.form.campaign .card-4 .radios > div {
   border-radius: 10px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  max-width: 458px;
 }
 .dealer-detail .table .row:nth-of-type(odd),
 .dealer-detail .open table .row:nth-of-type(odd),
