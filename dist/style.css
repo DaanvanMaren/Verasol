@@ -447,7 +447,7 @@ section.form.campaign .card-4 .radios > div {
     display: flex;
   }
 }
-.dealer-detail.dealer + .dealer-detail.store {
+.page .dealer-detail.dealer + .dealer-detail.store {
   display: none;
 }
 .prod-acc {
