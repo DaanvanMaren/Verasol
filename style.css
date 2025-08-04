@@ -107,7 +107,13 @@ html {
 .header-menu + [id*="lib-block"].has-bg-arrow {
   margin-top: 0;
 }
-.blog-heading > a {
+.box-specificatie {
+  overflow-x: auto;
+}
+.dakbedekking-col {
+  min-width: 700px;
+}
+.blog-heading a {
   text-decoration: none !important;
 }
 .vanaf-prijs .card-3 {
