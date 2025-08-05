@@ -151,34 +151,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-document.addEventListener('DOMContentLoaded', function () {
-  var triggerValues = ['Veranda', 'Tuinkamer', 'Schuifwand'];
-  var productsoortCheckboxes = document.querySelectorAll('input[name="productsoort[]"]');
-  var productlijnSection = document.querySelector('.form-field-7.dark input[name="field_10"]').parentElement.nextElementSibling;
-  var productlijnRadios = document.querySelectorAll('input[name="field_5-veranda"]');
-
-  function updateProductlijnVisibility() {
-    var show = Array.from(productsoortCheckboxes).some(function (cb) {
-      return cb.checked && triggerValues.includes(cb.value);
-    });
-    productlijnSection.style.display = show ? '' : 'none';
-    productlijnRadios.forEach(function (radio) {
-      radio.required = !!show;
-      if (!show) radio.checked = false;
-    });
-  }
-
-  productsoortCheckboxes.forEach(function (cb) {
-    cb.addEventListener('change', updateProductlijnVisibility);
-    cb.addEventListener('input', updateProductlijnVisibility);
-  }); // Also observe programmatic changes to checkboxes
-
-  var observer = new MutationObserver(updateProductlijnVisibility);
-  productsoortCheckboxes.forEach(function (cb) {
-    return observer.observe(cb, {
-      attributes: true,
-      attributeFilter: ['checked']
-    });
-  });
-  updateProductlijnVisibility();
-});

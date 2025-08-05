@@ -161,29 +161,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   
 });
-document.addEventListener('DOMContentLoaded', function() {
-  const triggerValues = ['Veranda', 'Tuinkamer', 'Schuifwand'];
-  const productsoortCheckboxes = document.querySelectorAll('input[name="productsoort[]"]');
-  const productlijnSection = document.querySelector('.form-field-7.dark input[name="field_10"]').parentElement.nextElementSibling;
-  const productlijnRadios = document.querySelectorAll('input[name="field_5-veranda"]');
-
-  function updateProductlijnVisibility() {
-      let show = Array.from(productsoortCheckboxes).some(cb => cb.checked && triggerValues.includes(cb.value));
-      productlijnSection.style.display = show ? '' : 'none';
-      productlijnRadios.forEach(radio => {
-          radio.required = !!show;
-          if (!show) radio.checked = false;
-      });
-  }
-
-  productsoortCheckboxes.forEach(cb => {
-      cb.addEventListener('change', updateProductlijnVisibility);
-      cb.addEventListener('input', updateProductlijnVisibility);
-  });
-
-  // Also observe programmatic changes to checkboxes
-  const observer = new MutationObserver(updateProductlijnVisibility);
-  productsoortCheckboxes.forEach(cb => observer.observe(cb, { attributes: true, attributeFilter: ['checked'] }));
-
-  updateProductlijnVisibility();
-});
