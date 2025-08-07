@@ -383,7 +383,7 @@ section.form.campaign .card-4 .radios > div {
 .cm-form input {
   width: 100%;
 }
-.cm-form input#newsletterCheckbox + label {
+.cm-form input[id^="#newsletterCheckbox"] + label {
   display: inline;
 }
 .cm-form input[type="checkbox"] {
