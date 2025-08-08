@@ -161,13 +161,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   
 });
-document.addEventListener('DOMContentLoaded', function() {
-    var verandaCheckbox = document.getElementById('veranda-checkbox');
-    var productlijnSection = document.getElementById('veranda-productlijn');
-    if (!verandaCheckbox || !productlijnSection) return;
-    function toggleProductlijn() {
-        productlijnSection.style.display = verandaCheckbox.checked ? '' : 'none';
-    }
-    verandaCheckbox.addEventListener('change', toggleProductlijn);
-    toggleProductlijn();
-});
