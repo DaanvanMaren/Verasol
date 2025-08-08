@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function toggleProductlijn() {
     console.log("5");
-    productlijnSection.style.display = verandaCheckbox.checked ? '' : 'none';
+    productlijnSection.style.display = verandaCheckbox.checked ? '' : 'block';
     console.log("6");
   }
 
