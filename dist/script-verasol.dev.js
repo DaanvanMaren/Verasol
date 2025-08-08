@@ -151,26 +151,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-console.log("0");
 document.addEventListener('DOMContentLoaded', function () {
-  console.log("1");
   var verandaCheckbox = document.getElementById('veranda-checkbox');
-  console.log("2");
   var productlijnSection = document.getElementById('veranda-productlijn');
-  console.log("3");
   if (!verandaCheckbox || !productlijnSection) return;
-  console.log("4");
 
   function toggleProductlijn() {
-    console.log("5");
-    productlijnSection.style.display = verandaCheckbox.checked ? '' : 'block';
-    console.log("6");
+    productlijnSection.style.display = verandaCheckbox.checked ? '' : 'none';
   }
 
-  console.log("7");
   verandaCheckbox.addEventListener('change', toggleProductlijn);
-  console.log("8");
   toggleProductlijn();
-  console.log("9");
 });
-console.log("10");
