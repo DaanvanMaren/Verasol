@@ -107,6 +107,11 @@ html {
 .header-menu + [id*="lib-block"].has-bg-arrow {
   margin-top: 0;
 }
+@media (max-width: 768px) {
+  [id*="lib-block"].has-bg-arrow {
+    margin: 40px 0;
+  }
+}
 .box-specificatie {
   overflow-x: auto;
 }
