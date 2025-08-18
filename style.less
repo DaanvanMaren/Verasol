@@ -921,8 +921,62 @@ section.form {
 }
 
 // ***** Service pagina's *****
-	.service .sticky {
-		position: sticky;
-		top: 150px;
-		height: fit-content;
-	}
+.service {
+  .sticky {
+    position: sticky;
+    top: 150px;
+    height: fit-content;
+  }
+
+  .menu-3 {
+    >ul {
+      >li.active {
+        >a {
+          font-size: 16px;
+          font-family: 'open-sans-light';
+          font-weight: 300;
+        }
+      }
+
+      >li {
+        margin-right: 0px;
+
+        >a {
+          font-size: 16px;
+          font-family: 'open-sans-light';
+          font-weight: 300;
+        }
+      }
+
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+
+    &.dark {
+      >ul {
+        >li.active {
+          >a {
+            color: @primary-400;
+          }
+        }
+
+        >li {
+          >a {
+            color: @primary-500;
+
+            &:focus {
+              color: @primary-400;
+            }
+          }
+
+          &:hover {
+            >a {
+              color: @primary-400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
