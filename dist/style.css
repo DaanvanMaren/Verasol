@@ -11,12 +11,12 @@ html {
   .usp-hotspot {
     display: none;
   }
+  .lib-block-19052-1 {
+    flex-direction: column-reverse !important;
+  }
   .lib-block-19052-1 > .arrow-left {
     position: relative;
     margin-top: 10px;
-  }
-  .lib-block-19052-1 {
-    flex-direction: column-reverse !important;
   }
 }
 .table-row {
@@ -572,14 +572,12 @@ section.form.campaign .card-4 .radios > div {
   }
 }
 @media only screen and (max-width: 767px) {
+  .faq-section {
+    overflow: hidden;
+  }
   .faq-section > .media-4.arrow-right,
   .faq-section > .faq-helper {
     display: none !important;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .faq-section {
-    overflow: hidden;
   }
   .faq-section .media-4.arrow-right {
     align-self: self-end;
@@ -595,6 +593,11 @@ section.form.campaign .card-4 .radios > div {
 .review-section i.fa-star {
   -webkit-text-stroke: 2px #fff;
   font-size: 20px;
+}
+.project-slider .box-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .text-1 ul,
 .text-2 ul,

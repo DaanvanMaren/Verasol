@@ -10,22 +10,26 @@ html {
 }
 
 // **** Label *****
-@media only screen and (max-width:767px){
-  .box-folder-label{
+@media only screen and (max-width:767px) {
+  .box-folder-label {
     display: none;
   }
-  .scroll-punten{
+
+  .scroll-punten {
     display: none;
   }
-  .usp-hotspot{
+
+  .usp-hotspot {
     display: none;
   }
-  .lib-block-19052-1 > .arrow-left {
-    position: relative;
-    margin-top: 10px;
-  }
-  .lib-block-19052-1{
+
+  .lib-block-19052-1 {
     flex-direction: column-reverse !important;
+
+    >.arrow-left {
+      position: relative;
+      margin-top: 10px;
+    }
   }
 }
 
@@ -755,38 +759,32 @@ section.form {
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
-  .faq-section {
+.faq-section {
+  @media (min-width:768px) and (max-width:1023px) {
     .media-3.faq-helper {
       left: -25px;
     }
   }
-}
 
-@media only screen and (max-width: 767px) {
-  .faq-section {
-    > .media-4.arrow-right,
-    > .faq-helper{
+  @media only screen and (max-width: 767px) {
+    overflow: hidden;
+
+    >.media-4.arrow-right,
+    >.faq-helper {
       display: none !important;
     }
-  }
-} // van wie is deze? graag samenvoegen met die hieronder
-
-@media only screen and (max-width: 767px) {
-  .faq-section {
-    overflow:hidden;
 
     .media-4.arrow-right {
       align-self: self-end;
-      width:100%;
+      width: 100%;
     }
 
     .media-3.faq-helper {
-      left:0;
+      left: 0;
     }
 
     .container {
-      order:1;
+      order: 1;
     }
   }
 }
@@ -796,6 +794,16 @@ section.form {
   i.fa-star {
     -webkit-text-stroke: 2px #fff;
     font-size: 20px;
+  }
+}
+
+// ***** Projecten *****
+// Slider
+.project-slider {
+  .box-1 {
+    background: linear-gradient(0deg, rgba(0,0,0,.5), transparent);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }
 
