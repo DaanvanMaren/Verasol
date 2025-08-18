@@ -102,51 +102,91 @@ html {
     mask-position: right center, 100% 0;
 }
 
-@media only screen and (max-width: 767px) {
-  section.has-bg-arrow.mobile-arrow-top {
-    padding: 0px 12px;
-    .arrow-top {
-      mask-size: 100% auto;
-      mask-position: top;
-      mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-      transform: translateX(0px);
-      height:400px;
-    }
-  }
-}
+// @media only screen and (max-width: 767px) {
+//   section.has-bg-arrow.mobile-arrow-top {
+//     padding: 0px 12px;
+//     .arrow-top {
+//       mask-size: 100% auto;
+//       mask-position: top;
+//       mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+//       transform: translateX(0px);
+//       height:400px;
+//     }
+//   }
+// } // verhuisd naar algemene selector
 
 [id*="lib-block"].has-bg-arrow {
-    margin: 100px 0;
-    overflow: hidden;
+  margin: 100px 0;
+  overflow: hidden;
 
-    &:has(.arrow-left),
-    &:has(.arrow-right) {
-        flex-direction: column-reverse;
+  &:has(.arrow-left),
+  &:has(.arrow-right) {
+    flex-direction: column-reverse;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    position: relative;
+    margin-top: 36px;
+  }
+
+  .arrow-left {
+    transform: translateX(12px);
+  }
+
+  .arrow-right {
+    transform: translateX(-12px);
+  }
+
+  .header-menu+& {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: 767px) {
+    margin: 40px 0;
+
+    &.mobile-arrow-top {
+      padding: 0px 12px;
+
+      .arrow-top {
+        mask-size: 100% auto;
+        mask-position: top;
+        mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+        transform: translateX(0px);
+        height: 400px;
+      }
     }
+  }
 
+  @media only screen and (min-width: 768px) {
     .arrow-left,
     .arrow-right {
-        position: relative;
-        margin-top: 36px;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      margin-top: 0;
+      transform: none;
     }
 
     .arrow-left {
-        transform: translateX(12px);
+      left: 50%;
     }
 
-    .arrow-right {
-        transform: translateX(-12px);
+    >.media-4 {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 50%;
     }
-
-    .header-menu+& {
-        margin-top: 0;
-    }
-}
-@media (max-width:768px) {
-  [id*="lib-block"].has-bg-arrow {
-    margin: 40px 0;
   }
 }
+
+// @media (max-width:768px) {
+    // [id*="lib-block"].has-bg-arrow {
+    //   margin: 40px 0;
+    // }
+// } verkeerde max-waarde en verhuisd naar algemene selector
 
 // dakbedekking
 .box-specificatie{
@@ -183,23 +223,23 @@ html {
   }
 }
 
-@media only screen and (min-width: 768px) {
-    [id*="lib-block"].has-bg-arrow {
-        .arrow-left,
-        .arrow-right {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            margin-top: 0;
-            transform: none;
-        }
+// @media only screen and (min-width: 768px) {
+//     [id*="lib-block"].has-bg-arrow {
+//         .arrow-left,
+//         .arrow-right {
+//             position: absolute;
+//             height: 100%;
+//             width: 100%;
+//             top: 0;
+//             margin-top: 0;
+//             transform: none;
+//         }
         
-        .arrow-left {
-            left: 50%;
-        }
-    }
-}
+//         .arrow-left {
+//             left: 50%;
+//         }
+//     }
+// } verhuisd naar algemene selecctor
 
 // usp pijlen
 @media only screen and (max-width: 1023px) {
@@ -241,14 +281,14 @@ html {
   pointer-events: none;
 }
 
-@media only screen and (min-width: 768px) {
-  [id*="lib-block"].has-bg-arrow>.media-4 {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 50%;
-  }
-}
+// @media only screen and (min-width: 768px) {
+//   [id*="lib-block"].has-bg-arrow>.media-4 {
+//     height: 100%;
+//     width: 100%;
+//     top: 0;
+//     left: 50%;
+//   }
+// } //verhuisd naar algemene selector
 
 // ***** Vlaggen *****
 // vlaggen algemeen
