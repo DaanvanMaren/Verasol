@@ -599,6 +599,9 @@ section.form.campaign .card-4 .radios > div {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.project-slider .heading-7 a:hover {
+  text-decoration: none;
+}
 .text-1 ul,
 .text-2 ul,
 .text-3 ul,
