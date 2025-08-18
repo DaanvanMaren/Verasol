@@ -735,3 +735,8 @@ header .text-7 ul:not(.usp) li:before {
 #page-2063530 .accordion .box-2 .listener p {
   color: #ffffff !important;
 }
+.service .sticky {
+  position: sticky;
+  top: 150px;
+  height: fit-content;
+}
