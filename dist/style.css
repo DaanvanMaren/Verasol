@@ -600,7 +600,9 @@ section.form.campaign .card-4 .radios > div {
   border-bottom-right-radius: 15px;
 }
 .project-slider .heading-7 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #BF570D;
 }
 .text-1 ul,
 .text-2 ul,
