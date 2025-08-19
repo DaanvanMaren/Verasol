@@ -132,7 +132,9 @@ html {
 }
 @media only screen and (min-width: 768px) {
   [id*="lib-block"].has-bg-arrow:has(+footer),
-  [class*="lib-block"].has-bg-arrow:has(+footer) {
+  [class*="lib-block"].has-bg-arrow:has(+footer),
+  [id*="lib-block"].has-bg-arrow:has(+.showroom),
+  [class*="lib-block"].has-bg-arrow:has(+.showroom) {
     margin-bottom: 50px;
   }
 }

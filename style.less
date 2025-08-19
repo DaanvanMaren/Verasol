@@ -189,7 +189,8 @@ html {
 [id*="lib-block"].has-bg-arrow,
 [class*="lib-block"].has-bg-arrow {
   @media only screen and (min-width: 768px) {
-    &:has(+footer) {
+    &:has(+footer),
+    &:has(+.showroom) {
       margin-bottom: 50px;
     }
   }
