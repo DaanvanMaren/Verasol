@@ -130,9 +130,11 @@ html {
     left: 50%;
   }
 }
-[id*="lib-block"].has-bg-arrow:has(+footer),
-[class*="lib-block"].has-bg-arrow:has(+footer) {
-  margin-bottom: 50px;
+@media only screen and (min-width: 768px) {
+  [id*="lib-block"].has-bg-arrow:has(+footer),
+  [class*="lib-block"].has-bg-arrow:has(+footer) {
+    margin-bottom: 50px;
+  }
 }
 .box-specificatie {
   overflow-x: auto;
