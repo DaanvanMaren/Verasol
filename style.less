@@ -723,20 +723,26 @@ section.form {
 // ***** FAQ Section *****
 .faq-section {
   .media-4.arrow-right {
-    height:300px;
+    height: 300px;
     position: absolute;
-    align-self: anchor-center;
-    left:0;
-    margin-bottom: 50px;
+    // align-self: anchor-center; // dit werkt niet in safari en firefox
+    left: 0;
+    // margin-bottom: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+
   }
 
   .media-3.faq-helper {
     position: absolute;
-    width: 260px;
+    // width: 260px;
     left: 65px;
-    align-self: anchor-center;
-    // bottom: 26px;
-    bottom: 64px;
+    // align-self: anchor-center; // dit werkt niet in safari en firefox
+    // bottom: 64px;
+    height: 360px;
+    transform: translateY~"(calc(50% - 30px))";
+    bottom: 50%;
+    margin-bottom: 0;
   }
 
   .accordion {
@@ -750,12 +756,15 @@ section.form {
   }
 
   .footnote p {
-    font-size:12px;
+    font-size: 12px;
 
     a {
-      color:@primary-400; 
-      text-decoration:none;
-      &:hover {text-decoration:underline;}
+      color: @primary-400;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
