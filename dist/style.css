@@ -738,7 +738,7 @@ header .text-7 ul:not(.usp) li:before {
   max-width: 600px;
 }
 .blog-content .text-3 ul {
-  margin-bottom: 2em;
+  margin-bottom: 2em!important;
 }
 #page-2063530 .accordion .box-2 {
   background-color: #636363;
