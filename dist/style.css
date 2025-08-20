@@ -134,7 +134,9 @@ html {
   [id*="lib-block"].has-bg-arrow:has(+footer),
   [class*="lib-block"].has-bg-arrow:has(+footer),
   [id*="lib-block"].has-bg-arrow:has(+.showroom),
-  [class*="lib-block"].has-bg-arrow:has(+.showroom) {
+  [class*="lib-block"].has-bg-arrow:has(+.showroom),
+  [id*="lib-block"].has-bg-arrow:has(+.bestdeal),
+  [class*="lib-block"].has-bg-arrow:has(+.bestdeal) {
     margin-bottom: 50px;
   }
 }
