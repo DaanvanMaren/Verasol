@@ -734,11 +734,25 @@ header .text-7 ul:not(.usp) li:before {
   text-decoration: none !important;
 }
 .blog-content .text-3 img {
-  border-radius: 20px;
+  border-radius: 10px;
   max-width: 600px;
 }
+.blog-content .text-3 img + img:nth-of-type(even) {
+  margin-left: 15px;
+  width: calc(50% - 15px);
+}
+.blog-content .text-3 img:nth-of-type(odd):has(+ img),
+.blog-content .text-3 img:nth-of-type(odd):last-child {
+  margin-right: 15px;
+  width: calc(50% - 15px);
+}
 .blog-content .text-3 ul {
-  margin-bottom: 2em!important;
+  margin-bottom: 2em !important;
+}
+@media only screen and (min-width: 768px) {
+  .blog-content .text-3 img {
+    border-radius: 20px;
+  }
 }
 #page-2063530 .accordion .box-2 {
   background-color: #636363;

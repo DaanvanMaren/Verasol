@@ -925,12 +925,33 @@ section.form {
 .blog-content {
   .text-3 {
     img {
-      border-radius: 20px;
+      border-radius: 10px;
       max-width: 600px;
+
+      +img:nth-of-type(even) {
+        margin-left: 15px;
+        width: ~"calc(50% - 15px)";
+      }
+
+      &:nth-of-type(odd){
+        &:has(+ img),
+        &:last-child {
+          margin-right: 15px;
+          width: ~"calc(50% - 15px)";
+        }
+      }
     }
 
     ul {
-      margin-bottom: 2em!important;
+      margin-bottom: 2em !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .text-3 {
+      img {
+        border-radius: 20px;
+      }
     }
   }
 }
