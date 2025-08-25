@@ -289,6 +289,9 @@ html {
     height: 55px;
     padding-left: 10px;
   }
+  .hero-arrows .usp.usp-arrow-right::before {
+    margin-right: -27px;
+  }
   .hero-arrows .usp .text-1 {
     font-size: 18px;
   }
