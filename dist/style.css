@@ -229,7 +229,7 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
 }
-.hero-arrows .heading-1.shadow {
+.hero-arrows .heading-1 {
   text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.5);
 }
 .hero-arrows .usp.usp-arrow-right {
