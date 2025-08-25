@@ -296,95 +296,102 @@ html {
 
 // usp pijlen NEW
 .hero-arrows {
-    .row-1,
-    .row-2 {
-        padding: 0;
-    }
-    
-    .col.arrows {
-        padding: 0;
-    }
 
-    .box.arrows {
+  .row-1,
+  .row-2 {
+    padding: 0;
+  }
+
+  .col.arrows {
+    padding: 0;
+  }
+
+  .box.arrows {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    gap: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .heading-1.shadow {
+    text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.5);
+  }
+
+  .usp {
+    &.usp-arrow-right {
+      padding: 5px;
+      background-color: #FFFFFF;
+      z-index: 99;
+      padding-right: 20px;
+      display: flex;
+      height: 45px;
+      position: relative;
+      align-items: center;
+      width: fit-content;
+
+      &:nth-of-type(1) {
+        grid-area: ~"1 / 1 / 2 / 2";
+      }
+
+      &:nth-of-type(2) {
+        grid-area: ~"2 / 1 / 3 / 2";
+      }
+
+      &:nth-of-type(3) {
+        grid-area: ~"3 / 1 / 4 / 2";
+      }
+
+      &::before {
+        content: "";
+        margin-right: -20px;
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 90%;
-        gap: 10px;
-        padding-bottom: 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        top: 0;
+        right: 0;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M17.64,83.75c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.67-31.91c.75-1.39.75-3.06,0-4.45L23.77,9.99l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H5.56v79.26h12.07Z'/%3E%3Cpath class='cls-2' d='M36.37,41.63L14.58,6.28l-2.24-3.63C11.28,1.18,9.6.27,7.79.19l-4.23-.19H0v88h7.78c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.8-35.35c.84-1.54.84-3.39,0-4.93Z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: 0;
+        pointer-events: none;
+        height: 100%;
+        aspect-ratio: 1/2;
+      }
     }
 
-    .heading-1.shadow {
-      text-shadow: 0px 0px 17px rgba(0,0,0,0.5);
+    .text-1 {
+      font-size: 12px;
+      padding: 0px;
+      white-space: normal;
+      line-height: 1.2;
+      color: @primary-500;
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .usp .text-1 {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col.content {
+      padding: 60px;
     }
 
     .usp {
-        &.usp-arrow-right {
-            padding: 5px;
-            background-color: #FFFFFF;
-            z-index: 99;
-            padding-right: 20px;
-            display: flex;
-            height: 45px;
-            position: relative;
-            align-items: center;
-            width: fit-content;
+      &.usp-arrow-right {
+        height: 55px;
+      }
 
-            &:nth-of-type(1) {
-                grid-area: ~"1 / 1 / 2 / 2";
-            }
-
-            &:nth-of-type(2) {
-                grid-area: ~"2 / 1 / 3 / 2";
-            }
-
-            &:nth-of-type(3) {
-                grid-area: ~"3 / 1 / 4 / 2";
-            }
-
-            &::before {
-                content: "";
-                margin-right: -20px;
-                position: absolute;
-                top: 0;
-                right: 0;
-                background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M17.64,83.75c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.67-31.91c.75-1.39.75-3.06,0-4.45L23.77,9.99l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H5.56v79.26h12.07Z'/%3E%3Cpath class='cls-2' d='M36.37,41.63L14.58,6.28l-2.24-3.63C11.28,1.18,9.6.27,7.79.19l-4.23-.19H0v88h7.78c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.8-35.35c.84-1.54.84-3.39,0-4.93Z'/%3E%3C/svg%3E");
-                background-repeat: no-repeat;
-                background-position: right;
-                z-index: 0;
-                pointer-events: none;
-                height: 100%;
-                aspect-ratio: 1/2;
-            }
-        }
-
-        .text-1 {
-            font-size: 12px;
-            padding: 0px;
-            white-space: normal;
-            line-height: 1.2;
-            color: @primary-500;
-        }
+      .text-1 {
+        font-size: 18px;
+      }
     }
-
-    @media only screen and (min-width: 480px) {
-        .usp .text-1 {
-            font-size: 14px;
-        }
-    }
-    
-    @media only screen and (min-width: 768px) {
-        .col.content {
-            padding: 60px;
-        }
-        
-        .usp .text-1 {
-            font-size: 18px;
-        }
-    }
+  }
 }
 
 // ***** Vlaggen *****
