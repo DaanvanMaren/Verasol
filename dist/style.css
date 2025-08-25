@@ -334,7 +334,7 @@ html {
     min-height: 800px !important;
   }
   .hero-arrows.hero .col.arrows {
-    display: none;
+    display: flex;
   }
   .hero-arrows .col.content {
     padding: 60px;
