@@ -206,7 +206,7 @@ html {
   left: 0;
   width: 90%;
   gap: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -254,6 +254,11 @@ html {
   white-space: normal;
   line-height: 1.2;
   color: #636363;
+}
+@media only screen and (min-width: 480px) {
+  .hero-arrows .usp .text-1 {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .hero-arrows .usp .text-1 {
