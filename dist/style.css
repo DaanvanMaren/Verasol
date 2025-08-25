@@ -208,6 +208,13 @@ html {
 .hero-arrows.hero .media-4 {
   border-radius: 0;
 }
+.hero-arrows.hero .col.content {
+  align-items: center;
+  justify-content: center;
+}
+.hero-arrows.hero .text-hero .heading-1 {
+  text-align: center;
+}
 .hero-arrows.hero .col.arrows {
   display: none;
 }
