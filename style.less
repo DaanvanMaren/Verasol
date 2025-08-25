@@ -1202,3 +1202,17 @@ section.form {
     }
   }
 }
+
+// ***** Algemene contentblokken *****
+// Content/Intro 2 kolommen met USP blok
+.intro.usp {
+  .usp ul li:not(:last-child):after {
+      content: '';
+      border-bottom: 1px solid #CBD2D9;
+      position: absolute;
+      width: ~"calc(100% + 20px)";
+      height: 1px;
+      bottom: 0;
+      left: -20px;
+  }
+}
