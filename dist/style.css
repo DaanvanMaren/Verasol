@@ -201,6 +201,9 @@ html {
 .hero-arrows .row-2 {
   padding: 0;
 }
+.hero-arrows .media-4:after {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .hero-arrows .col.arrows {
   padding: 0;
 }
