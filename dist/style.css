@@ -197,6 +197,10 @@ html {
   z-index: 0;
   pointer-events: none;
 }
+.hero-arrows .row-1,
+.hero-arrows .row-2 {
+  padding: 0;
+}
 .hero-arrows .col.arrows {
   padding: 0;
 }
@@ -261,6 +265,9 @@ html {
   }
 }
 @media only screen and (min-width: 768px) {
+  .hero-arrows .col.content {
+    padding: 60px;
+  }
   .hero-arrows .usp .text-1 {
     font-size: 18px;
   }
