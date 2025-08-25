@@ -284,6 +284,7 @@ html {
   }
   .hero-arrows .usp.usp-arrow-right {
     height: 55px;
+    padding-left: 10px;
   }
   .hero-arrows .usp .text-1 {
     font-size: 18px;
@@ -298,6 +299,9 @@ html {
   }
   .hero-arrows .box.arrows {
     padding-bottom: 80px;
+  }
+  .hero-arrows .usp.usp-arrow-right {
+    padding-left: 20px;
   }
 }
 .menu nav[data-menu="language"]::after {
