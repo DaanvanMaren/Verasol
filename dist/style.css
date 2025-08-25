@@ -277,7 +277,7 @@ html {
 }
 @media only screen and (min-width: 768px) {
   .hero-arrows .col.content {
-    padding: 60px;
+    padding: 30px;
   }
   .hero-arrows .box.arrows {
     padding-bottom: 60px;
@@ -292,6 +292,9 @@ html {
 @media only screen and (min-width: 1024px) {
   .hero-arrows {
     min-height: 700px!important;
+  }
+  .hero-arrows .col.content {
+    padding: 60px;
   }
   .hero-arrows .box.arrows {
     padding-bottom: 80px;
