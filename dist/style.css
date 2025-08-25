@@ -587,6 +587,9 @@ section.form.campaign .card-4 .radios > div {
 .prod-acc + .box-3 > .text-5.dark {
   display: none !important;
 }
+.productflags .text-3 ul li:before {
+  color: #ffffff;
+}
 .productflags .productflag-slider {
   overflow: hidden!important;
 }
@@ -599,8 +602,8 @@ section.form.campaign .card-4 .radios > div {
 .productflags .productflag-slider .profiline-flag .card-3 x-shape-bg > * {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");
 }
-.productflags .productflag-slider .profiline-flag .card-3 .text-3 li::before {
-  color: #ffffff;
+.productflags .productflag-slider .profiline-flag .card-3 .text-3 ul li::before {
+  color: #BF570D;
 }
 .productflags .productflag-slider .profiline-flag .card-3 .button-4 {
   border: 1px solid #BF570D;
