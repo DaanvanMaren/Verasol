@@ -198,11 +198,9 @@ html {
   pointer-events: none;
 }
 .hero-arrows {
-  padding: 12px;
-  min-height: 510px;
-}
-.hero-arrows .row-1 {
-  min-height: 350px;
+  padding: 12px!important;
+  padding-top: 30px!important;
+  min-height: 510px!important;
 }
 .hero-arrows .row-1,
 .hero-arrows .row-2 {
@@ -293,7 +291,7 @@ html {
 }
 @media only screen and (min-width: 1024px) {
   .hero-arrows {
-    min-height: 700px;
+    min-height: 700px!important;
   }
   .hero-arrows .box.arrows {
     padding-bottom: 80px;
