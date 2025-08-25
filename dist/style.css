@@ -344,7 +344,7 @@ html {
     min-height: 800px !important;
   }
   .hero-arrows.hero {
-    padding: 0;
+    padding: 0!important;
     min-height: 570px;
   }
   .hero-arrows.hero .col.arrows {
