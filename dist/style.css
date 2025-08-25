@@ -208,6 +208,10 @@ html {
 .hero-arrows.hero .col.arrows {
   display: none;
 }
+.hero-arrows.hero .box.arrows {
+  left: unset;
+  right: 0;
+}
 .hero-arrows .container {
   width: 100%;
 }
@@ -274,6 +278,7 @@ html {
 }
 .hero-arrows .usp.usp-arrow-right {
   padding-right: 20px;
+  left: 0;
 }
 .hero-arrows .usp.usp-arrow-right::before {
   margin-right: -20px;
@@ -283,6 +288,7 @@ html {
 }
 .hero-arrows .usp.usp-arrow-left {
   padding-left: 20px;
+  right: 0;
 }
 .hero-arrows .usp.usp-arrow-left::before {
   margin-left: -20px;
