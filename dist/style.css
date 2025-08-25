@@ -305,6 +305,7 @@ html {
   }
   .hero-arrows .box.arrows {
     padding-bottom: 80px;
+    gap: 20px;
   }
   .hero-arrows .usp.usp-arrow-right {
     padding-left: 20px;
