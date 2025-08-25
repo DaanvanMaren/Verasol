@@ -1206,7 +1206,12 @@ section.form {
 // ***** Algemene contentblokken *****
 // Content/Intro 2 kolommen met USP blok
 .intro.usp {
-  .usp ul li:not(:last-child):after {
+  .usp ul li {
+      font-family: 'open-sans-semibold';
+    padding: 10px 0;
+    position: relative;
+    
+    &:not(:last-child):after {
       content: '';
       border-bottom: 1px solid #CBD2D9;
       position: absolute;
@@ -1215,4 +1220,5 @@ section.form {
       bottom: 0;
       left: -20px;
   }
+}
 }

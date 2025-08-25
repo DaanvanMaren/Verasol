@@ -936,6 +936,11 @@ header .text-7 ul:not(.usp) li:before {
     margin-top: -100px;
   }
 }
+.intro.usp .usp ul li {
+  font-family: 'open-sans-semibold';
+  padding: 10px 0;
+  position: relative;
+}
 .intro.usp .usp ul li:not(:last-child):after {
   content: '';
   border-bottom: 1px solid #CBD2D9;
