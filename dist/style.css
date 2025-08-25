@@ -940,6 +940,7 @@ header .text-7 ul:not(.usp) li:before {
   font-family: 'open-sans-semibold';
   padding: 10px 0;
   position: relative;
+  max-width: 450px;
 }
 .intro.usp .usp ul li:not(:last-child):after {
   content: '';
@@ -949,4 +950,12 @@ header .text-7 ul:not(.usp) li:before {
   height: 1px;
   bottom: 0;
   left: -20px;
+}
+@media only screen and (min-width: 1024px) {
+  .intro.usp .intro {
+    padding-right: 50px;
+  }
+  .intro.usp .usp {
+    padding-left: 50px;
+  }
 }
