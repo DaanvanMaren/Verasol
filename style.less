@@ -296,14 +296,25 @@ html {
 
 // usp pijlen NEW
 .hero-arrows {
-    padding: 12px!important;
-    padding-top: 30px!important;
-    min-height: 510px!important;
+  padding: 12px !important;
+  padding-top: 30px !important;
+  min-height: 510px !important;
 
-    .container {
+  &.hero {
+    .media-4 {
+        border-radius: 0;
+    }
+
+    .col.arrows {
+        display: none;
+    }
+  }
+
+  .container {
     width: 100%;
   }
-    .row-1,
+
+  .row-1,
   .row-2 {
     padding: 0;
   }
@@ -312,9 +323,9 @@ html {
     border-radius: 20px;
 
     &:after {
-        background-color: rgba(0,0,0,0.1);
+      background-color: rgba(0, 0, 0, 0.1);
     }
-    }
+  }
 
 
   .col.arrows {
@@ -338,43 +349,62 @@ html {
   }
 
   .usp {
-    &.usp-arrow-right {
+    &.usp-arrow-right, 
+    &.usp-arrow-left {
       padding: 5px;
       background-color: #FFFFFF;
       z-index: 99;
-      padding-right: 20px;
       display: flex;
       height: 45px;
       position: relative;
       align-items: center;
       width: fit-content;
-
+      
       &:nth-of-type(1) {
-        grid-area: ~"1 / 1 / 2 / 2";
-      }
+          grid-area: ~"1 / 1 / 2 / 2";
+        }
+        
+        &:nth-of-type(2) {
+            grid-area: ~"2 / 1 / 3 / 2";
+        }
+        
+        &:nth-of-type(3) {
+            grid-area: ~"3 / 1 / 4 / 2";
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            background-repeat: no-repeat;
+            z-index: 0;
+            pointer-events: none;
+            height: 100%;
+            aspect-ratio: 1/2;
+        }
+    }
+    
+    &.usp-arrow-right {
+        padding-right: 20px;
 
-      &:nth-of-type(2) {
-        grid-area: ~"2 / 1 / 3 / 2";
-      }
+        &::before {
+            margin-right: -20px;
+            right: 0;
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M17.64,83.75c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.67-31.91c.75-1.39.75-3.06,0-4.45L23.77,9.99l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H5.56v79.26h12.07Z'/%3E%3Cpath class='cls-2' d='M36.37,41.63L14.58,6.28l-2.24-3.63C11.28,1.18,9.6.27,7.79.19l-4.23-.19H0v88h7.78c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.8-35.35c.84-1.54.84-3.39,0-4.93Z'/%3E%3C/svg%3E");
+            background-position: right;
 
-      &:nth-of-type(3) {
-        grid-area: ~"3 / 1 / 4 / 2";
-      }
+        }
+    }
+    
+    &.usp-arrow-left {
+        padding-left: 20px;
 
-      &::before {
-        content: "";
-        margin-right: -20px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M17.64,83.75c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.67-31.91c.75-1.39.75-3.06,0-4.45L23.77,9.99l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H5.56v79.26h12.07Z'/%3E%3Cpath class='cls-2' d='M36.37,41.63L14.58,6.28l-2.24-3.63C11.28,1.18,9.6.27,7.79.19l-4.23-.19H0v88h7.78c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.8-35.35c.84-1.54.84-3.39,0-4.93Z'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: right;
-        z-index: 0;
-        pointer-events: none;
-        height: 100%;
-        aspect-ratio: 1/2;
-      }
+        &::before {
+            margin-left: -20px;
+            left: 0;
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M26.36,4.25c-1.64.07-3.16.89-4.12,2.22l-2.02,3.28L.56,41.65c-.75,1.39-.75,3.06,0,4.45l19.67,31.91,2.02,3.28c.96,1.33,2.48,2.16,4.12,2.23h12.07V4.26h-12.07Z'/%3E%3Cpath class='cls-2' d='M7.63,46.37l21.8,35.36,2.24,3.63c1.06,1.47,2.74,2.38,4.55,2.46l4.23.19h3.57V0h-7.78c-1.82.08-3.5.99-4.56,2.47l-2.24,3.63L7.63,41.44c-.84,1.54-.84,3.39,0,4.93Z'/%3E%3C/svg%3E");
+            background-position: left;
+        }
     }
 
     .text-1 {
@@ -402,12 +432,24 @@ html {
     }
 
     .usp {
+      &.usp-arrow-left,
       &.usp-arrow-right {
         height: 55px;
+    }
+
+    &.usp-arrow-right {
         padding-left: 10px;
 
         &::before {
           margin-right: -27px;
+        }
+      }
+
+      &.usp-arrow-left {
+        padding-right: 10px;
+
+        &::before {
+          margin-left: -27px;
         }
       }
 
@@ -418,8 +460,14 @@ html {
   }
 
   @media only screen and (min-width: 1024px) {
-    min-height: 800px!important;
-    
+    min-height: 800px !important;
+
+    &.hero {
+    .col.arrows {
+        display: none;
+    }
+
+    }
     .col.content {
       padding: 60px;
     }
@@ -430,6 +478,9 @@ html {
     }
 
     .usp {
+      &.usp-arrow-left {
+        padding-right: 20px;
+      }
       &.usp-arrow-right {
         padding-left: 20px;
       }
@@ -1229,7 +1280,7 @@ section.form {
     .intro {
       padding-right: 50px;
     }
-    
+
     .usp {
       padding-left: 50px;
     }
