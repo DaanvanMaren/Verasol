@@ -340,6 +340,9 @@ html {
   .hero-arrows {
     min-height: 800px !important;
   }
+  .hero-arrows.hero {
+    padding: 0;
+  }
   .hero-arrows.hero .col.arrows {
     display: flex;
   }
