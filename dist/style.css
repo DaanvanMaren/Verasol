@@ -923,3 +923,16 @@ header .text-7 ul:not(.usp) li:before {
 .service .menu-3.dark > ul > li:hover > a {
   color: #BF570D;
 }
+.hero-arrows + .folder {
+  margin-top: -20px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-arrows + .folder {
+    margin-top: -50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-arrows + .folder {
+    margin-top: -100px;
+  }
+}
