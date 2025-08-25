@@ -203,7 +203,7 @@ html {
   min-height: 510px !important;
 }
 .hero-arrows.hero {
-  min-height: 490px;
+  min-height: 490px!important;
 }
 .hero-arrows.hero .media-4 {
   border-radius: 0;
@@ -352,7 +352,7 @@ html {
   }
   .hero-arrows.hero {
     padding: 0!important;
-    min-height: 570px;
+    min-height: 570px!important;
   }
   .hero-arrows.hero .col.arrows {
     display: flex;
