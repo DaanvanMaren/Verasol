@@ -296,14 +296,25 @@ html {
 
 // usp pijlen NEW
 .hero-arrows {
+    padding: 12px;
+    min-height: 510px;
+
+    .row-1 {
+        min-height: 350px;
+    }
   .row-1,
   .row-2 {
     padding: 0;
   }
 
-  .media-4:after {
-    background-color: rgba(0,0,0,0.1);
-  }
+  .media-4 {
+    border-radius: 20px;
+
+    &:after {
+        background-color: rgba(0,0,0,0.1);
+    }
+    }
+
 
   .col.arrows {
     padding: 0;

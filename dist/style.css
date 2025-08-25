@@ -197,9 +197,19 @@ html {
   z-index: 0;
   pointer-events: none;
 }
+.hero-arrows {
+  padding: 12px;
+  min-height: 510px;
+}
+.hero-arrows .row-1 {
+  min-height: 350px;
+}
 .hero-arrows .row-1,
 .hero-arrows .row-2 {
   padding: 0;
+}
+.hero-arrows .media-4 {
+  border-radius: 20px;
 }
 .hero-arrows .media-4:after {
   background-color: rgba(0, 0, 0, 0.1);
