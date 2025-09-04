@@ -121,6 +121,10 @@ document.addEventListener('DOMContentLoaded', function () {
       el.style.display = hasActie ? 'none' : '';
     });
 
+    document.querySelectorAll('.usp').forEach(el => {
+      el.style.display = hasActie ? 'none' : '';
+    });
+
     document.querySelectorAll('.actie-vaantje-onderkant').forEach(container => {
       const shapeBg = container.querySelector('x-shape-bg');
       if (!shapeBg) return;
