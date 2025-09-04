@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // USP's en x-shape-bg verbergen of tonen afhankelijk van .actie
   function updateVisibility() {
-    document.querySelectorAll('.product-blok').forEach(blok => {
+    document.querySelectorAll('.hero').forEach(blok => {
       const hasActie = blok.querySelector('.actie') !== null;
 
       // Alleen de elementen binnen dit blok aanpakken
