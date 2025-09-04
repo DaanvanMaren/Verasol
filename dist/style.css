@@ -378,6 +378,9 @@ html {
   .hero-arrows .usp.usp-arrow-right {
     padding-left: 20px;
   }
+  .hero-arrows .actie-vaantje-onderkant {
+    margin-top: 0;
+  }
 }
 .menu nav[data-menu="language"]::after {
   content: '';
