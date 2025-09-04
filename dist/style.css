@@ -203,7 +203,7 @@ html {
   min-height: 510px !important;
 }
 .hero-arrows.hero {
-  min-height: 490px!important;
+  min-height: 490px !important;
 }
 .hero-arrows.hero .media-4 {
   border-radius: 0;
@@ -234,6 +234,11 @@ html {
 }
 .hero-arrows .media-4:after {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.hero-arrows .col.content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-arrows .col.arrows {
   padding: 0;
@@ -314,6 +319,9 @@ html {
   line-height: 1.2;
   color: #636363;
 }
+.hero-arrows .actie-vaantje-onderkant {
+  margin-top: -30px;
+}
 @media only screen and (min-width: 480px) {
   .hero-arrows .usp .text-1 {
     font-size: 14px;
@@ -351,8 +359,8 @@ html {
     min-height: 800px !important;
   }
   .hero-arrows.hero {
-    padding: 0!important;
-    min-height: 570px!important;
+    padding: 0 !important;
+    min-height: 570px !important;
   }
   .hero-arrows.hero .col.arrows {
     display: flex;
