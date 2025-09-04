@@ -109,9 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.usp-hero').forEach(function (el) {
       el.style.display = hasActie ? 'none' : '';
     });
-    document.querySelectorAll('.usp').forEach(function (el) {
-      el.style.display = hasActie ? 'none' : '';
-    });
     document.querySelectorAll('.actie-vaantje-onderkant').forEach(function (container) {
       var shapeBg = container.querySelector('x-shape-bg');
       if (!shapeBg) return;
