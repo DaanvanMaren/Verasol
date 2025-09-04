@@ -115,18 +115,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // USP's en x-shape-bg verbergen of tonen afhankelijk van .actie
   function updateVisibility() {
-    const hasActie = !!document.querySelector('.actie');
+    document.querySelectorAll('.product-blok').forEach(blok => {
+      const hasActie = blok.querySelector('.actie') !== null;
 
-    document.querySelectorAll('.usp-hero').forEach(el => {
-      el.style.display = hasActie ? 'none' : '';
-    });
+      // Alleen de elementen binnen dit blok aanpakken
+      blok.querySelectorAll('.usp-hero, .usp').forEach(el => {
+        el.style.display = hasActie ? 'none' : '';
+      });
 
-    document.querySelectorAll('.actie-vaantje-onderkant').forEach(container => {
-      const shapeBg = container.querySelector('x-shape-bg');
-      if (!shapeBg) return;
-      shapeBg.style.display = hasActie ? '' : 'none';
+      blok.querySelectorAll('.actie-vaantje-onderkant').forEach(container => {
+        const shapeBg = container.querySelector('x-shape-bg');
+        if (!shapeBg) return;
+        shapeBg.style.display = hasActie ? '' : 'none';
+      });
     });
   }
+
   // tekst bold maken voor scrollbare blokken
   const steps = document.querySelectorAll(".step-content");
   const links = document.querySelectorAll(".text-3");
