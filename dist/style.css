@@ -896,8 +896,15 @@ header .text-7 ul:not(.usp) li:before {
 .text-4 ul:last-of-type,
 .text-5 ul:last-of-type,
 .text-6 ul:last-of-type,
-.text-7 ul:last-of-type {
-  margin-bottom: 2em;
+.text-7 ul:last-of-type,
+.text-1 p:last-of-type,
+.text-2 p:last-of-type,
+.text-3 p:last-of-type,
+.text-4 p:last-of-type,
+.text-5 p:last-of-type,
+.text-6 p:last-of-type,
+.text-7 p:last-of-type {
+  margin-bottom: 2em!important;
 }
 .text-1 ol:last-child,
 .text-2 ol:last-child,
@@ -912,8 +919,15 @@ header .text-7 ul:not(.usp) li:before {
 .text-4 ul:last-child,
 .text-5 ul:last-child,
 .text-6 ul:last-child,
-.text-7 ul:last-child {
-  margin-bottom: 0;
+.text-7 ul:last-child,
+.text-1 p:last-child,
+.text-2 p:last-child,
+.text-3 p:last-child,
+.text-4 p:last-child,
+.text-5 p:last-child,
+.text-6 p:last-child,
+.text-7 p:last-child {
+  margin-bottom: 0!important;
 }
 .text-1 strong,
 .text-2 strong,
