@@ -1115,13 +1115,15 @@ section.form {
 .text-7 {
   ol:last-of-type,
   ul:last-of-type,
-  p:last-of-type {
+  p:last-of-type,
+  p:not([class^="heading-"]):last-of-type {
     margin-bottom: 2em!important;
   }
 
   ol:last-child,
   ul:last-child,
-  p:last-child {
+  p:last-child,
+  p:not([class^="heading-"]):last-child {
     margin-bottom: 0!important;
   }
 }

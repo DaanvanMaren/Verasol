@@ -903,7 +903,14 @@ header .text-7 ul:not(.usp) li:before {
 .text-4 p:last-of-type,
 .text-5 p:last-of-type,
 .text-6 p:last-of-type,
-.text-7 p:last-of-type {
+.text-7 p:last-of-type,
+.text-1 p:not([class^="heading-"]):last-of-type,
+.text-2 p:not([class^="heading-"]):last-of-type,
+.text-3 p:not([class^="heading-"]):last-of-type,
+.text-4 p:not([class^="heading-"]):last-of-type,
+.text-5 p:not([class^="heading-"]):last-of-type,
+.text-6 p:not([class^="heading-"]):last-of-type,
+.text-7 p:not([class^="heading-"]):last-of-type {
   margin-bottom: 2em!important;
 }
 .text-1 ol:last-child,
@@ -926,7 +933,14 @@ header .text-7 ul:not(.usp) li:before {
 .text-4 p:last-child,
 .text-5 p:last-child,
 .text-6 p:last-child,
-.text-7 p:last-child {
+.text-7 p:last-child,
+.text-1 p:not([class^="heading-"]):last-child,
+.text-2 p:not([class^="heading-"]):last-child,
+.text-3 p:not([class^="heading-"]):last-child,
+.text-4 p:not([class^="heading-"]):last-child,
+.text-5 p:not([class^="heading-"]):last-child,
+.text-6 p:not([class^="heading-"]):last-child,
+.text-7 p:not([class^="heading-"]):last-child {
   margin-bottom: 0!important;
 }
 .text-1 strong,
