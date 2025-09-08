@@ -883,6 +883,38 @@ header .text-7 ul:not(.usp) li:before {
 .legal .text-7 ul li:before {
   display: none;
 }
+.text-1 ol:last-of-type,
+.text-2 ol:last-of-type,
+.text-3 ol:last-of-type,
+.text-4 ol:last-of-type,
+.text-5 ol:last-of-type,
+.text-6 ol:last-of-type,
+.text-7 ol:last-of-type,
+.text-1 ul:last-of-type,
+.text-2 ul:last-of-type,
+.text-3 ul:last-of-type,
+.text-4 ul:last-of-type,
+.text-5 ul:last-of-type,
+.text-6 ul:last-of-type,
+.text-7 ul:last-of-type {
+  margin-bottom: 2em;
+}
+.text-1 ol:last-child,
+.text-2 ol:last-child,
+.text-3 ol:last-child,
+.text-4 ol:last-child,
+.text-5 ol:last-child,
+.text-6 ol:last-child,
+.text-7 ol:last-child,
+.text-1 ul:last-child,
+.text-2 ul:last-child,
+.text-3 ul:last-child,
+.text-4 ul:last-child,
+.text-5 ul:last-child,
+.text-6 ul:last-child,
+.text-7 ul:last-child {
+  margin-bottom: 0;
+}
 .text-1 strong,
 .text-2 strong,
 .text-3 strong,

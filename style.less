@@ -1056,7 +1056,8 @@ section.form {
   }
 }
 
-// ***** Lijsten in teksten vinkjes geven *****
+// ***** Lijsten  *****
+// *** Lijsten vinkjes geven ***
 .text-1,
 .text-2,
 .text-3,
@@ -1101,6 +1102,25 @@ section.form {
         display: none;
       }
     }
+  }
+}
+
+// *** ruimtes onder lijsten ***
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-6,
+.text-7 {
+  ol:last-of-type,
+  ul:last-of-type {
+    margin-bottom: 2em;
+  }
+
+  ol:last-child,
+  ul:last-child {
+    margin-bottom: 0;
   }
 }
 
