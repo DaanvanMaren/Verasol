@@ -321,6 +321,54 @@ html {
 }
 .hero-arrows .actie-vaantje-onderkant {
   margin-top: -30px;
+  top: -5px;
+  /* AN */
+  z-index: 2;
+  /* AN */
+  position: absolute;
+  /* AN */
+  right: 20px;
+  /* AN */
+  border-radius: 0px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant[data-shape="bg"] {
+  padding-bottom: 32px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant .actie {
+  align-items: center;
+  /* AN */
+  padding: 9px;
+  /* AN */
+  padding-top: 12px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant .actie .media-3 {
+  width: 88px;
+  /* AN */
+  height: 120px;
+  /* AN */
+  border-radius: 0px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant .actie .button-1 {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  /* AN */
+  font-size: 12px;
+  /* AN */
+  padding: 6px;
+  /* AN */
+  padding-left: 6px;
+  /* AN */
+  padding-right: 6px;
+  /* AN */
+  margin: 0px;
+  /* AN */
+  margin-top: 6px;
+  /* AN */
+  width: 110px;
+  /* AN */
 }
 @media only screen and (min-width: 480px) {
   .hero-arrows .usp .text-1 {
@@ -353,6 +401,22 @@ html {
   .hero-arrows .usp .text-1 {
     font-size: 18px;
   }
+  .hero-arrows .actie-vaantje-onderkant {
+    top: 30px;
+    /* AN */
+    border-radius: 5px;
+    /* AN */
+  }
+  .hero-arrows .actie-vaantje-onderkant .actie {
+    padding: 6px;
+    /* AN */
+  }
+  .hero-arrows .actie-vaantje-onderkant .actie .media-3 {
+    width: 120px;
+    /* AN */
+    height: 161px;
+    /* AN */
+  }
 }
 @media only screen and (min-width: 1024px) {
   .hero-arrows {
@@ -380,6 +444,10 @@ html {
   }
   .hero-arrows .actie-vaantje-onderkant {
     margin-top: 0;
+  }
+  .hero-arrows .actie-vaantje-onderkant .actie {
+    padding: 12px;
+    /* AN */
   }
 }
 .menu nav[data-menu="language"]::after {
