@@ -327,7 +327,7 @@ html {
   /* AN */
   position: absolute;
   /* AN */
-  right: 20px;
+  right: 8px;
   /* AN */
   border-radius: 0px;
   /* AN */
@@ -339,7 +339,7 @@ html {
 .hero-arrows .actie-vaantje-onderkant .actie {
   align-items: center;
   /* AN */
-  padding: 9px;
+  padding: 6px;
   /* AN */
   padding-top: 12px;
   /* AN */
@@ -406,6 +406,8 @@ html {
     /* AN */
     border-radius: 5px;
     /* AN */
+    right: 20px;
+    /* AN */
   }
   .hero-arrows .actie-vaantje-onderkant .actie {
     padding: 6px;
@@ -444,6 +446,8 @@ html {
   }
   .hero-arrows .actie-vaantje-onderkant {
     margin-top: 0;
+    right: 32px;
+    /* AN */
   }
   .hero-arrows .actie-vaantje-onderkant .actie {
     padding: 12px;
