@@ -23,6 +23,7 @@ html {
 .table-row:last-of-type {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-bottom: 1px soid #eceded;
 }
 .table-body .col div {
   padding: 10px;
