@@ -70,6 +70,7 @@ html {
 [class*="lib-block"].has-bg-arrow {
   margin: 100px 0;
   overflow: hidden;
+  padding: 0;
 }
 [id*="lib-block"].has-bg-arrow:has(.arrow-left),
 [class*="lib-block"].has-bg-arrow:has(.arrow-left),
@@ -83,6 +84,7 @@ html {
 [class*="lib-block"].has-bg-arrow .arrow-right {
   position: relative;
   margin-top: 36px;
+  max-height: 600px;
 }
 [id*="lib-block"].has-bg-arrow .arrow-left,
 [class*="lib-block"].has-bg-arrow .arrow-left {
