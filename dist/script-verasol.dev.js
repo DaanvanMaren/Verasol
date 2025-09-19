@@ -105,14 +105,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }); // USP's en x-shape-bg verbergen of tonen afhankelijk van .actie
 
   function updateVisibility() {
-    var hasActie = !!document.querySelector('.actie');
-    document.querySelectorAll('.usp-hero').forEach(function (el) {
-      el.style.display = hasActie ? 'none' : '';
-    });
-    document.querySelectorAll('.actie-vaantje-onderkant').forEach(function (container) {
-      var shapeBg = container.querySelector('x-shape-bg');
-      if (!shapeBg) return;
-      shapeBg.style.display = hasActie ? '' : 'none';
+    document.querySelectorAll('.hero').forEach(function (blok) {
+      var hasActie = blok.querySelector('.actie') !== null; // Alleen de elementen binnen dit blok aanpakken
+
+      blok.querySelectorAll('.usp-hero, .usp').forEach(function (el) {
+        el.style.display = hasActie ? 'none' : '';
+      });
+      blok.querySelectorAll('.actie-vaantje-onderkant').forEach(function (container) {
+        var shapeBg = container.querySelector('x-shape-bg');
+        if (!shapeBg) return;
+        shapeBg.style.display = hasActie ? '' : 'none';
+      });
     });
   } // tekst bold maken voor scrollbare blokken
 

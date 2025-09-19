@@ -10,22 +10,17 @@ html {
 }
 
 // **** Label *****
-@media only screen and (max-width:767px){
-  .box-folder-label{
+@media only screen and (max-width:767px) {
+  .box-folder-label {
     display: none;
   }
-  .scroll-punten{
+
+  .scroll-punten {
     display: none;
   }
-  .usp-hotspot{
+
+  .usp-hotspot {
     display: none;
-  }
-  .lib-block-19052-1 > .arrow-left {
-    position: relative;
-    margin-top: 10px;
-  }
-  .lib-block-19052-1{
-    flex-direction: column-reverse !important;
   }
 }
 
@@ -37,6 +32,12 @@ html {
   &:first-of-type {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+  }
+
+  &:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid #eceded;
   }
 }
 
@@ -102,63 +103,120 @@ html {
     mask-position: right center, 100% 0;
 }
 
-@media only screen and (max-width: 767px) {
-  section.has-bg-arrow.mobile-arrow-top {
-    padding: 0px 12px;
-    .arrow-top {
-      mask-size: 100% auto;
-      mask-position: top;
-      mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-      transform: translateX(0px);
-      height:400px;
+// @media only screen and (max-width: 767px) {
+//   section.has-bg-arrow.mobile-arrow-top {
+//     padding: 0px 12px;
+//     .arrow-top {
+//       mask-size: 100% auto;
+//       mask-position: top;
+//       mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+//       transform: translateX(0px);
+//       height:400px;
+//     }
+//   }
+// } // verhuisd naar algemene selector
+
+[id*="lib-block"].has-bg-arrow,
+[class*="lib-block"].has-bg-arrow {
+  margin: 100px 0;
+  overflow: hidden;
+  padding: 0;
+
+  &:has(.arrow-left),
+  &:has(.arrow-right) {
+    flex-direction: column-reverse;
+  }
+
+  .arrow-left,
+  .arrow-right {
+    position: relative;
+    margin-top: 36px;
+    max-height: 600px;
+  }
+
+  .arrow-left {
+    transform: translateX(12px);
+  }
+
+  .arrow-right {
+    transform: translateX(-12px);
+  }
+
+  .header-menu+& {
+    margin-top: 0;
+  }
+
+  + [id*="lib-block"].has-bg-arrow,
+  + [class*="lib-block"].has-bg-arrow {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: 767px) {
+    margin: 40px 0;
+
+    &.mobile-arrow-top {
+      padding: 0px 12px;
+
+      .arrow-top {
+        mask-size: 100% auto;
+        mask-position: top;
+        mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+        transform: translateX(0px);
+        height: 400px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .arrow-left,
+    .arrow-right {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      margin-top: 0;
+      transform: none;
+    }
+
+    .arrow-left {
+      left: 50%;
+    }
+
+    >.media-4 {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 50%;
     }
   }
 }
 
-[id*="lib-block"].has-bg-arrow {
-    margin: 100px 0;
-    overflow: hidden;
-
-    &:has(.arrow-left),
-    &:has(.arrow-right) {
-        flex-direction: column-reverse;
+[id*="lib-block"].has-bg-arrow,
+[class*="lib-block"].has-bg-arrow {
+  @media only screen and (min-width: 768px) {
+    &:has(+footer),
+    &:has(+.showroom),
+    &:has(+.bestdeal) {
+      margin-bottom: 50px;
     }
-
-    .arrow-left,
-    .arrow-right {
-        position: relative;
-        margin-top: 36px;
-    }
-
-    .arrow-left {
-        transform: translateX(12px);
-    }
-
-    .arrow-right {
-        transform: translateX(-12px);
-    }
-
-    .header-menu+& {
-        margin-top: 0;
-    }
+  }
 }
-// dakbedekking
-.box-specificatie{
-  overflow-x: auto;
-}
-.dakbedekking-col{
-  min-width: 700px;
-}
-// blogs
-.blog-heading a {
-  text-decoration: none !important;
-} 
+
+// @media (max-width:768px) {
+    // [id*="lib-block"].has-bg-arrow {
+    //   margin: 40px 0;
+    // }
+// } verkeerde max-waarde en verhuisd naar algemene selector
+
 .vanaf-prijs {
   .card-3 {
     mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M1920,600H186.94c-10.69,0-23.82-7.58-29.16-16.83L4.01,316.84c-5.35-9.26-5.35-24.42,0-33.67L157.77,16.84c5.35-9.26,18.47-16.84,29.16-16.84h1733.06v600Z'/%3E%3C/svg%3E");
     mask-position: right center, 100% 0;
     mask-repeat: no-repeat;
     mask-size: 250px;
+    min-width: 200px;
+    padding: 5px;
+
     .text-4 {
       margin: 3px 3px 0px;
       text-align: right;
@@ -166,7 +224,9 @@ html {
       font-size:16px;
       color:#fff;
       transform: translate(0px, 3px);
+      line-height: 1.75;
     }
+    
     .heading-4 {
       text-align: right;
       font-size: 32px;
@@ -175,24 +235,6 @@ html {
       transform: translate(0px, -7px);
     }
   }
-}
-
-@media only screen and (min-width: 768px) {
-    [id*="lib-block"].has-bg-arrow {
-        .arrow-left,
-        .arrow-right {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            margin-top: 0;
-            transform: none;
-        }
-        
-        .arrow-left {
-            left: 50%;
-        }
-    }
 }
 
 // usp pijlen
@@ -235,12 +277,294 @@ html {
   pointer-events: none;
 }
 
-@media only screen and (min-width: 768px) {
-  [id*="lib-block"].has-bg-arrow>.media-4 {
-    height: 100%;
+// @media only screen and (min-width: 768px) {
+//   [id*="lib-block"].has-bg-arrow>.media-4 {
+//     height: 100%;
+//     width: 100%;
+//     top: 0;
+//     left: 50%;
+//   }
+// } //verhuisd naar algemene selector
+
+// usp pijlen NEW
+.hero-arrows {
+  padding: 12px !important;
+  padding-top: 30px !important;
+  min-height: 510px !important;
+
+  &.hero {
+    min-height: 490px !important;
+
+    .media-4 {
+      border-radius: 0;
+    }
+
+    .col.content {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-hero .heading-1 {
+      text-align: center;
+    }
+
+    .col.arrows {
+      display: none;
+    }
+
+    .box.arrows {
+      left: unset;
+      right: 0;
+    }
+  }
+
+  .container {
     width: 100%;
-    top: 0;
-    left: 50%;
+  }
+
+  .row-1,
+  .row-2 {
+    padding: 0;
+  }
+
+  .media-4 {
+    border-radius: 20px;
+
+    &:after {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .col.content {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col.arrows {
+    padding: 0;
+  }
+
+  .box.arrows {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    gap: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .heading-1 {
+    text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.5);
+  }
+
+  .usp {
+    &.usp-arrow-right,
+    &.usp-arrow-left {
+      padding: 5px;
+      background-color: #FFFFFF;
+      z-index: 99;
+      display: flex;
+      height: 45px;
+      position: relative;
+      align-items: center;
+      width: fit-content;
+
+      &:nth-of-type(1) {
+        grid-area: ~"1 / 1 / 2 / 2";
+      }
+
+      &:nth-of-type(2) {
+        grid-area: ~"2 / 1 / 3 / 2";
+      }
+
+      &:nth-of-type(3) {
+        grid-area: ~"3 / 1 / 4 / 2";
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-repeat: no-repeat;
+        z-index: 0;
+        pointer-events: none;
+        height: 100%;
+        aspect-ratio: 1/2;
+      }
+    }
+
+    &.usp-arrow-right {
+      padding-right: 20px;
+      left: 0;
+
+      &::before {
+        margin-right: -20px;
+        right: 0;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M17.64,83.75c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.67-31.91c.75-1.39.75-3.06,0-4.45L23.77,9.99l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H5.56v79.26h12.07Z'/%3E%3Cpath class='cls-2' d='M36.37,41.63L14.58,6.28l-2.24-3.63C11.28,1.18,9.6.27,7.79.19l-4.23-.19H0v88h7.78c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.8-35.35c.84-1.54.84-3.39,0-4.93Z'/%3E%3C/svg%3E");
+        background-position: right;
+      }
+    }
+
+    &.usp-arrow-left {
+      padding-left: 20px;
+      right: 0;
+      justify-self: flex-end;
+
+      &::before {
+        margin-left: -20px;
+        left: 0;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M26.36,4.25c-1.64.07-3.16.89-4.12,2.22l-2.02,3.28L.56,41.65c-.75,1.39-.75,3.06,0,4.45l19.67,31.91,2.02,3.28c.96,1.33,2.48,2.16,4.12,2.23h12.07V4.26h-12.07Z'/%3E%3Cpath class='cls-2' d='M7.63,46.37l21.8,35.36,2.24,3.63c1.06,1.47,2.74,2.38,4.55,2.46l4.23.19h3.57V0h-7.78c-1.82.08-3.5.99-4.56,2.47l-2.24,3.63L7.63,41.44c-.84,1.54-.84,3.39,0,4.93Z'/%3E%3C/svg%3E");
+        background-position: left;
+      }
+    }
+
+    .text-1 {
+      font-size: 12px;
+      padding: 0px;
+      white-space: normal;
+      line-height: 1.2;
+      color: @primary-500;
+    }
+  }
+
+  .actie-vaantje-onderkant {
+    margin-top: -30px;
+    top: -5px;/* AN */
+    z-index: 2;/* AN */
+    position: absolute;/* AN */
+    right: 8px;/* AN */
+    border-radius: 0px;/* AN */
+
+    &[data-shape="bg"] {
+      padding-bottom: 32px;/* AN */
+    }
+
+    .actie {
+      align-items: center;/* AN */
+      padding: 6px;/* AN */
+      padding-top: 12px;/* AN */
+
+      .media-3 {
+        width: 88px;/* AN */
+        height: 120px;/* AN */
+        border-radius: 0px;/* AN */
+      }
+
+      .button-1 {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);/* AN */
+        font-size: 12px;/* AN */
+        padding: 6px;/* AN */
+        padding-left: 6px;/* AN */
+        padding-right: 6px;/* AN */
+        margin: 0px;/* AN */
+        margin-top: 6px;/* AN */
+        width: 110px;/* AN */
+      }
+    }
+  }
+
+  @media only screen and (min-width: 480px) {
+    .usp .text-1 {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .col.content {
+      padding: 30px;
+    }
+
+    .box.arrows {
+      padding-bottom: 60px;
+    }
+
+    .usp {
+      &.usp-arrow-left,
+      &.usp-arrow-right {
+        height: 55px;
+      }
+
+      &.usp-arrow-right {
+        padding-left: 10px;
+
+        &::before {
+          margin-right: -27px;
+        }
+      }
+
+      &.usp-arrow-left {
+        padding-right: 10px;
+
+        &::before {
+          margin-left: -27px;
+        }
+      }
+
+      .text-1 {
+        font-size: 18px;
+      }
+    }
+
+    .actie-vaantje-onderkant {
+      top: 30px;/* AN */
+      border-radius: 5px;/* AN */
+      right: 20px;/* AN */
+
+      .actie {
+        padding: 6px;/* AN */
+
+        .media-3 {
+          width: 120px;/* AN */
+          height: 161px;/* AN */
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    min-height: 800px !important;
+
+    &.hero {
+      padding: 0 !important;
+      min-height: 570px !important;
+
+      .col.arrows {
+        display: flex;
+      }
+    }
+
+    .col.content {
+      padding: 60px;
+    }
+
+    .box.arrows {
+      padding-bottom: 80px;
+      gap: 20px;
+    }
+
+    .usp {
+      &.usp-arrow-left {
+        padding-right: 20px;
+      }
+
+      &.usp-arrow-right {
+        padding-left: 20px;
+      }
+    }
+
+    .actie-vaantje-onderkant {
+      margin-top: 0;
+      right: 32px;/* AN */
+
+
+      .actie {
+        padding: 12px;/* AN */
+      }
+    }
   }
 }
 
@@ -499,7 +823,7 @@ section.form {
   input {
     width: 100%;
 
-    &[id^="#newsletterCheckbox"] + label {
+    &[id^="newsletterCheckbox"] + label {
       display: inline;
     }
   
@@ -578,6 +902,9 @@ section.form {
 
 // Veranda typen - product vlaggen
 .productflags {
+  .text-3 ul li:before {
+    color: #ffffff;
+  }
   .productflag-slider {
     overflow:hidden!important;
 
@@ -593,9 +920,11 @@ section.form {
       x-shape-bg>*{
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");
       }
-      .text-3 li::before {
+
+      .text-3 ul li::before {
         color:@primary-400;
       }
+
       .button-4 {
         border: 1px solid @primary-400;
       }
@@ -663,20 +992,26 @@ section.form {
 // ***** FAQ Section *****
 .faq-section {
   .media-4.arrow-right {
-    height:300px;
+    height: 300px;
     position: absolute;
-    align-self: anchor-center;
-    left:0;
-    margin-bottom: 50px;
+    // align-self: anchor-center; // dit werkt niet in safari en firefox
+    left: 0;
+    // margin-bottom: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+
   }
 
   .media-3.faq-helper {
     position: absolute;
-    width: 260px;
+    // width: 260px;
     left: 65px;
-    align-self: anchor-center;
-    // bottom: 26px;
-    bottom: 64px;
+    // align-self: anchor-center; // dit werkt niet in safari en firefox
+    // bottom: 64px;
+    height: 360px;
+    transform:~"translateY(calc(50% - 30px))";
+    bottom: 50%;
+    margin-bottom: 0;
   }
 
   .accordion {
@@ -690,12 +1025,15 @@ section.form {
   }
 
   .footnote p {
-    font-size:12px;
+    font-size: 12px;
 
     a {
-      color:@primary-400; 
-      text-decoration:none;
-      &:hover {text-decoration:underline;}
+      color: @primary-400;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -707,40 +1045,34 @@ section.form {
       display: none !important;
     }
   }
-}
+} // volgens mij staat ie gewoon op safari, dus dan kan dit weg?
 
-@media (min-width:768px) and (max-width:1023px) {
-  .faq-section {
+.faq-section {
+  @media (min-width:768px) and (max-width:1023px) {
     .media-3.faq-helper {
       left: -25px;
     }
   }
-}
 
-@media only screen and (max-width: 767px) {
-  .faq-section {
-    > .media-4.arrow-right,
-    > .faq-helper{
+  @media only screen and (max-width: 767px) {
+    overflow: hidden;
+
+    >.media-4.arrow-right,
+    >.faq-helper {
       display: none !important;
     }
-  }
-} // van wie is deze? graag samenvoegen met die hieronder
-
-@media only screen and (max-width: 767px) {
-  .faq-section {
-    overflow:hidden;
 
     .media-4.arrow-right {
       align-self: self-end;
-      width:100%;
+      width: 100%;
     }
 
     .media-3.faq-helper {
-      left:0;
+      left: 0;
     }
 
     .container {
-      order:1;
+      order: 1;
     }
   }
 }
@@ -753,7 +1085,24 @@ section.form {
   }
 }
 
-// ***** Lijsten in teksten vinkjes geven *****
+// ***** Projecten *****
+// Slider
+.project-slider {
+  .box-1 {
+    background: linear-gradient(0deg, rgba(0,0,0,.5), transparent);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .heading-7 a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: @primary-400;
+  }
+}
+
+// ***** Lijsten  *****
+// *** Lijsten vinkjes geven ***
 .text-1,
 .text-2,
 .text-3,
@@ -801,6 +1150,29 @@ section.form {
   }
 }
 
+// *** ruimtes onder lijsten ***
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-6,
+.text-7 {
+  ol:last-of-type,
+  ul:last-of-type,
+  p:last-of-type,
+  p:not([class^="heading-"]):last-of-type {
+    margin-bottom: 2em!important;
+  }
+
+  ol:last-child,
+  ul:last-child,
+  p:last-child,
+  p:not([class^="heading-"]):last-child {
+    margin-bottom: 0!important;
+  }
+}
+
 // ***** Bold in teksten ook echt bold *****
 .text-1,
 .text-2,
@@ -835,21 +1207,186 @@ section.form {
 .dnone {
   display: none;
 }
-// faq
+
+.header-menu + .breadcrumb {
+  margin-top: 75px;
+}
+// dakbedekking
+.box-specificatie{
+  overflow-x: auto;
+}
+
+.dakbedekking-col{
+  min-width: 700px;
+}
+
+// ***** Blogs *****
+.blog-heading a {
+  text-decoration: none !important;
+}
+
+.blog-content {
+  .text-3 {
+    img {
+      border-radius: 10px;
+      max-width: 600px;
+
+      +img:nth-of-type(even) {
+        margin-left: 15px;
+        margin-bottom: 30px;
+        width: ~"calc(50% - 15px)";
+      }
+      
+      &:nth-of-type(odd){
+        &:has(+ img),
+        &:last-child {
+          margin-right: 15px;
+          margin-bottom: 30px;
+          width: ~"calc(50% - 15px)";
+        }
+      }
+    }
+
+    ul {
+      margin-bottom: 2em !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .text-3 {
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+// ***** FAQ-pagina *****
 #page-2063530 .accordion .box-2{
-  background-color: #707070;
-  border-radius: 8px;
+  background-color: @primary-500;
+  border-radius: 20px;
   margin-bottom: 10px;
 
-  .handler{
-    color: #FFFFFF !important;
-    padding: 20px;
-    font-size: 18px;
+  .handler {
+    color: #ffffff !important;
+    padding: 10px 15px;
+    font-size: 20px;
   }
+  
   .listener {
     padding: 20px;
+
     p{
-      color: #FFFFFF !important;
+      color: #ffffff !important;
     };
+  }
+}
+
+// ***** Service pagina's *****
+.service {
+  .sticky {
+    position: sticky;
+    top: 150px;
+    height: fit-content;
+  }
+
+  .menu-3 {
+    >ul {
+      >li.active {
+        >a {
+          font-size: 16px;
+          font-family: 'open-sans-light';
+          font-weight: 300;
+        }
+      }
+
+      >li {
+        margin-right: 0px;
+
+        >a {
+          font-size: 16px;
+          font-family: 'open-sans-light';
+          font-weight: 300;
+        }
+      }
+
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+
+    &.dark {
+      >ul {
+        >li.active {
+          >a {
+            color: @primary-400;
+          }
+        }
+
+        >li {
+          >a {
+            color: @primary-500;
+
+            &:focus {
+              color: @primary-400;
+            }
+          }
+
+          &:hover {
+            >a {
+              color: @primary-400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ***** Folder *****
+.folder {
+  .hero-arrows + & {
+    margin-top: -20px;
+    
+    @media only screen and (min-width: 768px) {
+        margin-top: -50px;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+        margin-top: -100px;
+    }
+  }
+}
+
+// ***** Algemene contentblokken *****
+// Content/Intro 2 kolommen met USP blok
+.intro.usp {
+  .usp {
+    ul li {
+      font-family: 'open-sans-semibold';
+      padding: 10px 0;
+      position: relative;
+      max-width: 450px;
+
+      &:not(:last-child):after {
+        content: '';
+        border-bottom: 1px solid #CBD2D9;
+        position: absolute;
+        width: ~"calc(100% + 20px)";
+        height: 1px;
+        bottom: 0;
+        left: -20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .intro {
+      padding-right: 50px;
+    }
+
+    .usp {
+      padding-left: 50px;
+    }
   }
 }

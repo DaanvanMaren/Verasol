@@ -11,13 +11,6 @@ html {
   .usp-hotspot {
     display: none;
   }
-  .lib-block-19052-1 > .arrow-left {
-    position: relative;
-    margin-top: 10px;
-  }
-  .lib-block-19052-1 {
-    flex-direction: column-reverse !important;
-  }
 }
 .table-row {
   padding-left: 3px;
@@ -26,6 +19,11 @@ html {
 .table-row:first-of-type {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.table-row:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid #eceded;
 }
 .table-body .col div {
   padding: 10px;
@@ -73,11 +71,55 @@ html {
   mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M0,0h1733.06c10.69,0,23.82,7.58,29.16,16.83l153.77,266.33c5.35,9.26,5.35,24.42,0,33.67l-153.77,266.33c-5.35,9.26-18.47,16.84-29.16,16.84H0V0Z'/%3E%3C/svg%3E");
   mask-position: right center, 100% 0;
 }
+[id*="lib-block"].has-bg-arrow,
+[class*="lib-block"].has-bg-arrow {
+  margin: 100px 0;
+  overflow: hidden;
+  padding: 0;
+}
+[id*="lib-block"].has-bg-arrow:has(.arrow-left),
+[class*="lib-block"].has-bg-arrow:has(.arrow-left),
+[id*="lib-block"].has-bg-arrow:has(.arrow-right),
+[class*="lib-block"].has-bg-arrow:has(.arrow-right) {
+  flex-direction: column-reverse;
+}
+[id*="lib-block"].has-bg-arrow .arrow-left,
+[class*="lib-block"].has-bg-arrow .arrow-left,
+[id*="lib-block"].has-bg-arrow .arrow-right,
+[class*="lib-block"].has-bg-arrow .arrow-right {
+  position: relative;
+  margin-top: 36px;
+  max-height: 600px;
+}
+[id*="lib-block"].has-bg-arrow .arrow-left,
+[class*="lib-block"].has-bg-arrow .arrow-left {
+  transform: translateX(12px);
+}
+[id*="lib-block"].has-bg-arrow .arrow-right,
+[class*="lib-block"].has-bg-arrow .arrow-right {
+  transform: translateX(-12px);
+}
+.header-menu + [id*="lib-block"].has-bg-arrow,
+.header-menu + [class*="lib-block"].has-bg-arrow {
+  margin-top: 0;
+}
+[id*="lib-block"].has-bg-arrow + [id*="lib-block"].has-bg-arrow,
+[class*="lib-block"].has-bg-arrow + [id*="lib-block"].has-bg-arrow,
+[id*="lib-block"].has-bg-arrow + [class*="lib-block"].has-bg-arrow,
+[class*="lib-block"].has-bg-arrow + [class*="lib-block"].has-bg-arrow {
+  margin-top: 0;
+}
 @media only screen and (max-width: 767px) {
-  section.has-bg-arrow.mobile-arrow-top {
+  [id*="lib-block"].has-bg-arrow,
+  [class*="lib-block"].has-bg-arrow {
+    margin: 40px 0;
+  }
+  [id*="lib-block"].has-bg-arrow.mobile-arrow-top,
+  [class*="lib-block"].has-bg-arrow.mobile-arrow-top {
     padding: 0px 12px;
   }
-  section.has-bg-arrow.mobile-arrow-top .arrow-top {
+  [id*="lib-block"].has-bg-arrow.mobile-arrow-top .arrow-top,
+  [class*="lib-block"].has-bg-arrow.mobile-arrow-top .arrow-top {
     mask-size: 100% auto;
     mask-position: top;
     mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
@@ -85,42 +127,47 @@ html {
     height: 400px;
   }
 }
-[id*="lib-block"].has-bg-arrow {
-  margin: 100px 0;
-  overflow: hidden;
+@media only screen and (min-width: 768px) {
+  [id*="lib-block"].has-bg-arrow .arrow-left,
+  [class*="lib-block"].has-bg-arrow .arrow-left,
+  [id*="lib-block"].has-bg-arrow .arrow-right,
+  [class*="lib-block"].has-bg-arrow .arrow-right {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin-top: 0;
+    transform: none;
+  }
+  [id*="lib-block"].has-bg-arrow .arrow-left,
+  [class*="lib-block"].has-bg-arrow .arrow-left {
+    left: 50%;
+  }
+  [id*="lib-block"].has-bg-arrow > .media-4,
+  [class*="lib-block"].has-bg-arrow > .media-4 {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 50%;
+  }
 }
-[id*="lib-block"].has-bg-arrow:has(.arrow-left),
-[id*="lib-block"].has-bg-arrow:has(.arrow-right) {
-  flex-direction: column-reverse;
-}
-[id*="lib-block"].has-bg-arrow .arrow-left,
-[id*="lib-block"].has-bg-arrow .arrow-right {
-  position: relative;
-  margin-top: 36px;
-}
-[id*="lib-block"].has-bg-arrow .arrow-left {
-  transform: translateX(12px);
-}
-[id*="lib-block"].has-bg-arrow .arrow-right {
-  transform: translateX(-12px);
-}
-.header-menu + [id*="lib-block"].has-bg-arrow {
-  margin-top: 0;
-}
-.box-specificatie {
-  overflow-x: auto;
-}
-.dakbedekking-col {
-  min-width: 700px;
-}
-.blog-heading a {
-  text-decoration: none !important;
+@media only screen and (min-width: 768px) {
+  [id*="lib-block"].has-bg-arrow:has(+footer),
+  [class*="lib-block"].has-bg-arrow:has(+footer),
+  [id*="lib-block"].has-bg-arrow:has(+.showroom),
+  [class*="lib-block"].has-bg-arrow:has(+.showroom),
+  [id*="lib-block"].has-bg-arrow:has(+.bestdeal),
+  [class*="lib-block"].has-bg-arrow:has(+.bestdeal) {
+    margin-bottom: 50px;
+  }
 }
 .vanaf-prijs .card-3 {
   mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M1920,600H186.94c-10.69,0-23.82-7.58-29.16-16.83L4.01,316.84c-5.35-9.26-5.35-24.42,0-33.67L157.77,16.84c5.35-9.26,18.47-16.84,29.16-16.84h1733.06v600Z'/%3E%3C/svg%3E");
   mask-position: right center, 100% 0;
   mask-repeat: no-repeat;
   mask-size: 250px;
+  min-width: 200px;
+  padding: 5px;
 }
 .vanaf-prijs .card-3 .text-4 {
   margin: 3px 3px 0px;
@@ -129,6 +176,7 @@ html {
   font-size: 16px;
   color: #fff;
   transform: translate(0px, 3px);
+  line-height: 1.75;
 }
 .vanaf-prijs .card-3 .heading-4 {
   text-align: right;
@@ -136,20 +184,6 @@ html {
   padding-right: 20px;
   color: #fff;
   transform: translate(0px, -7px);
-}
-@media only screen and (min-width: 768px) {
-  [id*="lib-block"].has-bg-arrow .arrow-left,
-  [id*="lib-block"].has-bg-arrow .arrow-right {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    margin-top: 0;
-    transform: none;
-  }
-  [id*="lib-block"].has-bg-arrow .arrow-left {
-    left: 50%;
-  }
 }
 @media only screen and (max-width: 1023px) {
   .usp-pijl-rechts {
@@ -187,12 +221,261 @@ html {
   z-index: 0;
   pointer-events: none;
 }
+.hero-arrows {
+  padding: 12px !important;
+  padding-top: 30px !important;
+  min-height: 510px !important;
+}
+.hero-arrows.hero {
+  min-height: 490px !important;
+}
+.hero-arrows.hero .media-4 {
+  border-radius: 0;
+}
+.hero-arrows.hero .col.content {
+  align-items: center;
+  justify-content: center;
+}
+.hero-arrows.hero .text-hero .heading-1 {
+  text-align: center;
+}
+.hero-arrows.hero .col.arrows {
+  display: none;
+}
+.hero-arrows.hero .box.arrows {
+  left: unset;
+  right: 0;
+}
+.hero-arrows .container {
+  width: 100%;
+}
+.hero-arrows .row-1,
+.hero-arrows .row-2 {
+  padding: 0;
+}
+.hero-arrows .media-4 {
+  border-radius: 20px;
+}
+.hero-arrows .media-4:after {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.hero-arrows .col.content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-arrows .col.arrows {
+  padding: 0;
+}
+.hero-arrows .box.arrows {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  gap: 10px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.hero-arrows .heading-1 {
+  text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.5);
+}
+.hero-arrows .usp.usp-arrow-right,
+.hero-arrows .usp.usp-arrow-left {
+  padding: 5px;
+  background-color: #FFFFFF;
+  z-index: 99;
+  display: flex;
+  height: 45px;
+  position: relative;
+  align-items: center;
+  width: fit-content;
+}
+.hero-arrows .usp.usp-arrow-right:nth-of-type(1),
+.hero-arrows .usp.usp-arrow-left:nth-of-type(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.hero-arrows .usp.usp-arrow-right:nth-of-type(2),
+.hero-arrows .usp.usp-arrow-left:nth-of-type(2) {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.hero-arrows .usp.usp-arrow-right:nth-of-type(3),
+.hero-arrows .usp.usp-arrow-left:nth-of-type(3) {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.hero-arrows .usp.usp-arrow-right::before,
+.hero-arrows .usp.usp-arrow-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
+  height: 100%;
+  aspect-ratio: 0.5;
+}
+.hero-arrows .usp.usp-arrow-right {
+  padding-right: 20px;
+  left: 0;
+}
+.hero-arrows .usp.usp-arrow-right::before {
+  margin-right: -20px;
+  right: 0;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M17.64,83.75c1.64-.07,3.16-.89,4.12-2.22l2.02-3.28,19.67-31.91c.75-1.39.75-3.06,0-4.45L23.77,9.99l-2.02-3.28c-.96-1.33-2.48-2.16-4.12-2.23H5.56v79.26h12.07Z'/%3E%3Cpath class='cls-2' d='M36.37,41.63L14.58,6.28l-2.24-3.63C11.28,1.18,9.6.27,7.79.19l-4.23-.19H0v88h7.78c1.82-.08,3.5-.99,4.56-2.47l2.24-3.63,21.8-35.35c.84-1.54.84-3.39,0-4.93Z'/%3E%3C/svg%3E");
+  background-position: right;
+}
+.hero-arrows .usp.usp-arrow-left {
+  padding-left: 20px;
+  right: 0;
+  justify-self: flex-end;
+}
+.hero-arrows .usp.usp-arrow-left::before {
+  margin-left: -20px;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 88'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23bf570d; %7D .cls-2 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Path_79-2' data-name='Path 79-2' class='cls-1' d='M26.36,4.25c-1.64.07-3.16.89-4.12,2.22l-2.02,3.28L.56,41.65c-.75,1.39-.75,3.06,0,4.45l19.67,31.91,2.02,3.28c.96,1.33,2.48,2.16,4.12,2.23h12.07V4.26h-12.07Z'/%3E%3Cpath class='cls-2' d='M7.63,46.37l21.8,35.36,2.24,3.63c1.06,1.47,2.74,2.38,4.55,2.46l4.23.19h3.57V0h-7.78c-1.82.08-3.5.99-4.56,2.47l-2.24,3.63L7.63,41.44c-.84,1.54-.84,3.39,0,4.93Z'/%3E%3C/svg%3E");
+  background-position: left;
+}
+.hero-arrows .usp .text-1 {
+  font-size: 12px;
+  padding: 0px;
+  white-space: normal;
+  line-height: 1.2;
+  color: #636363;
+}
+.hero-arrows .actie-vaantje-onderkant {
+  margin-top: -30px;
+  top: -5px;
+  /* AN */
+  z-index: 2;
+  /* AN */
+  position: absolute;
+  /* AN */
+  right: 8px;
+  /* AN */
+  border-radius: 0px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant[data-shape="bg"] {
+  padding-bottom: 32px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant .actie {
+  align-items: center;
+  /* AN */
+  padding: 6px;
+  /* AN */
+  padding-top: 12px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant .actie .media-3 {
+  width: 88px;
+  /* AN */
+  height: 120px;
+  /* AN */
+  border-radius: 0px;
+  /* AN */
+}
+.hero-arrows .actie-vaantje-onderkant .actie .button-1 {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  /* AN */
+  font-size: 12px;
+  /* AN */
+  padding: 6px;
+  /* AN */
+  padding-left: 6px;
+  /* AN */
+  padding-right: 6px;
+  /* AN */
+  margin: 0px;
+  /* AN */
+  margin-top: 6px;
+  /* AN */
+  width: 110px;
+  /* AN */
+}
+@media only screen and (min-width: 480px) {
+  .hero-arrows .usp .text-1 {
+    font-size: 14px;
+  }
+}
 @media only screen and (min-width: 768px) {
-  [id*="lib-block"].has-bg-arrow > .media-4 {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 50%;
+  .hero-arrows .col.content {
+    padding: 30px;
+  }
+  .hero-arrows .box.arrows {
+    padding-bottom: 60px;
+  }
+  .hero-arrows .usp.usp-arrow-left,
+  .hero-arrows .usp.usp-arrow-right {
+    height: 55px;
+  }
+  .hero-arrows .usp.usp-arrow-right {
+    padding-left: 10px;
+  }
+  .hero-arrows .usp.usp-arrow-right::before {
+    margin-right: -27px;
+  }
+  .hero-arrows .usp.usp-arrow-left {
+    padding-right: 10px;
+  }
+  .hero-arrows .usp.usp-arrow-left::before {
+    margin-left: -27px;
+  }
+  .hero-arrows .usp .text-1 {
+    font-size: 18px;
+  }
+  .hero-arrows .actie-vaantje-onderkant {
+    top: 30px;
+    /* AN */
+    border-radius: 5px;
+    /* AN */
+    right: 20px;
+    /* AN */
+  }
+  .hero-arrows .actie-vaantje-onderkant .actie {
+    padding: 6px;
+    /* AN */
+  }
+  .hero-arrows .actie-vaantje-onderkant .actie .media-3 {
+    width: 120px;
+    /* AN */
+    height: 161px;
+    /* AN */
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-arrows {
+    min-height: 800px !important;
+  }
+  .hero-arrows.hero {
+    padding: 0 !important;
+    min-height: 570px !important;
+  }
+  .hero-arrows.hero .col.arrows {
+    display: flex;
+  }
+  .hero-arrows .col.content {
+    padding: 60px;
+  }
+  .hero-arrows .box.arrows {
+    padding-bottom: 80px;
+    gap: 20px;
+  }
+  .hero-arrows .usp.usp-arrow-left {
+    padding-right: 20px;
+  }
+  .hero-arrows .usp.usp-arrow-right {
+    padding-left: 20px;
+  }
+  .hero-arrows .actie-vaantje-onderkant {
+    margin-top: 0;
+    right: 32px;
+    /* AN */
+  }
+  .hero-arrows .actie-vaantje-onderkant .actie {
+    padding: 12px;
+    /* AN */
   }
 }
 .menu nav[data-menu="language"]::after {
@@ -383,7 +666,7 @@ section.form.campaign .card-4 .radios > div {
 .cm-form input {
   width: 100%;
 }
-.cm-form input[id^="#newsletterCheckbox"] + label {
+.cm-form input[id^="newsletterCheckbox"] + label {
   display: inline;
 }
 .cm-form input[type="checkbox"] {
@@ -471,6 +754,9 @@ section.form.campaign .card-4 .radios > div {
 .prod-acc + .box-3 > .text-5.dark {
   display: none !important;
 }
+.productflags .text-3 ul li:before {
+  color: #ffffff;
+}
 .productflags .productflag-slider {
   overflow: hidden!important;
 }
@@ -483,7 +769,7 @@ section.form.campaign .card-4 .radios > div {
 .productflags .productflag-slider .profiline-flag .card-3 x-shape-bg > * {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' class='cls-1' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3Cdiv xmlns='' id='divScriptsUsed' style='display: none'/%3E%3Cscript xmlns='' id='globalVarsDetection' src='chrome-extension://cmkdbmfndkfgebldhnkbfhlneefdaaip/js/wrs_env.js'/%3E%3C/svg%3E");
 }
-.productflags .productflag-slider .profiline-flag .card-3 .text-3 li::before {
+.productflags .productflag-slider .profiline-flag .card-3 .text-3 ul li::before {
   color: #BF570D;
 }
 .productflags .productflag-slider .profiline-flag .card-3 .button-4 {
@@ -534,16 +820,17 @@ section.form.campaign .card-4 .radios > div {
 .faq-section .media-4.arrow-right {
   height: 300px;
   position: absolute;
-  align-self: anchor-center;
   left: 0;
-  margin-bottom: 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .faq-section .media-3.faq-helper {
   position: absolute;
-  width: 260px;
   left: 65px;
-  align-self: anchor-center;
-  bottom: 64px;
+  height: 360px;
+  transform: translateY(calc(50% - 30px));
+  bottom: 50%;
+  margin-bottom: 0;
 }
 .faq-section .accordion .handler.active {
   font-family: 'open-sans-bold';
@@ -571,14 +858,12 @@ section.form.campaign .card-4 .radios > div {
   }
 }
 @media only screen and (max-width: 767px) {
+  .faq-section {
+    overflow: hidden;
+  }
   .faq-section > .media-4.arrow-right,
   .faq-section > .faq-helper {
     display: none !important;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .faq-section {
-    overflow: hidden;
   }
   .faq-section .media-4.arrow-right {
     align-self: self-end;
@@ -594,6 +879,16 @@ section.form.campaign .card-4 .radios > div {
 .review-section i.fa-star {
   -webkit-text-stroke: 2px #fff;
   font-size: 20px;
+}
+.project-slider .box-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.project-slider .heading-7 a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #BF570D;
 }
 .text-1 ul,
 .text-2 ul,
@@ -684,6 +979,66 @@ header .text-7 ul:not(.usp) li:before {
 .legal .text-7 ul li:before {
   display: none;
 }
+.text-1 ol:last-of-type,
+.text-2 ol:last-of-type,
+.text-3 ol:last-of-type,
+.text-4 ol:last-of-type,
+.text-5 ol:last-of-type,
+.text-6 ol:last-of-type,
+.text-7 ol:last-of-type,
+.text-1 ul:last-of-type,
+.text-2 ul:last-of-type,
+.text-3 ul:last-of-type,
+.text-4 ul:last-of-type,
+.text-5 ul:last-of-type,
+.text-6 ul:last-of-type,
+.text-7 ul:last-of-type,
+.text-1 p:last-of-type,
+.text-2 p:last-of-type,
+.text-3 p:last-of-type,
+.text-4 p:last-of-type,
+.text-5 p:last-of-type,
+.text-6 p:last-of-type,
+.text-7 p:last-of-type,
+.text-1 p:not([class^="heading-"]):last-of-type,
+.text-2 p:not([class^="heading-"]):last-of-type,
+.text-3 p:not([class^="heading-"]):last-of-type,
+.text-4 p:not([class^="heading-"]):last-of-type,
+.text-5 p:not([class^="heading-"]):last-of-type,
+.text-6 p:not([class^="heading-"]):last-of-type,
+.text-7 p:not([class^="heading-"]):last-of-type {
+  margin-bottom: 2em!important;
+}
+.text-1 ol:last-child,
+.text-2 ol:last-child,
+.text-3 ol:last-child,
+.text-4 ol:last-child,
+.text-5 ol:last-child,
+.text-6 ol:last-child,
+.text-7 ol:last-child,
+.text-1 ul:last-child,
+.text-2 ul:last-child,
+.text-3 ul:last-child,
+.text-4 ul:last-child,
+.text-5 ul:last-child,
+.text-6 ul:last-child,
+.text-7 ul:last-child,
+.text-1 p:last-child,
+.text-2 p:last-child,
+.text-3 p:last-child,
+.text-4 p:last-child,
+.text-5 p:last-child,
+.text-6 p:last-child,
+.text-7 p:last-child,
+.text-1 p:not([class^="heading-"]):last-child,
+.text-2 p:not([class^="heading-"]):last-child,
+.text-3 p:not([class^="heading-"]):last-child,
+.text-4 p:not([class^="heading-"]):last-child,
+.text-5 p:not([class^="heading-"]):last-child,
+.text-6 p:not([class^="heading-"]):last-child,
+.text-7 p:not([class^="heading-"]):last-child {
+  margin-bottom: 0!important;
+}
 .text-1 strong,
 .text-2 strong,
 .text-3 strong,
@@ -710,19 +1065,124 @@ header .text-7 ul:not(.usp) li:before {
 .dnone {
   display: none;
 }
+.header-menu + .breadcrumb {
+  margin-top: 75px;
+}
+.box-specificatie {
+  overflow-x: auto;
+}
+.dakbedekking-col {
+  min-width: 700px;
+}
+.blog-heading a {
+  text-decoration: none !important;
+}
+.blog-content .text-3 img {
+  border-radius: 10px;
+  max-width: 600px;
+}
+.blog-content .text-3 img + img:nth-of-type(even) {
+  margin-left: 15px;
+  margin-bottom: 30px;
+  width: calc(50% - 15px);
+}
+.blog-content .text-3 img:nth-of-type(odd):has(+ img),
+.blog-content .text-3 img:nth-of-type(odd):last-child {
+  margin-right: 15px;
+  margin-bottom: 30px;
+  width: calc(50% - 15px);
+}
+.blog-content .text-3 ul {
+  margin-bottom: 2em !important;
+}
+@media only screen and (min-width: 768px) {
+  .blog-content .text-3 img {
+    border-radius: 20px;
+  }
+}
 #page-2063530 .accordion .box-2 {
-  background-color: #707070;
-  border-radius: 8px;
+  background-color: #636363;
+  border-radius: 20px;
   margin-bottom: 10px;
 }
 #page-2063530 .accordion .box-2 .handler {
-  color: #FFFFFF !important;
-  padding: 20px;
-  font-size: 18px;
+  color: #ffffff !important;
+  padding: 10px 15px;
+  font-size: 20px;
 }
 #page-2063530 .accordion .box-2 .listener {
   padding: 20px;
 }
 #page-2063530 .accordion .box-2 .listener p {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
+}
+.service .sticky {
+  position: sticky;
+  top: 150px;
+  height: fit-content;
+}
+.service .menu-3 > ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service .menu-3 > ul > li.active > a {
+  font-size: 16px;
+  font-family: 'open-sans-light';
+  font-weight: 300;
+}
+.service .menu-3 > ul > li {
+  margin-right: 0px;
+}
+.service .menu-3 > ul > li > a {
+  font-size: 16px;
+  font-family: 'open-sans-light';
+  font-weight: 300;
+}
+.service .menu-3.dark > ul > li.active > a {
+  color: #BF570D;
+}
+.service .menu-3.dark > ul > li > a {
+  color: #636363;
+}
+.service .menu-3.dark > ul > li > a:focus {
+  color: #BF570D;
+}
+.service .menu-3.dark > ul > li:hover > a {
+  color: #BF570D;
+}
+.hero-arrows + .folder {
+  margin-top: -20px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-arrows + .folder {
+    margin-top: -50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hero-arrows + .folder {
+    margin-top: -100px;
+  }
+}
+.intro.usp .usp ul li {
+  font-family: 'open-sans-semibold';
+  padding: 10px 0;
+  position: relative;
+  max-width: 450px;
+}
+.intro.usp .usp ul li:not(:last-child):after {
+  content: '';
+  border-bottom: 1px solid #CBD2D9;
+  position: absolute;
+  width: calc(100% + 20px);
+  height: 1px;
+  bottom: 0;
+  left: -20px;
+}
+@media only screen and (min-width: 1024px) {
+  .intro.usp .intro {
+    padding-right: 50px;
+  }
+  .intro.usp .usp {
+    padding-left: 50px;
+  }
 }
