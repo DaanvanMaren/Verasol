@@ -1260,6 +1260,12 @@ header .text-7 ul:not(.usp) li:before {
     margin: 0;
   }
 }
+.specs-intro .row-2 {
+  padding-left: 0;
+}
+.specs-intro .col-2 .button-wrapper {
+  margin-top: 24px;
+}
 .intro.usp .usp ul li {
   font-family: 'open-sans-semibold';
   padding: 10px 0;
