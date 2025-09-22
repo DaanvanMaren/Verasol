@@ -513,7 +513,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.locator-widget .row-1 {
+.hero:has(.timer) + .locator-widget .row-1 {
   bottom: 0;
 }
 @media only screen and (min-width: 768px) {
