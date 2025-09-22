@@ -616,6 +616,11 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 div#page-1977967 .ons-assortiment .grey-bg-arrow {
   display: none;
 }
+.ons-assortiment {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0!important;
+}
 .ons-assortiment .grey-bg-arrow {
   width: 100%;
   background-size: auto 75%;
