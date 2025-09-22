@@ -1202,6 +1202,10 @@ header .text-7 ul:not(.usp) li:before {
   max-width: unset!important;
   padding: 6px;
 }
+.hero .timer .has-timer {
+  font-size: 22px;
+  height: unset;
+}
 .hero .timer .has-timer #timer {
   max-width: 300px;
   justify-content: center;
@@ -1219,8 +1223,11 @@ header .text-7 ul:not(.usp) li:before {
   .timer .has-timer #timer .number {
     width: 40px;
   }
-  .hero .timer .has-timer {
-    height: unset;
+}
+@media (min-width: 1024px) {
+  .hero .timer {
+    padding: 12px;
+    margin: 0;
   }
 }
 .intro.usp .usp ul li {

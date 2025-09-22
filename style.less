@@ -1405,6 +1405,9 @@ section.form {
     padding: 6px;
 
     .has-timer {
+      font-size: 22px;
+      height: unset;
+
       #timer {
         max-width: 300px;
         justify-content: center;
@@ -1429,11 +1432,12 @@ section.form {
         width: 40px;
       }
     }
+  }
 
+  @media (min-width: 1024px) {
     .hero & {
-      .has-timer {
-        height: unset;
-      }
+      padding: 12px;
+      margin: 0;
     }
   }
 }
