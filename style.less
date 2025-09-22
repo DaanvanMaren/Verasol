@@ -1362,39 +1362,40 @@ section.form {
 .timer {
   .has-timer {
     height: 60px;
+
+    #timer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      >span {
+        width: 33.33333333%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .number {
+        text-align: center;
+        background-color: #fff;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        width: 35px;
+        font-weight: 600;
+        color: @primary-400;
+        padding: 5px;
+      }
+  
+      .text {
+        width: fit-content;
+      }
+    }
   }
   
-  #timer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    >span {
-      width: 33.33333333%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .number {
-      text-align: center;
-      background-color: #fff;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      width: 35px;
-      font-weight: 600;
-      color: @primary-400;
-      padding: 5px;
-    }
-
-    .text {
-      width: fit-content;
-    }
-  }
 
   @media (min-width: 480px) {
-    #timer {
+    .has-timer #timer {
       justify-content: flex-start;
 
       >span {
@@ -1404,7 +1405,7 @@ section.form {
   }
 
   @media (min-width: 768px) {
-    #timer {
+    .has-timer #timer {
       .number {
         width: 40px;
       }

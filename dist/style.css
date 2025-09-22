@@ -1166,19 +1166,19 @@ header .text-7 ul:not(.usp) li:before {
 .timer .has-timer {
   height: 60px;
 }
-.timer #timer {
+.timer .has-timer #timer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.timer #timer > span {
+.timer .has-timer #timer > span {
   width: 33.33333333%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.timer #timer .number {
+.timer .has-timer #timer .number {
   text-align: center;
   background-color: #fff;
   aspect-ratio: 1;
@@ -1188,19 +1188,19 @@ header .text-7 ul:not(.usp) li:before {
   color: #BF570D;
   padding: 5px;
 }
-.timer #timer .text {
+.timer .has-timer #timer .text {
   width: fit-content;
 }
 @media (min-width: 480px) {
-  .timer #timer {
+  .timer .has-timer #timer {
     justify-content: flex-start;
   }
-  .timer #timer > span {
+  .timer .has-timer #timer > span {
     justify-content: flex-start;
   }
 }
 @media (min-width: 768px) {
-  .timer #timer .number {
+  .timer .has-timer #timer .number {
     width: 40px;
   }
 }
