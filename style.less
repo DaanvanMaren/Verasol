@@ -1362,6 +1362,7 @@ section.form {
 .timer {
   .has-timer {
     height: 60px;
+    width: 100%;
 
     #timer {
       display: flex;
@@ -1402,6 +1403,14 @@ section.form {
     width: 100vw;
     max-width: unset!important;
     padding: 6px;
+
+    .has-timer {
+      #timer {
+        max-width: 300px;
+        justify-content: center;
+        margin: auto;
+      }
+    }
 }
 
   @media (min-width: 480px) {
@@ -1418,6 +1427,12 @@ section.form {
     .has-timer #timer {
       .number {
         width: 40px;
+      }
+    }
+
+    .hero & {
+      .has-timer {
+        height: unset;
       }
     }
   }

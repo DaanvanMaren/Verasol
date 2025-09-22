@@ -1165,6 +1165,7 @@ header .text-7 ul:not(.usp) li:before {
 }
 .timer .has-timer {
   height: 60px;
+  width: 100%;
 }
 .timer .has-timer #timer {
   display: flex;
@@ -1201,6 +1202,11 @@ header .text-7 ul:not(.usp) li:before {
   max-width: unset!important;
   padding: 6px;
 }
+.hero .timer .has-timer #timer {
+  max-width: 300px;
+  justify-content: center;
+  margin: auto;
+}
 @media (min-width: 480px) {
   .timer .has-timer #timer {
     justify-content: flex-start;
@@ -1212,6 +1218,9 @@ header .text-7 ul:not(.usp) li:before {
 @media (min-width: 768px) {
   .timer .has-timer #timer .number {
     width: 40px;
+  }
+  .hero .timer .has-timer {
+    height: unset;
   }
 }
 .intro.usp .usp ul li {
