@@ -509,6 +509,13 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     display: none;
   }
 }
+.hero:has(.timer) + .locator-widget {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.locator-widget .row-1 {
+  bottom: 0;
+}
 @media only screen and (min-width: 768px) {
   .locator-widget input {
     text-align: left;
