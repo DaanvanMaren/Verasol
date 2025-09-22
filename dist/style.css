@@ -1208,10 +1208,18 @@ header .text-7 ul:not(.usp) li:before {
   width: 100vw;
   max-width: unset!important;
   padding: 6px;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .timer h2 {
+  font-size: 22px;
+  text-align: center;
 }
 .hero .timer .has-timer {
   font-size: 18px;
   height: unset;
+  width: unset;
+  min-width: 200px;
 }
 .hero .timer .has-timer #timer {
   max-width: 300px;
@@ -1229,6 +1237,15 @@ header .text-7 ul:not(.usp) li:before {
 @media (min-width: 768px) {
   .timer .has-timer #timer .number {
     width: 40px;
+  }
+  .hero .timer {
+    flex-direction: row;
+  }
+  .hero .timer h2 {
+    margin-right: 20px;
+  }
+  .hero .timer .has-timer #timer {
+    margin-left: 20px;
   }
   .hero .timer .has-timer #timer .number {
     width: 35px;
