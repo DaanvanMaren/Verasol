@@ -1203,7 +1203,7 @@ header .text-7 ul:not(.usp) li:before {
   padding: 6px;
 }
 .hero .timer .has-timer {
-  font-size: 22px;
+  font-size: 18px;
   height: unset;
 }
 .hero .timer .has-timer #timer {
