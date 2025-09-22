@@ -1230,6 +1230,9 @@ header .text-7 ul:not(.usp) li:before {
   .timer .has-timer #timer .number {
     width: 40px;
   }
+  .hero .timer .has-timer #timer .number {
+    width: 35px;
+  }
 }
 @media (min-width: 1024px) {
   .hero .timer {
