@@ -1191,7 +1191,7 @@ header .text-7 ul:not(.usp) li:before {
 .timer .has-timer #timer .text {
   width: fit-content;
 }
-.timer.hero {
+.hero .timer {
   background-color: #BF570D;
   justify-content: center;
   z-index: 1;
