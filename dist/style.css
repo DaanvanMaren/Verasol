@@ -1219,7 +1219,7 @@ header .text-7 ul:not(.usp) li:before {
   font-size: 18px;
   height: unset;
   width: unset;
-  min-width: 200px;
+  min-width: 250px;
 }
 .hero .timer .has-timer #timer {
   max-width: 300px;
@@ -1243,9 +1243,6 @@ header .text-7 ul:not(.usp) li:before {
   }
   .hero .timer h2 {
     margin-right: 20px;
-  }
-  .hero .timer .has-timer {
-    min-width: 250px;
   }
   .hero .timer .has-timer #timer {
     margin-left: 20px;
