@@ -905,6 +905,9 @@ section.form.campaign .card-4 .radios > div {
   text-decoration-thickness: 1px;
   text-decoration-color: #BF570D;
 }
+.project-slider + [id^="block-74"].light {
+  padding-top: 0;
+}
 .text-1 ul,
 .text-2 ul,
 .text-3 ul,
