@@ -1017,7 +1017,6 @@ section.form {
     position: absolute;
     // align-self: anchor-center; // dit werkt niet in safari en firefox
     left: 0;
-    // margin-bottom: 50px;
     top: 50%;
     transform: translateY(-50%);
 
@@ -1025,35 +1024,42 @@ section.form {
 
   .media-3.faq-helper {
     position: absolute;
-    // width: 260px;
     left: 65px;
     // align-self: anchor-center; // dit werkt niet in safari en firefox
-    // bottom: 64px;
     height: 360px;
     transform:~"translateY(calc(50% - 30px))";
     bottom: 50%;
     margin-bottom: 0;
   }
 
+  .heading-2 {
+      text-align: center;
+      margin-bottom: 2rem!important;
+  }  
+
   .accordion {
     .handler.active {
       font-family: 'open-sans-bold';
     }
 
-    // .text-4 p {
-    //   font-size: 14px;
-    // }
+    .text-5 {
+      line-height: 1.8;
+    }
   }
 
-  .footnote p {
-    font-size: 12px;
+  .footnote {
+    padding-top: 36px;
 
-    a {
-      color: @primary-400;
-      text-decoration: none;
+    p {
+      font-size: 12px;
 
-      &:hover {
-        text-decoration: underline;
+      a {
+        color: @primary-400;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

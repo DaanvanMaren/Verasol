@@ -847,8 +847,18 @@ section.form.campaign .card-4 .radios > div {
   bottom: 50%;
   margin-bottom: 0;
 }
+.faq-section .heading-2 {
+  text-align: center;
+  margin-bottom: 2rem!important;
+}
 .faq-section .accordion .handler.active {
   font-family: 'open-sans-bold';
+}
+.faq-section .accordion .text-5 {
+  line-height: 1.8;
+}
+.faq-section .footnote {
+  padding-top: 36px;
 }
 .faq-section .footnote p {
   font-size: 12px;
