@@ -1103,6 +1103,10 @@ header .text-7 ul:not(.usp) li:before {
   min-width: 700px;
   padding: 0;
 }
+.only-buttons {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
 .blog-heading a {
   text-decoration: none !important;
 }
