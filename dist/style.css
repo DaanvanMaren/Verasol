@@ -1101,6 +1101,7 @@ header .text-7 ul:not(.usp) li:before {
 }
 .dakbedekking-col {
   min-width: 700px;
+  padding: 0;
 }
 .blog-heading a {
   text-decoration: none !important;
