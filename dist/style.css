@@ -147,6 +147,10 @@ html {
     left: 50%;
   }
 }
+[id*="lib-block"].has-bg-arrow .container > .row > .col:only-child {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .vanaf-prijs .card-3 {
   mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M1920,600H186.94c-10.69,0-23.82-7.58-29.16-16.83L4.01,316.84c-5.35-9.26-5.35-24.42,0-33.67L157.77,16.84c5.35-9.26,18.47-16.84,29.16-16.84h1733.06v600Z'/%3E%3C/svg%3E");
   mask-position: right center, 100% 0;
