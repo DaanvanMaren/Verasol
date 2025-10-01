@@ -306,7 +306,7 @@ html {
   z-index: 0;
   pointer-events: none;
   height: 100%;
-  aspect-ratio: 0.5;
+  aspect-ratio: 1/2;
 }
 .hero-arrows .usp.usp-arrow-right {
   padding-right: 20px;
@@ -1056,6 +1056,31 @@ header .text-7 ul:not(.usp) li:before {
 .text-6 p:not([class^="heading-"]):last-child,
 .text-7 p:not([class^="heading-"]):last-child {
   margin-bottom: 0!important;
+}
+.specs-new article {
+  border-style: none;
+  border-color: #CBD2D9;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.specs-new article.active {
+  padding-bottom: 24px;
+}
+.specs-new .handler-1 {
+  font-size: 16px;
+}
+.specs-new .handler-1.active {
+  padding-bottom: 5px;
+}
+.specs-new #afmetingen .handler-1.handler.dark,
+.specs-new #situatie .handler-1.handler.dark,
+.specs-new #samenstellen .handler-1.handler.dark,
+.specs-new #uitbreiden .handler-1.handler.dark,
+.specs-new #aankleden .handler-1.handler.dark,
+.specs-new #afronden .handler-1.handler.dark {
+  padding-right: 0;
 }
 .text-1 strong,
 .text-2 strong,
