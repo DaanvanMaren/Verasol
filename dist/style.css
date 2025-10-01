@@ -1090,6 +1090,12 @@ header .text-7 ul:not(.usp) li:before {
 .specs-new #afronden .handler-1.handler.dark {
   padding-right: 0;
 }
+@media only screen and (min-width: 768px) {
+  .specs-new .listener > .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .text-1 strong,
 .text-2 strong,
 .text-3 strong,
