@@ -1080,7 +1080,7 @@ header .text-7 ul:not(.usp) li:before {
   padding-top: 18px;
 }
 .specs-new .listener > .row > .col:last-child {
-  padding-bottom: 0;
+  padding-bottom: 0!important;
 }
 .specs-new #afmetingen .handler-1.handler.dark,
 .specs-new #situatie .handler-1.handler.dark,
