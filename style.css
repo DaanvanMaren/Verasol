@@ -1074,6 +1074,14 @@ header .text-7 ul:not(.usp) li:before {
 .specs-new .handler-1.active {
   padding-bottom: 5px;
 }
+.specs-new #afmetingen .handler-1.handler.dark,
+.specs-new #situatie .handler-1.handler.dark,
+.specs-new #samenstellen .handler-1.handler.dark,
+.specs-new #uitbreiden .handler-1.handler.dark,
+.specs-new #aankleden .handler-1.handler.dark,
+.specs-new #afronden .handler-1.handler.dark {
+  padding-right: 0;
+}
 .text-1 strong,
 .text-2 strong,
 .text-3 strong,
