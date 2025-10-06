@@ -1576,6 +1576,9 @@ section:not(.ons-assortiment) .button-wrapper:has([class^="button"]:first-child+
     width: fit-content;
   }
 }
+.two-products .button-wrapper {
+  width: 100%;
+}
 .two-products .button-wrapper [class^="button"] {
   width: 100%;
   height: 70px;
