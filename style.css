@@ -1565,6 +1565,17 @@ header .text-7 ul:not(.usp) li:before {
     width: unset;
   }
 }
+.button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) {
+  container-type: inline-size;
+}
+.button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) [class^="button"] {
+  width: 100%;
+}
+@container (width > 462px) {
+  .button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) [class^="button"] {
+    width: fit-content;
+  }
+}
 .intro.usp .usp ul li {
   font-family: 'open-sans-semibold';
   padding: 10px 0;

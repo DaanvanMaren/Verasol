@@ -1914,6 +1914,24 @@ section.form {
   }
 }
 
+// ***** Knoppen uitlijnen *****
+.button-wrapper {
+  // 2 knoppen
+  &:has([class^="button"]:first-child+[class^="button"]:last-child) {
+    container-type: inline-size;
+    
+    [class^="button"] {
+      width: 100%
+    }
+  }
+}
+
+@container (width > 462px) {
+  // 2 knoppen
+  .button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) [class^="button"] {
+      width: fit-content;
+  }
+}
 
 // ***** Algemene contentblokken *****
 // Content/Intro 2 kolommen met USP blok
