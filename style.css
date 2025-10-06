@@ -220,6 +220,9 @@ html {
   padding-top: 30px !important;
   min-height: 510px !important;
 }
+.hero-arrows .heading-1 {
+  text-wrap: balance;
+}
 .hero-arrows.hero {
   min-height: 490px !important;
 }
