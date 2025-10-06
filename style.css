@@ -1582,7 +1582,7 @@ section:not(.ons-assortiment) .button-wrapper:has([class^="button"]:first-child+
   align-content: center;
 }
 @media only screen and (min-width: 800px) {
-  .two-products {
+  .two-products [class^="button"] {
     max-width: 370px;
     height: fit-content;
   }
