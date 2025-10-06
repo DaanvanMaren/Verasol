@@ -1368,7 +1368,7 @@ header .text-7 ul:not(.usp) li:before {
 }
 .oa-widget #oa_widget .datepicker-inline td,
 .oa-widget #oa_widget .datepicker-inline table td {
-  font-size: 16px!important;
+  font-size: 16px !important;
 }
 .oa-widget #oa_widget .datepicker thead {
   color: #636363;
@@ -1484,6 +1484,12 @@ header .text-7 ul:not(.usp) li:before {
 .oa-widget #oa_widget select,
 .oa-widget #oa_widget textarea {
   padding-left: 5px;
+}
+.oa-widget #oa_widget select {
+  background: transparent;
+  border: none;
+  border-color: rgba(99, 99, 99, 0.25);
+  border-bottom: 1px solid rgba(99, 99, 99, 0.25);
 }
 .oa-widget #oa_widget #widget-select-filters,
 .oa-widget #oa_widget #widget-select-datetime,
