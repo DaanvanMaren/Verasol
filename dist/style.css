@@ -1294,6 +1294,271 @@ header .text-7 ul:not(.usp) li:before {
 .specs-intro .col-2 .button-wrapper {
   margin-top: 24px;
 }
+.oa-widget #oa_widget {
+  padding: 0;
+  margin: 0;
+  font-size: 16px !important;
+  width: 100%;
+  background-color: transparent !important;
+}
+.oa-widget #oa_widget #widget-booking-footer-navigation {
+  margin-top: 0;
+}
+.oa-widget #oa_widget .oanl-shop-summary-container {
+  padding: 0;
+}
+.oa-widget #oa_widget h1,
+.oa-widget #oa_widget #widget-select-datetime h2,
+.oa-widget #oa_widget .frm-section-register-form h2 {
+  font-size: 16px !important;
+  font-family: 'Isidora Sans Alt', sans-serif;
+  font-weight: 600;
+  color: #636363;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: rgba(99, 99, 99, 0.25);
+  line-height: 2;
+}
+.oa-widget #oa_widget .form-label {
+  font-family: 'Isidora Sans Alt', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2;
+  color: #636363;
+  margin-bottom: 6px;
+}
+.oa-widget #oa_widget #widget-booking-content {
+  min-height: unset;
+  font-family: 'Open Sans', sans-serif;
+  font-variant: lining-nums;
+}
+.oa-widget #oa_widget #widget-select-time ul.oanl-times-list {
+  margin-top: 0;
+}
+.oa-widget #oa_widget a,
+.oa-widget #oa_widget a:visited {
+  color: #BF570D;
+}
+.oa-widget #oa_widget div.fld,
+.oa-widget #oa_widget label.fld {
+  border: 1px solid #ECEDED;
+  border-radius: 0;
+}
+.oa-widget #oa_widget input,
+.oa-widget #oa_widget textarea,
+.oa-widget #oa_widget select,
+.oa-widget #oa_widget .oanl-booking-widget input,
+.oa-widget #oa_widget .oanl-booking-widget textarea,
+.oa-widget #oa_widget .oanl-booking-widget select {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.oa-widget #oa_widget .frm-section-register-forms *,
+.oa-widget #oa_widget .widget-register-remarks {
+  color: #636363;
+  line-height: 1.3;
+}
+.oa-widget #oa_widget .form-row p {
+  padding-top: 6px;
+}
+.oa-widget #oa_widget .datepicker-inline,
+.oa-widget #oa_widget .datepicker-inline table {
+  width: 100% !important;
+  max-width: 430px;
+}
+.oa-widget #oa_widget .datepicker-inline td,
+.oa-widget #oa_widget .datepicker-inline table td {
+  font-size: 16px!important;
+}
+.oa-widget #oa_widget .datepicker thead {
+  color: #636363;
+}
+.oa-widget #oa_widget .datepicker table tr td,
+.oa-widget #oa_widget .datepicker table tr th {
+  height: 20px;
+  line-height: 0.7;
+  padding-top: 5px;
+}
+.oa-widget #oa_widget button {
+  border-radius: 8px;
+  font-family: 'Isidora Sans Alt', sans-serif !important;
+  font-size: 19px;
+  font-weight: normal;
+  line-height: 1;
+  padding: 12px 22px 17px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  transition: all 0.25s ease;
+  margin-top: 24px;
+}
+.oa-widget #oa_widget.theme-advanced button.oanl-shop-button,
+.oa-widget #oa_widget.theme-advanced .form-row button,
+.oa-widget #oa_widget.theme-advanced .form-buttons button,
+.oa-widget #oa_widget.theme-advanced .form-row .fake-button,
+.oa-widget #oa_widget.theme-advanced .form-buttons .fake-button,
+.oa-widget #oa_widget.theme-advanced .booking-step-container-vertical li.active-item,
+.oa-widget #oa_widget.theme-advanced div.fld-password button {
+  background: #BF570D !important;
+  transition: all 0.3s ease;
+}
+.oa-widget #oa_widget.theme-advanced button.oanl-shop-button:hover,
+.oa-widget #oa_widget.theme-advanced .form-row button:hover,
+.oa-widget #oa_widget.theme-advanced .form-buttons button:hover,
+.oa-widget #oa_widget.theme-advanced .form-row .fake-button:hover,
+.oa-widget #oa_widget.theme-advanced .form-buttons .fake-button:hover,
+.oa-widget #oa_widget.theme-advanced .booking-step-container-vertical li.active-item:hover,
+.oa-widget #oa_widget.theme-advanced div.fld-password button:hover {
+  background: #636363 !important;
+  transition: all 0.3s ease;
+}
+.oa-widget #oa_widget.theme-advanced #widget-select-time ul.oanl-times-list a.oanl-times-list-button {
+  background: #BF570D;
+  transition: all 0.3s ease;
+  padding: 0;
+  height: 30px;
+}
+.oa-widget #oa_widget.theme-advanced #widget-select-time ul.oanl-times-list a.oanl-times-list-button:hover {
+  background: #636363;
+  transition: all 0.3s ease;
+}
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tfoot {
+  display: none;
+}
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.day,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.day.highlighted {
+  background: #BF570D !important;
+  transition: all 0.3s ease;
+}
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.today {
+  border-color: #636363 !important;
+}
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.active,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.active,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.day:hover,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted:hover {
+  background: #636363 !important;
+  transition: all 0.3s ease;
+}
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.old,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.old:hover,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.old,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.old:hover,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.new,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.new:hover,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.disabled,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.disabled:hover,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted {
+  background: rgba(191, 87, 13, 0.2) !important;
+}
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.new,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.old,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.new:hover,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.old:hover,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.disabled,
+.oa-widget #oa_widget.theme-advanced .datepicker-inline table tr td.highlighted.disabled:hover {
+  background: rgba(191, 87, 13, 0.4) !important;
+}
+.oa-widget #oa_widget .oanl-summary-body.oanl-summary-appointment {
+  color: #636363;
+}
+.oa-widget #oa_widget .oanl-summary-body.oanl-summary-appointment tr td {
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: rgba(99, 99, 99, 0.25);
+}
+.oa-widget #oa_widget .far {
+  color: #BF570D;
+}
+.oa-widget #oa_widget h2 {
+  font-weight: bold;
+}
+.oa-widget #oa_widget ul li.oanl-times-list-item {
+  padding: unset;
+}
+.oa-widget #oa_widget ul li:before {
+  display: none;
+}
+.oa-widget #oa_widget input,
+.oa-widget #oa_widget select,
+.oa-widget #oa_widget textarea {
+  padding-left: 5px;
+}
+.oa-widget #oa_widget #widget-select-filters,
+.oa-widget #oa_widget #widget-select-datetime,
+.oa-widget #oa_widget #widget-select-date,
+.oa-widget #oa_widget #widget-select-time {
+  min-height: unset !important;
+  height: fit-content;
+  color: #636363;
+}
+.oa-widget #oa_widget #widget-select-filters p,
+.oa-widget #oa_widget #widget-select-datetime p,
+.oa-widget #oa_widget #widget-select-date p,
+.oa-widget #oa_widget #widget-select-time p {
+  line-height: 1.3;
+  padding-top: 6px;
+}
+.oa-widget #oa_widget .oanl-checkout-summary a {
+  text-decoration: underline;
+}
+.oa-widget #oa_widget .oanl-checkout-summary .frm-section-fields-base .form-row {
+  width: 100% !important;
+}
+.oa-widget #oa_widget .oanl-checkout-summary tbody tr.oanl-summary-appointment-price-show:has(td:empty) {
+  display: none;
+}
+.oa-widget #oa_widget div.fld-medium,
+.oa-widget #oa_widget label.fld-email,
+.oa-widget #oa_widget div.fld {
+  width: 100%;
+}
+.oa-widget #oa_widget div.fld-medium + p,
+.oa-widget #oa_widget label.fld-email + p,
+.oa-widget #oa_widget div.fld + p {
+  font-style: italic;
+}
+@media only screen and (min-width: 768px) {
+  .oa-widget #oa_widget .widget-horizontal #widget-select-date {
+    width: 49%;
+  }
+  .oa-widget #oa_widget .form-label {
+    font-size: 16px;
+  }
+  .oa-widget #oa_widget #widget-booking-content > .widget-view-full-height {
+    display: flex;
+    flex-direction: column;
+  }
+  .oa-widget #oa_widget label.fld-email,
+  .oa-widget #oa_widget div.fld-medium,
+  .oa-widget #oa_widget div.fld {
+    width: calc(100% - 190px);
+  }
+  .oa-widget #oa_widget label.fld-email + p,
+  .oa-widget #oa_widget div.fld-medium + p,
+  .oa-widget #oa_widget div.fld + p {
+    width: calc(100% - 190px);
+    margin-left: 190px;
+  }
+  .oa-widget #oa_widget #widget-select-filters {
+    padding-right: 6px;
+  }
+  .oa-widget #oa_widget #widget-select-datetime {
+    padding-left: 6px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .oa-widget #oa_widget #widget-select-filters {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .oa-widget #oa_widget #widget-select-filters,
+  .oa-widget #oa_widget.widget-horizontal #widget-select-date {
+    width: unset;
+  }
+}
 .intro.usp .usp ul li {
   font-family: 'open-sans-semibold';
   padding: 10px 0;

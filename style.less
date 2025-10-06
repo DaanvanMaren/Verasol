@@ -1583,6 +1583,326 @@ section.form {
   }
 }
 
+// ***** Online Afspraken *****
+.oa-widget #oa_widget {
+	padding: 0;
+	margin: 0;
+	font-size: 16px !important;
+	width: 100%;
+	background-color: transparent !important;
+
+	#widget-booking-footer-navigation {
+		margin-top: 0;
+	}
+
+	.oanl-shop-summary-container {
+		padding: 0;
+	}
+
+	h1,
+	#widget-select-datetime h2,
+	.frm-section-register-form h2 {
+		font-size: 16px !important;
+		font-family: 'Isidora Sans Alt', sans-serif;
+		font-weight: 600;
+		color: @primary-500;
+		border-width: 0px;
+		border-bottom-width: 1px;
+		border-style: solid;
+		border-color: fade(@primary-500, 25%);
+		line-height: 2;
+	}
+
+	.form-label {
+		font-family: 'Isidora Sans Alt', sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 2;
+		color: @primary-500;
+		margin-bottom: 6px;
+	}
+
+	#widget-booking-content {
+		min-height: unset;
+		font-family: 'Open Sans', sans-serif;
+		font-variant: lining-nums;
+	}
+
+	#widget-select-time ul.oanl-times-list {
+		margin-top: 0;
+	}
+
+	a,
+	a:visited {
+		color: @primary-400;
+	}
+
+	div.fld,
+	label.fld {
+		border: 1px solid #ECEDED;
+		border-radius: 0;
+	}
+
+	input,
+	textarea,
+	select,
+	.oanl-booking-widget input,
+	.oanl-booking-widget textarea,
+	.oanl-booking-widget select {
+		font-family: 'Open Sans', sans-serif !important;
+	}
+
+	.frm-section-register-forms *,
+	.widget-register-remarks {
+		color: @primary-500;
+		line-height: 1.3
+	}
+
+	.form-row p {
+		padding-top: 6px;
+	}
+
+	.datepicker-inline,
+	.datepicker-inline table {
+		width: 100% !important;
+		max-width: 430px;
+
+		td {
+			font-size: 16px!important;
+		}
+	}
+
+	.datepicker {
+		thead {
+			color: @primary-500;
+		}
+
+		table tr {
+			td, 
+			th {
+				height: 20px;
+				line-height: 0.7;
+				padding-top: 5px;
+			}
+		}
+	}
+
+	button {
+		border-radius: 8px;
+		font-family: 'Isidora Sans Alt',sans-serif!important;
+		font-size: 19px;
+		font-weight: normal;
+		line-height: 1;
+		padding: 12px 22px 17px;
+		text-align: center;
+		border-style: solid;
+		border-width: 1px;
+		transition: all .25s ease;
+		margin-top: 24px;
+	}
+
+	&.theme-advanced {
+		button.oanl-shop-button,
+		.form-row button,
+		.form-buttons button,
+		.form-row .fake-button,
+		.form-buttons .fake-button,
+		.booking-step-container-vertical li.active-item,
+		div.fld-password button {
+			background: @primary-400 !important;
+			transition: all .3s ease;
+
+			&:hover {
+				background: @primary-500 !important;
+				transition: all .3s ease;
+			}
+		}
+
+		#widget-select-time ul.oanl-times-list a.oanl-times-list-button {
+			background: @primary-400;
+			transition: all .3s ease;
+			padding: 0;
+			height: 30px;
+
+			&:hover {
+				background: @primary-500;
+				transition: all .3s ease;
+			}
+		}
+
+		.datepicker-inline table {
+			tfoot {
+				display: none;
+			}
+
+			tr td {
+				&.day,
+				&.day.highlighted {
+					background: @primary-400 !important;
+					transition: all .3s ease;
+				}
+
+				&.today {
+					border-color: @primary-500 !important;
+				}
+
+				&.active,
+				&.highlighted.active,
+				&.day:hover,
+				&.highlighted:hover {
+					background: @primary-500 !important;
+					transition: all .3s ease;
+				}
+
+				&.old,
+				&.old:hover,
+				&.highlighted.old,
+				&.highlighted.old:hover,
+				&.new,
+				&.new:hover,
+				&.disabled,
+				&.disabled:hover,
+				&.highlighted {
+					background: rgba(191,87,13, 0.2) !important;
+					// rgb of primarycolor;
+				}
+
+				&.highlighted.new,
+				&.highlighted.old,
+				&.highlighted.new:hover,
+				&.highlighted.old:hover,
+				&.highlighted.disabled,
+				&.highlighted.disabled:hover {
+					background: rgba(191,87,13, 0.4) !important;
+					// rgb of primarycolor;
+				}
+			}
+		}
+	}
+
+	.oanl-summary-body.oanl-summary-appointment {
+		color: @primary-500;
+
+		tr td {
+			border-width: 0px;
+			border-bottom-width: 1px;
+			border-style: solid;
+			border-color: fade(@primary-500, 25%);
+		}
+	}
+
+	.far {
+		color: @primary-400;
+	}
+
+	h2 {
+		font-weight: bold;
+	}
+
+	ul li {
+		&.oanl-times-list-item {
+			padding: unset;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	input,
+	select,
+	textarea {
+		padding-left: 5px;
+	}
+
+	#widget-select-filters,
+	#widget-select-datetime,
+	#widget-select-date,
+	#widget-select-time {
+		min-height: unset !important;
+		height: fit-content;
+		color: @primary-500;
+
+		p {
+			line-height: 1.3;
+			padding-top: 6px;
+		}            
+	}
+
+	.oanl-checkout-summary {
+		a {
+			text-decoration: underline;
+		}
+
+		.frm-section-fields-base .form-row {
+			width: 100% !important;
+		}
+
+		tbody tr.oanl-summary-appointment-price-show:has(td:empty) {
+			display: none;
+		}
+	}
+
+	div.fld-medium,
+	label.fld-email,
+	div.fld {
+		width: 100%;
+
+		+p {
+			font-style: italic;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.widget-horizontal #widget-select-date {
+			width: 49%;
+		}
+
+		.form-label {
+			font-size: 16px;
+		}
+
+		#widget-booking-content {
+			> .widget-view-full-height {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		label.fld-email,
+		div.fld-medium,
+		div.fld {
+			width: calc(~"100% - 190px");
+
+			+p {
+				width: calc(~"100% - 190px");
+				margin-left: 190px;
+			}
+		}
+
+		#widget-select-filters {
+			padding-right: 6px;
+		}
+
+		#widget-select-datetime {
+			padding-left: 6px;
+		}
+	}
+	
+	@media only screen and (min-width: 1024px) {
+		#widget-select-filters {
+			width: 100%;
+		}
+	}
+	
+	@media only screen and (min-width: 1280px) {
+		#widget-select-filters,
+		&.widget-horizontal #widget-select-date {
+			width: unset;
+		}
+	}
+}
+
+
 // ***** Algemene contentblokken *****
 // Content/Intro 2 kolommen met USP blok
 .intro.usp {
