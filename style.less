@@ -1928,7 +1928,7 @@ section:not(.ons-assortiment) .button-wrapper {
 
 @container (width > 462px) {
   // 2 knoppen
-  .button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) [class^="button"] {
+  section:not(.ons-assortiment) .button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) [class^="button"] {
       width: fit-content;
   }
 }

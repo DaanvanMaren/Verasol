@@ -1572,7 +1572,7 @@ section:not(.ons-assortiment) .button-wrapper:has([class^="button"]:first-child+
   width: 100%;
 }
 @container (width > 462px) {
-  .button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) [class^="button"] {
+  section:not(.ons-assortiment) .button-wrapper:has([class^="button"]:first-child+[class^="button"]:last-child) [class^="button"] {
     width: fit-content;
   }
 }
