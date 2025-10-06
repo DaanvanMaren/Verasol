@@ -1576,6 +1576,17 @@ section:not(.ons-assortiment) .button-wrapper:has([class^="button"]:first-child+
     width: fit-content;
   }
 }
+.two-products [class^="button"] {
+  width: 100%;
+  height: 70px;
+  align-content: center;
+}
+@media only screen and (min-width: 800px) {
+  .two-products {
+    max-width: 370px;
+    height: fit-content;
+  }
+}
 .intro.usp .usp ul li {
   font-family: 'open-sans-semibold';
   padding: 10px 0;
