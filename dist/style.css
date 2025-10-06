@@ -1578,6 +1578,7 @@ section:not(.ons-assortiment) .button-wrapper:has([class^="button"]:first-child+
 }
 .two-products .button-wrapper {
   width: 100%;
+  justify-content: center;
 }
 .two-products .button-wrapper [class^="button"] {
   width: 100%;
