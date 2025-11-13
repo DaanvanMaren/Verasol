@@ -80,7 +80,7 @@ html {
     max-height: unset !important;
   }
   .has-video-arrow .col-1 {
-    width: 100%!;
+    width: 100%!important;
     margin-bottom: 50px;
   }
 }
