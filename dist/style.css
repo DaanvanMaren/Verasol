@@ -74,7 +74,7 @@ html {
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .has-video-arrow .video-arrow {
-    max-height: 450px;
+    max-height: 450px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
