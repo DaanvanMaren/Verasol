@@ -80,7 +80,7 @@ html {
 @media (min-width: 768px) and (max-width: 1023px) {
   .has-video-arrow .video-arrow {
     position: relative !important;
-    width: 100%!important;
+    width: 85%!important;
     height: auto !important;
     max-height: unset !important;
   }
