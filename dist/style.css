@@ -80,10 +80,10 @@ html {
     max-height: unset !important;
   }
   .has-video-arrow .video-arrow.arrow-right {
-    transform: translateX(-12px);
+    transform: translateX(-12px) !important;
   }
   .has-video-arrow .video-arrow.arrow-left {
-    transform: translateX(12px);
+    transform: translateX(12px) !important;
   }
   .has-video-arrow .col-1 {
     width: 100%!important;
