@@ -79,6 +79,12 @@ html {
     height: auto !important;
     max-height: unset !important;
   }
+  .has-video-arrow .video-arrow.arrow-right {
+    transform: translateX(-12px);
+  }
+  .has-video-arrow .video-arrow.arrow-left {
+    transform: translateX(12px);
+  }
   .has-video-arrow .col-1 {
     width: 100%!important;
     margin-bottom: 50px;
