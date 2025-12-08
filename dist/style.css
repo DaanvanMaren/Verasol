@@ -474,6 +474,12 @@ html {
     padding: 12px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  div#page-1977967 .hero-arrows.hero {
+    padding: 0 !important;
+    min-height: 670px !important;
+  }
+}
 .menu nav[data-menu="language"]::after {
   content: '';
   position: absolute;
