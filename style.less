@@ -506,6 +506,30 @@ html {
     }
   }
 
+  .box-3.bdg {
+		bottom: -15px;
+		width: 100%;
+		height: 120px;
+		.bestedealgarantie {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 120px;
+			height: 120px;
+			transform: translate(-5px, 50%);
+			z-index: 1;
+			background: #fff;
+			border-radius: 50%;
+		}
+	}
+  @media only screen and (max-width: 767px) {
+    .box-3.bdg .bestedealgarantie {
+			height: 100px!important;
+      width: 100px!important;
+      transform: translate(10px, 50%)!important;
+		}
+  }
+
   @media only screen and (min-width: 480px) {
     .usp .text-1 {
       font-size: 14px;
