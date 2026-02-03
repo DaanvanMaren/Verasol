@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+/* Impressum uitschakelen voor NL, is alleen voor DE */
+html[lang="nl"] section.service li.page-2473657 {
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   .box-folder-label {
     display: none;
