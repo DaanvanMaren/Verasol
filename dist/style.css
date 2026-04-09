@@ -948,7 +948,7 @@ section.form.campaign .card-4 .radios > div {
 .text-5 ul.checklist li,
 .text-6 ul.checklist li,
 .text-7 ul.checklist li {
-  postition: relative;
+  position: relative;
 }
 .text-1 ul li:before,
 .text-2 ul li:before,
@@ -1349,6 +1349,7 @@ header .text-7 ul:not(.usp) li:before {
   position: relative;
   padding-left: 7px;
   line-height: 2.6;
+  font-family: 'open-sans-semibold';
 }
 .specs-intro .text-3 ul li:before {
   top: 13px;
