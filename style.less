@@ -69,19 +69,27 @@ html[lang="nl"] section.service li.page-2473657 {
 }
 
 // ***** scroll blok *****
-.scroll-punten .box-1 {
-  > * {
-    display: none;
-  }
-
-  > h2,
-  > .heading-2 {
-    display: block;
-  }
-
-  @media only screen and (min-width: 768px) {
+.scroll-punten {
+  .box-1 {
     > * {
-      display:block;
+      display: none;
+    }
+
+    > h2,
+    > .heading-2 {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      > * {
+        display:block;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .heading-2 {
+      margin-bottom: 0;
     }
   }
 }

@@ -52,9 +52,14 @@ html[lang="nl"] section.service li.page-2473657 {
 .scroll-punten .box-1 > .heading-2 {
   display: block;
 }
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .scroll-punten .box-1 > * {
     display: block;
+  }
+}
+@media (max-width: 767px) {
+  .scroll-punten .heading-2 {
+    margin-bottom: 0;
   }
 }
 .step-content:not(:last-child) {
