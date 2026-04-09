@@ -48,8 +48,14 @@ html[lang="nl"] section.service li.page-2473657 {
 .table-body .col {
   padding: 0px !important;
 }
+.scroll-link {
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.scroll-link.active p,
 .text-3.active p {
-  font-weight: bold;
+  font-family: 'open-sans-semibold';
 }
 .scroll-link {
   cursor: pointer;
