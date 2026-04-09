@@ -52,12 +52,12 @@ html[lang="nl"] section.service li.page-2473657 {
 .scroll-punten .box-1 > .heading-2 {
   display: block;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .scroll-punten .box-1 > * {
     display: block;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .scroll-punten .heading-2 {
     margin-bottom: 0;
   }
@@ -98,12 +98,12 @@ html[lang="nl"] section.service li.page-2473657 {
   mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Laag_1' data-name='Laag 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 600'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M0,0h1733.06c10.69,0,23.82,7.58,29.16,16.83l153.77,266.33c5.35,9.26,5.35,24.42,0,33.67l-153.77,266.33c-5.35,9.26-18.47,16.84-29.16,16.84H0V0Z'/%3E%3C/svg%3E");
   mask-position: right center, 100% 0;
 }
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .has-video-arrow .video-arrow {
-    max-height: 450px !important;
+    max-height: 450px!important;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .has-video-arrow .video-arrow {
     position: relative !important;
     width: 85%!important;
@@ -117,7 +117,7 @@ html[lang="nl"] section.service li.page-2473657 {
     transform: translateX(12px) !important;
   }
   .has-video-arrow .col-1 {
-    width: 100%!important;
+    width: 100% !important;
     margin-bottom: 50px;
   }
 }
@@ -145,6 +145,12 @@ html[lang="nl"] section.service li.page-2473657 {
 [class*="lib-block"].has-bg-arrow .arrow-left {
   transform: translateX(12px);
 }
+@media only screen and (min-width: 768px) {
+  [id*="lib-block"].has-bg-arrow .arrow-left + .container .col,
+  [class*="lib-block"].has-bg-arrow .arrow-left + .container .col {
+    padding-right: 36px;
+  }
+}
 [id*="lib-block"].has-bg-arrow .arrow-right,
 [class*="lib-block"].has-bg-arrow .arrow-right {
   transform: translateX(-12px);
@@ -152,6 +158,12 @@ html[lang="nl"] section.service li.page-2473657 {
 [id*="lib-block"].has-bg-arrow .arrow-right + .container > .row,
 [class*="lib-block"].has-bg-arrow .arrow-right + .container > .row {
   justify-content: flex-end;
+}
+@media only screen and (min-width: 768px) {
+  [id*="lib-block"].has-bg-arrow .arrow-right + .container .col,
+  [class*="lib-block"].has-bg-arrow .arrow-right + .container .col {
+    padding-left: 36px;
+  }
 }
 .header-menu + [id*="lib-block"].has-bg-arrow,
 .header-menu + [class*="lib-block"].has-bg-arrow {
@@ -896,7 +908,7 @@ section.form.campaign .card-4 .radios > div {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .faq-section .media-3.faq-helper {
     left: -25px;
   }
@@ -1330,7 +1342,7 @@ header .text-7 ul:not(.usp) li:before {
   justify-content: center;
   margin: auto;
 }
-@media (min-width: 480px) {
+@media only screen and (min-width: 480px) {
   .timer .has-timer #timer {
     justify-content: flex-start;
   }
@@ -1338,7 +1350,7 @@ header .text-7 ul:not(.usp) li:before {
     justify-content: flex-start;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .timer .has-timer #timer .number {
     width: 40px;
   }
@@ -1355,7 +1367,7 @@ header .text-7 ul:not(.usp) li:before {
     width: 35px;
   }
 }
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .hero .timer {
     padding: 12px;
     margin: 0;
