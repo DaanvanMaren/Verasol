@@ -9,9 +9,6 @@ html[lang="nl"] section.service li.page-2473657 {
   .box-folder-label {
     display: none;
   }
-  .scroll-punten {
-    display: none;
-  }
   .usp-hotspot {
     display: none;
   }
@@ -47,6 +44,18 @@ html[lang="nl"] section.service li.page-2473657 {
 .table-head .thead,
 .table-body .col {
   padding: 0 !important;
+}
+.scroll-punten .box-1 > * {
+  display: none;
+}
+.scroll-punten .box-1 > h2,
+.scroll-punten .box-1 > .heading-2 {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .scroll-punten .box-1 > * {
+    display: block;
+  }
 }
 .step-content:not(:last-child) {
   margin-bottom: 48px;

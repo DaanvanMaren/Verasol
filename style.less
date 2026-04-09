@@ -20,10 +20,6 @@ html[lang="nl"] section.service li.page-2473657 {
     display: none;
   }
 
-  .scroll-punten {
-    display: none;
-  }
-
   .usp-hotspot {
     display: none;
   }
@@ -73,6 +69,23 @@ html[lang="nl"] section.service li.page-2473657 {
 }
 
 // ***** scroll blok *****
+.scroll-punten .box-1 {
+  > * {
+    display: none;
+  }
+
+  > h2,
+  > .heading-2 {
+    display: block;
+  }
+
+  @media only screen and (min-width: 768px) {
+    > * {
+      display:block;
+    }
+  }
+}
+
 .step-content{
   &:not(:last-child) {
     margin-bottom: 48px;
