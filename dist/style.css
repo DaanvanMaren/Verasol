@@ -48,6 +48,12 @@ html[lang="nl"] section.service li.page-2473657 {
 .table-body .col {
   padding: 0px !important;
 }
+.step-content:not(:last-child) {
+  margin-bottom: 48px;
+}
+.step-content .text-2 {
+  margin-bottom: 24px;
+}
 .scroll-link {
   margin: 0px;
   margin-bottom: 5px;
