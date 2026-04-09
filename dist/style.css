@@ -1345,14 +1345,17 @@ header .text-7 ul:not(.usp) li:before {
 .specs-intro .col-2 .button-wrapper {
   margin-top: 24px;
 }
+.specs-intro .text-3 {
+  margin-bottom: 0!important;
+}
 .specs-intro .text-3 ul li {
   position: relative;
-  padding-left: 7px;
-  line-height: 2.6;
+  padding: 10px 0 10px 7px;
+  line-height: 1.5;
   font-family: 'open-sans-semibold';
 }
 .specs-intro .text-3 ul li:before {
-  top: 13px;
+  top: 15px;
   left: -20px;
   width: 18px;
 }
