@@ -46,7 +46,7 @@ html[lang="nl"] section.service li.page-2473657 {
 }
 .table-head .thead,
 .table-body .col {
-  padding: 0px !important;
+  padding: 0 !important;
 }
 .step-content:not(:last-child) {
   margin-bottom: 48px;
@@ -55,16 +55,12 @@ html[lang="nl"] section.service li.page-2473657 {
   margin-bottom: 24px;
 }
 .scroll-link {
-  margin: 0px;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin: 5px 0;
+  cursor: pointer;
 }
 .scroll-link.active p,
 .text-3.active p {
   font-family: 'open-sans-semibold';
-}
-.scroll-link {
-  cursor: pointer;
 }
 .primary {
   color: #BF570D;
@@ -73,7 +69,7 @@ html[lang="nl"] section.service li.page-2473657 {
   color: #636363;
 }
 .ml-0 {
-  margin-left: 0px !important;
+  margin-left: 0 !important;
 }
 .arrow-left,
 .arrow-right {
@@ -156,14 +152,14 @@ html[lang="nl"] section.service li.page-2473657 {
 @media only screen and (max-width: 767px) {
   [id*="lib-block"].has-bg-arrow.mobile-arrow-top,
   [class*="lib-block"].has-bg-arrow.mobile-arrow-top {
-    padding: 0px 12px;
+    padding: 0 12px;
   }
   [id*="lib-block"].has-bg-arrow.mobile-arrow-top .arrow-top,
   [class*="lib-block"].has-bg-arrow.mobile-arrow-top .arrow-top {
     mask-size: 100% auto;
     mask-position: top;
     mask-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20id%3D%22Laag_2%22%20data-name%3D%22Laag%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20600%201920%22%3E%3Cg%20id%3D%22Laag_1-2%22%20data-name%3D%22Laag%201%22%3E%3Cpath%20id%3D%22csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051%22%20data-name%3D%22csm%20Verasol%20Fabriek%20-%20Seher%20Melikoglu%20Fotografie-6831%20a0ceb3d051%22%20d%3D%22M0%2C1920V186.94c0-10.69%2C7.58-23.82%2C16.83-29.16L283.16%2C4.01c9.26-5.35%2C24.42-5.35%2C33.67%2C0l266.33%2C153.76c9.26%2C5.35%2C16.84%2C18.47%2C16.84%2C29.16v1733.06H0Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    transform: translateX(0px);
+    transform: translateX(0);
     height: 400px;
   }
 }
@@ -204,12 +200,12 @@ html[lang="nl"] section.service li.page-2473657 {
   padding: 5px;
 }
 .vanaf-prijs .card-3 .text-4 {
-  margin: 3px 3px 0px;
+  margin: 3px 3px 0;
   text-align: right;
   padding-right: 20px;
   font-size: 16px;
   color: #fff;
-  transform: translate(0px, 3px);
+  transform: translate(0, 3px);
   line-height: 1.75;
 }
 .vanaf-prijs .card-3 .heading-4 {
@@ -217,7 +213,7 @@ html[lang="nl"] section.service li.page-2473657 {
   font-size: 32px;
   padding-right: 20px;
   color: #fff;
-  transform: translate(0px, -7px);
+  transform: translate(0, -7px);
 }
 .specs-intro .vanaf-prijs {
   display: none;
@@ -319,7 +315,7 @@ html[lang="nl"] section.service li.page-2473657 {
   grid-template-rows: repeat(3, 1fr);
 }
 .hero-arrows .heading-1 {
-  text-shadow: 0px 0px 17px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 17px rgba(0, 0, 0, 0.5);
 }
 .hero-arrows .usp.usp-arrow-right,
 .hero-arrows .usp.usp-arrow-left {
@@ -378,7 +374,7 @@ html[lang="nl"] section.service li.page-2473657 {
 }
 .hero-arrows .usp .text-1 {
   font-size: 12px;
-  padding: 0px;
+  padding: 0;
   white-space: normal;
   line-height: 1.2;
   color: #636363;
@@ -389,7 +385,7 @@ html[lang="nl"] section.service li.page-2473657 {
   z-index: 2;
   position: absolute;
   right: 8px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .hero-arrows .actie-vaantje-onderkant[data-shape="bg"] {
   padding-bottom: 32px;
@@ -402,15 +398,15 @@ html[lang="nl"] section.service li.page-2473657 {
 .hero-arrows .actie-vaantje-onderkant .actie .media-3 {
   width: 88px;
   height: 117px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .hero-arrows .actie-vaantje-onderkant .actie .button-1 {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   font-size: 12px;
   padding: 6px;
   padding-left: 6px;
   padding-right: 6px;
-  margin: 0px;
+  margin: 0;
   margin-top: 6px;
   width: 110px;
 }
@@ -582,7 +578,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 }
 .cat-slider .card-3 .cat-slider-submenu .button-wrapper .button-6 {
   border-right: 1px solid #eee;
-  padding: 0px 15px 0px 5px;
+  padding: 0 15px 0 5px;
   text-align: center;
   color: #BF570D;
 }
@@ -593,7 +589,7 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 .cat-slider .card-3:hover .button-4 {
   background-color: #BF570D;
   color: #fff;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 .cat-slider .swiper-slide-active .cat-slider-submenu,
 .cat-slider .card-3:hover .cat-slider-submenu {
@@ -607,10 +603,10 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
 .orange-shadow:after {
   position: absolute;
   content: '';
-  bottom: 0px;
+  bottom: 0;
   width: 90%;
   justify-self: center;
-  height: 0px;
+  height: 0;
   background: transparent;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -703,7 +699,7 @@ section.form.campaign .card-4 .radios > div {
 .dealer-detail .table,
 .dealer-detail .open table {
   border-radius: 10px;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   max-width: 458px;
 }
@@ -809,11 +805,11 @@ section.form.campaign .card-4 .radios > div {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='Laag_2' data-name='Laag 2' viewBox='0 0 600 1920'%3E%3Cg id='Laag_1-2' data-name='Laag 1-2'%3E%3Cpath id='csm_Verasol_Fabriek_-_Seher_Melikoglu_Fotografie-6831_a0ceb3d051' data-name='csm Verasol Fabriek - Seher Melikoglu Fotografie-6831 a0ceb3d051' d='M600,0v1733.06c0,10.69-7.58,23.82-16.83,29.16l-266.33,153.77c-9.26,5.35-24.42,5.35-33.67,0L16.84,1762.23C7.58,1756.88,0,1743.76,0,1733.07V0s600,0,600,0h0Z'/%3E%3C/g%3E%3C/svg%3E");
 }
 .productflags .productflag-slider article .text-3 {
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 .productflags .productflag-slider article .text-3 ul {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
   position: relative;
 }
 .productflags .productflag-slider article .text-3 ul li:before {
@@ -942,7 +938,7 @@ section.form.campaign .card-4 .radios > div {
 .text-6 ul.checklist,
 .text-7 ul.checklist {
   list-style: none;
-  padding-left: 0px;
+  padding-left: 0;
   position: relative;
   margin-left: 24px;
 }
@@ -1232,7 +1228,7 @@ header .text-7 ul:not(.usp) li:before {
   font-weight: 300;
 }
 .service .menu-3 > ul > li {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .service .menu-3 > ul > li > a {
   font-size: 16px;
@@ -1412,7 +1408,7 @@ header .text-7 ul:not(.usp) li:before {
   font-family: 'Isidora Sans Alt', sans-serif;
   font-weight: 600;
   color: #636363;
-  border-width: 0px;
+  border-width: 0;
   border-bottom-width: 1px;
   border-style: solid;
   border-color: rgba(99, 99, 99, 0.25);
@@ -1561,7 +1557,7 @@ header .text-7 ul:not(.usp) li:before {
   color: #636363;
 }
 .oa-widget #oa_widget .oanl-summary-body.oanl-summary-appointment tr td {
-  border-width: 0px;
+  border-width: 0;
   border-bottom-width: 1px;
   border-style: solid;
   border-color: rgba(99, 99, 99, 0.25);
