@@ -1197,6 +1197,15 @@ header .text-7 ul:not(.usp) li:before {
   padding-top: 0!important;
   padding-bottom: 0!important;
 }
+.text-1 p img:only-child,
+.text-2 p img:only-child,
+.text-3 p img:only-child,
+.text-4 p img:only-child,
+.text-5 p img:only-child,
+.text-6 p img:only-child,
+.text-7 p img:only-child {
+  margin-bottom: 0;
+}
 .blog-heading a {
   text-decoration: none !important;
 }

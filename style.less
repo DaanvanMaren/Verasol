@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  //-webkit-font-smoothing: antialiased;
 }
 
 /* Impressum uitschakelen voor NL, is alleen voor DE */
@@ -1401,6 +1400,19 @@ section.form {
 .only-buttons {
   padding-top: 0!important;
   padding-bottom: 0!important;
+}
+
+//afbeeldingen in teksten
+.text-1,
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-6,
+.text-7 {
+  p img:only-child {
+      margin-bottom: 0;
+  }
 }
 
 // ***** Blogs *****
