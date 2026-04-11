@@ -1179,6 +1179,10 @@ header .text-7 ul:not(.usp) li:before {
   padding-top: 0!important;
   padding-bottom: 0!important;
 }
+p sup,
+li sup {
+  font-size: 0.6em;
+}
 .text-1 .heading-1:has(> img):not(:has( > :not(img))),
 .text-2 .heading-1:has(> img):not(:has( > :not(img))),
 .text-3 .heading-1:has(> img):not(:has( > :not(img))),
