@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Impressum uitschakelen voor NL, is alleen voor DE */
+// ***** Impressum uitschakelen voor NL, is alleen voor DE *****
 html[lang="nl"] section.service li.page-2473657 {
     display: none;
 }
@@ -786,24 +786,6 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
   }
 }
 
-// @media only screen and (max-width: 767px) {
-//   .cat-slider {
-//     .swiper-slide-active {
-//       .card-3 {
-//         .button-4 {
-//           background-color:@primary-400!important;
-//           color:#fff!important;
-//           box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2)!important;
-//         }
-
-//         .cat-slider-submenu {
-//           display:block;
-//         }
-//       }
-//     }
-//   }
-// }
-
 // Oranje rand/schaduw on hover
 .orange-shadow {
   &:after {
@@ -828,18 +810,6 @@ html[lang="de"] .menu nav[data-menu="language"]::after {
     }
   }
 }
-
-// @media only screen and (max-width: 767px) {
-//   .swiper-slide-active {
-//     .orange-shadow {
-//       &:after {
-//         background:@primary-400!important;
-//         bottom:-10px!important;
-//         height:10px!important;
-//       }
-//     }
-//   }
-// }
 
 // Grey bg arrow
 div#page-1977967 {// Homepage
@@ -1498,7 +1468,7 @@ section.form {
 
     p {
       color: #ffffff !important;
-    };
+    }
   }
 }
 
@@ -1512,13 +1482,8 @@ section.form {
 
   .menu-3 {
     >ul {
-      >li.active {
-        >a {
-          font-size: 16px;
-          font-family: 'open-sans-light';
-          font-weight: 300;
-        }
-      }
+      flex-direction: column;
+      align-items: flex-start;
 
       >li {
         margin-right: 0;
@@ -1528,36 +1493,29 @@ section.form {
           font-family: 'open-sans-light';
           font-weight: 300;
         }
-      }
 
-      flex-direction: column;
-      align-items: flex-start;
+        &.active > a {
+          font-size: 16px;
+          font-family: 'open-sans-light';
+          font-weight: 300;
+        }
+      }
     }
 
-
     &.dark {
-      >ul {
-        >li.active {
-          >a {
+      >ul>li {
+        >a {
+          color: @primary-500;
+
+          &:focus {
             color: @primary-400;
           }
         }
 
-        >li {
-          >a {
-            color: @primary-500;
-
-            &:focus {
-              color: @primary-400;
-            }
-          }
-
-          &:hover {
-            >a {
-              color: @primary-400;
-            }
-          }
-        }
+        &.active > a,
+        &:hover > a {
+          color: @primary-400;
+        }  
       }
     }
   }
@@ -1643,7 +1601,7 @@ section.form {
         margin: auto;
       }
     }
-}
+  }
 
   @media only screen and (min-width: 480px) {
     .has-timer #timer {
@@ -1898,7 +1856,6 @@ section.form {
       }
 
       tr td {
-
         &.day,
         &.day.highlighted {
           background: @primary-400 !important;
