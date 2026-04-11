@@ -1204,7 +1204,7 @@ header .text-7 ul:not(.usp) li:before {
 .text-5 p img:only-child,
 .text-6 p img:only-child,
 .text-7 p img:only-child {
-  margin-bottom: 0;
+  margin-bottom: 0!important;
 }
 .blog-heading a {
   text-decoration: none !important;
