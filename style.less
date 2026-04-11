@@ -1410,9 +1410,11 @@ section.form {
 .text-5,
 .text-6,
 .text-7 {
-  p img:only-child {
+  p:has(> img):not(:has(> :not(img))) {
       margin-bottom: 0!important;
   }
+  // :has(> img) → er moet minstens één directe <img> in zitten
+  // :not(:has(> :not(img))) → er mogen geen andere directe child-elements in zitten
 }
 
 // ***** Blogs *****
