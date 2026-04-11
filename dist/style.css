@@ -1283,7 +1283,9 @@ header .text-7 ul:not(.usp) li:before {
 #page-2063530 .accordion .box-2 .listener {
   padding: 20px;
 }
-#page-2063530 .accordion .box-2 .listener p {
+#page-2063530 .accordion .box-2 .listener p,
+#page-2063530 .accordion .box-2 .listener ol,
+#page-2063530 .accordion .box-2 .listener ul {
   color: #ffffff !important;
 }
 .service .sticky {
